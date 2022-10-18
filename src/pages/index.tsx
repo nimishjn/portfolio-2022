@@ -1,3 +1,5 @@
+import HeroSection from 'components/herosection';
+import Navbar from 'components/navbar';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -12,8 +14,12 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-
-			<main>Hola</main>
+			<main className='min-h-screen min-w-full'>
+				<HeroSection />
+				<Navbar />
+				<HeroSection />
+				<HeroSection />
+			</main>
 		</div>
 	);
 };
