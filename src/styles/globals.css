@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-    @apply bg-black text-white;
+    @apply bg-black text-white scroll-smooth;
 }
 
 @layer components {
@@ -13,5 +13,9 @@ html {
 
     .nav-link {
         @apply px-3 py-2;
+    }
+
+    .nav-link-active {
+        @apply bg-red-900;
     }
 }

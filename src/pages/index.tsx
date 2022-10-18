@@ -1,5 +1,9 @@
+import About from 'components/about';
 import HeroSection from 'components/herosection';
 import Navbar from 'components/navbar';
+import Projects from 'components/projects';
+import Research from 'components/research';
+import Skills from 'components/skills';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
@@ -17,8 +21,10 @@ const Home: NextPage = () => {
 			<main className='min-h-screen min-w-full'>
 				<HeroSection />
 				<Navbar />
-				<HeroSection />
-				<HeroSection />
+				<About />
+				<Skills />
+				<Projects />
+				<Research />
 			</main>
 		</div>
 	);
