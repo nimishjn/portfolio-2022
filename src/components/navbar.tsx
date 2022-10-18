@@ -1,11 +1,32 @@
-import React from 'react';
-import Link from 'next/link';
+import React, { useState } from 'react';
 import { Link as LinkScroll } from 'react-scroll';
 
 export default function Navbar() {
+	const [display, setDisplay] = useState(false);
+
+	const displayNavbar = () => {
+		setDisplay(true);
+	};
+
+	const removeNavbar = () => {
+		setDisplay(false);
+	};
+
 	return (
-		<nav className='sticky top-0 bg-gray-900 px-20 py-5 flex justify-between'>
-			<h1>{'<Nimish>'}</h1>
+		<nav
+			className='w-full fixed top-0 bg-gray-900 px-20 py-1 h-16 flex justify-between items-center transition-all duration-300'
+			style={{ marginTop: display ? 0 : '-64px' }}
+		>
+			<LinkScroll
+				spy={true}
+				smooth={true}
+				offset={-64}
+				duration={200}
+				to='herosection'
+				onSetActive={removeNavbar}
+			>
+				Nimish
+			</LinkScroll>
 			<div className='flex gap-2 items-center justify-center'>
 				<LinkScroll
 					activeClass='nav-link-active'
@@ -14,6 +35,7 @@ export default function Navbar() {
 					offset={-64}
 					duration={200}
 					to='about'
+					onSetActive={displayNavbar}
 				>
 					About
 				</LinkScroll>
@@ -24,6 +46,7 @@ export default function Navbar() {
 					offset={-64}
 					duration={200}
 					to='skills'
+					onSetActive={displayNavbar}
 				>
 					Tools and Skills
 				</LinkScroll>
@@ -34,6 +57,7 @@ export default function Navbar() {
 					offset={-64}
 					duration={200}
 					to='projects'
+					onSetActive={displayNavbar}
 				>
 					Projects
 				</LinkScroll>
@@ -44,6 +68,7 @@ export default function Navbar() {
 					offset={-64}
 					duration={200}
 					to='research'
+					onSetActive={displayNavbar}
 				>
 					Research
 				</LinkScroll>
@@ -53,7 +78,8 @@ export default function Navbar() {
 					smooth={true}
 					offset={-64}
 					duration={200}
-					to='hireMe'
+					to='contact'
+					onSetActive={displayNavbar}
 				>
 					Hire Me
 				</LinkScroll>

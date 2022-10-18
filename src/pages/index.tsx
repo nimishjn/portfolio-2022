@@ -1,15 +1,17 @@
-import About from 'components/about';
-import HeroSection from 'components/herosection';
-import Navbar from 'components/navbar';
-import Projects from 'components/projects';
-import Research from 'components/research';
-import Skills from 'components/skills';
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
+import HeroSection from 'components/home/herosection';
+import Navbar from 'components/navbar';
+import About from 'components/home/about';
+import Skills from 'components/home/skills';
+import Projects from 'components/home/projects';
+import Research from 'components/home/research';
+import Footer from 'components/footer';
+
 const Home: NextPage = () => {
 	return (
-		<div>
+		<>
 			<Head>
 				<title>{"Nimish Jain's Portfolio"}</title>
 				<meta
@@ -26,7 +28,8 @@ const Home: NextPage = () => {
 				<Projects />
 				<Research />
 			</main>
-		</div>
+			<Footer />
+		</>
 	);
 };
 
