@@ -7,10 +7,55 @@ html {
 }
 
 @layer components {
+	/* Every section container of Home Route */
 	.home-section {
 		@apply min-h-screen min-w-full py-16 px-20;
 	}
 
+	/* Primary Button */
+	.primary-button {
+		@apply relative block overflow-hidden px-4 py-2 bg-transparent hover:text-white border-1 border-solid border-blue-800 cursor-pointer active:bg-blue-900;
+	}
+
+	.primary-button span {
+		@apply absolute block w-0 h-0 rounded-full bg-blue-800;
+		transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+		transform: translate(-50%, -50%);
+		z-index: -1;
+	}
+
+	.primary-button:hover span {
+		width: 225%;
+		height: 562.5px;
+	}
+
+	/* Text Background Animation */
+	.animate-text-bg {
+		position: relative;
+		display: inline-block;
+		overflow: hidden;
+		transition: all 0.2s linear;
+		line-height: 1;
+		margin-bottom: -10px;
+	}
+
+	.animate-text-bg::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		transform: translateX(-100%);
+		transition: all 0.2s linear;
+	}
+
+	.animate-text-bg:hover:before {
+		transform: translateX(0);
+		z-index: -1;
+	}
+
+	/* Navbar Components */
 	.nav-link {
 		@apply text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase;
 	}
