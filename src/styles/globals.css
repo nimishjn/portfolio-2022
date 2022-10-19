@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 html {
 	@apply bg-black text-white scroll-smooth font-montserrat;
 }
@@ -15,10 +12,17 @@ html {
 	}
 
 	.nav-link {
-		@apply px-3 py-2;
+		@apply text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase;
+	}
+
+	.nav-link:hover {
+		@apply text-yellow-200;
 	}
 
 	.nav-link-active {
-		@apply bg-red-900;
+	}
+
+	.nav-link-active span {
+		@apply text-yellow-300;
 	}
 }

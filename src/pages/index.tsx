@@ -2,7 +2,7 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 
 import HeroSection from 'components/home/herosection';
-import Navbar from 'components/navbar';
+import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
 import Skills from 'components/home/skills';
 import Projects from 'components/home/projects';
