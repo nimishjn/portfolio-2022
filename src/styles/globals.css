@@ -9,12 +9,12 @@ html {
 @layer components {
 	/* Every section container of Home Route */
 	.home-section {
-		@apply min-h-screen min-w-full py-16 px-20;
+		@apply min-h-screen min-w-full py-16 px-3 sm:px-6 md:px-10 lg:px-20;
 	}
 
 	/* Primary Button */
 	.primary-button {
-		@apply relative block overflow-hidden px-4 py-2 bg-transparent hover:text-white border-1 border-solid border-blue-800 cursor-pointer active:bg-blue-900;
+		@apply relative block overflow-hidden px-4 py-2 bg-transparent hover:text-white border-1 border-solid border-blue-800 cursor-pointer active:bg-blue-900 delay-300;
 	}
 
 	.primary-button span {
@@ -36,7 +36,7 @@ html {
 		overflow: hidden;
 		transition: all 0.2s linear;
 		line-height: 1;
-		margin-bottom: -10px;
+		margin-bottom: -0.15em;
 	}
 
 	.animate-text-bg::before {
@@ -46,7 +46,7 @@ html {
 		right: 0;
 		bottom: 0;
 		left: 0;
-		transform: translateX(-100%);
+		transform: translateX(-101%);
 		transition: all 0.2s linear;
 	}
 

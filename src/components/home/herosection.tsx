@@ -15,26 +15,26 @@ import { SocialUrls } from 'utils/urls';
 export default function HeroSection() {
 	return (
 		<section
-			className='home-section flex items-center justify-center relative'
+			className='home-section flex flex-col-reverse sm:flex-row gap-5 sm:gap-1 items-center justify-center relative'
 			id='herosection'
 		>
 			{/* Left */}
 			<div>
 				<div>
-					<h1 className='text-5xl font-bold mb-5 inline-block'>
+					<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block'>
 						Hi, I am{' '}
 						<span className='animate-text-bg before:bg-white hover:text-black'>
 							Nimish
 						</span>
 					</h1>
-					<h2 className='text-xl font-light mb-1'>
+					<h2 className='text-sm md:text-lg lg:text-xl font-light mb-1'>
 						A Full-Stack Developer
 					</h2>
-					<h2 className='text-xl font-light mb-5'>
+					<h2 className='text-sm md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-5'>
 						A Data Analytics Researcher
 					</h2>
 				</div>
-				<div className='flex gap-2 mb-4 text-2xl'>
+				<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl'>
 					<Link passHref href={SocialUrls.github}>
 						<a
 							target='_blank'
@@ -72,7 +72,7 @@ export default function HeroSection() {
 						</a>
 					</Link>
 				</div>
-				<div className='flex gap-2 item-center justify-center w-fit'>
+				<div className='flex gap-2 item-center justify-center w-fit text-sm sm:text-base'>
 					<Button variant='primary'>
 						<Link href='https://resume.nimish-jain.com'>
 							View Resume
@@ -92,13 +92,13 @@ export default function HeroSection() {
 				</div>
 			</div>
 			{/* Right */}
-			<div>
+			<div className='w-3/4 sm:w-fit'>
 				<Image
+					className='rounded-full'
 					height={500}
 					width={500}
 					src='/images/nimish-nobg.png'
 					alt='Nimish Jain'
-					className='rounded-full border-ima'
 				/>
 			</div>
 			<LinkScroll
