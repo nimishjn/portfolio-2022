@@ -9,7 +9,7 @@ html {
 @layer components {
 	/* Every section container of Home Route */
 	.home-section {
-		@apply min-h-screen min-w-full py-16 px-3 sm:px-6 md:px-10 lg:px-20;
+		@apply min-h-mscreen min-w-full py-16 px-3 sm:px-6 md:px-10 lg:px-20;
 	}
 
 	/* Primary Button */
@@ -53,21 +53,5 @@ html {
 	.animate-text-bg:hover:before {
 		transform: translateX(0);
 		z-index: -1;
-	}
-
-	/* Navbar Components */
-	.nav-link {
-		@apply text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase;
-	}
-
-	.nav-link:hover {
-		@apply text-yellow-200;
-	}
-
-	.nav-link-active {
-	}
-
-	.nav-link-active span {
-		@apply text-yellow-300;
 	}
 }

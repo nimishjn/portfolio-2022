@@ -10,6 +10,12 @@ import Research from 'components/home/research';
 import Footer from 'components/footer';
 
 const Home: NextPage = () => {
+	if (typeof window !== 'undefined') {
+		window.addEventListener('resize', () => {
+			let vh = window.innerHeight * 0.01;
+			document.documentElement.style.setProperty('--vh', `${vh}px`);
+		});
+	}
 	return (
 		<>
 			<Head>
@@ -20,7 +26,7 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className='min-h-screen min-w-full'>
+			<main className='h-mscreen min-w-full'>
 				<HeroSection />
 				<Navbar />
 				<About />
