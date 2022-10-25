@@ -3,11 +3,12 @@ import Lottie from 'lottie-react';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
 import { allSkills } from 'utils/allSkills';
 import Link from 'next/link';
+import SkillBadge from 'components/common/SkillBadge';
 
 export default function Skills() {
 	return (
 		<section className='home-section bg-dark-gray' id='skills'>
-			<div className='flex gap-4 items-center justify-center relative  text-center md:text-right max-section-width'>
+			<div className='max-section-width flex gap-4 items-center justify-center relative text-center md:text-right'>
 				<div className='md:w-1/2'>
 					<h1 className='h1 animate-text-bg before:bg-white hover:text-dark-gray'>
 						Tools & Skills
@@ -21,18 +22,7 @@ export default function Skills() {
 					</p>
 					<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3'>
 						{allSkills.map((skill, index) => (
-							<Link href={skill.link} key={index}>
-								<a
-									target='_blank'
-									style={{
-										border: `1.2px solid ${skill.bgcolor}`,
-									}}
-									className='flex items-center rounded-xs py-1 px-2 gap-1 min-w-fit cursor-pointer hover:scale-110 transition ease-linear text-gray-200 text-sm md:text-base'
-								>
-									{skill.icon}
-									<li className='list-none'>{skill.name}</li>
-								</a>
-							</Link>
+							<SkillBadge skill={skill} key={index} />
 						))}
 					</ul>
 				</div>
