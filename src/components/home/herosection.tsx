@@ -82,7 +82,7 @@ export default function HeroSection() {
 						<LinkScroll
 							spy={true}
 							smooth={true}
-							offset={-64}
+							offset={-32}
 							duration={200}
 							to='contact'
 						>
@@ -105,7 +105,7 @@ export default function HeroSection() {
 				className='absolute bottom-4 text-xl opacity-40 animate-bounce'
 				spy={true}
 				smooth={true}
-				offset={-64}
+				offset={-32}
 				duration={200}
 				to='about'
 			>

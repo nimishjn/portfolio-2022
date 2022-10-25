@@ -68,7 +68,16 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							alt='Nimish Jain'
 						/>
 					</div>
-					<h1 className='text-xl font-bold mb-2'>Nimish Jain</h1>
+					<LinkScroll
+						spy={true}
+						smooth={true}
+						offset={-32}
+						duration={200}
+						to='herosection'
+						onSetActive={onClose}
+					>
+						<h1 className='text-xl font-bold mb-2 cursor-pointer'>Nimish Jain</h1>
+					</LinkScroll>
 					{/* Social Links */}
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl'>
 						<Link passHref href={SocialUrls.github}>
@@ -115,7 +124,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
 							spy={true}
 							smooth={true}
-							offset={-64}
+							offset={-32}
 							duration={200}
 							to={e.section}
 							onSetActive={onClose}

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { Link as LinkScroll } from 'react-scroll';
 import NavbarDropdown from './sidebar';
+import DarkLightModeSwitch from '../../assets/lottie/light-dark-mode-button.json';
 
 export default function Navbar() {
 	const [display, setDisplay] = useState(false);
@@ -23,7 +24,7 @@ export default function Navbar() {
 			<LinkScroll
 				spy={true}
 				smooth={true}
-				offset={-64}
+				offset={-32}
 				duration={200}
 				to='herosection'
 				onSetActive={removeNavbar}
@@ -39,7 +40,7 @@ export default function Navbar() {
 						className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
 						spy={true}
 						smooth={true}
-						offset={-64}
+						offset={-32}
 						duration={200}
 						to={e.section}
 						onSetActive={displayNavbar}

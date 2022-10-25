@@ -1,7 +1,8 @@
 import React, { ReactNode, useRef } from 'react';
 
-interface Props {
+interface Props extends React.ComponentPropsWithoutRef<"button"> {
 	children?: ReactNode;
+	className?: string;
 	variant?: 'primary' | 'secondary';
 }
 
@@ -14,19 +15,19 @@ export default function Button({ children, variant, ...props }: Props) {
 	}
 }
 
-function ButtonPrimary({ children, ...props }: Props) {
+function ButtonPrimary({ children, className, ...props }: Props) {
 	const spanElement = useRef<HTMLSpanElement>(null);
 
 	const mouseEnterLeaveHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
 		const relX = e.pageX - spanElement.current?.offsetParent?.offsetLeft;
 		const relY = e.pageY - spanElement.current?.offsetParent?.offsetTop;
-		spanElement.current.style.left = relX + "px";
-		spanElement.current.style.top = relY + "px";
+		spanElement.current.style.left = relX + 'px';
+		spanElement.current.style.top = relY + 'px';
 	};
 
 	return (
 		<button
-			className='primary-button'
+			className={'primary-button' + (className ? ' ' + className : '')}
 			onMouseEnter={mouseEnterLeaveHandler}
 			onMouseOut={mouseEnterLeaveHandler}
 			{...props}
@@ -37,9 +38,12 @@ function ButtonPrimary({ children, ...props }: Props) {
 	);
 }
 
-function ButtonSecondary({ children, ...props }: Props) {
+function ButtonSecondary({ children, className, ...props }: Props) {
 	return (
-		<button className='secondary-button' {...props}>
+		<button
+			className={'primary-button' + (className ? ' ' + className : '')}
+			{...props}
+		>
 			{children}
 			<span></span>
 		</button>

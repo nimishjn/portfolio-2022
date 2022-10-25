@@ -26,7 +26,7 @@ const Home: NextPage = () => {
 				/>
 				<link rel='icon' href='/favicon.ico' />
 			</Head>
-			<main className='h-mscreen min-w-full'>
+			<main className='min-h-screen min-w-full'>
 				<HeroSection />
 				<Navbar />
 				<About />
