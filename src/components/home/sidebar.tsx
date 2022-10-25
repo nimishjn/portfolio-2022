@@ -49,11 +49,11 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 				leaveFrom='translate-x-0'
 				leaveTo='translate-x-full'
 				unmount={false}
-				className='fixed inline-block top-0 right-0 bottom-0 w-full h-full z-20'
+				className='fixed inline-block top-0 right-0 h-screen bottom-0 w-full z-20'
 				id='sidebar-backdrop'
 				onClick={onBackdropClose}
 			>
-				<div className='ml-auto p-5 bg-gray-900 w-60 h-full flex flex-col items-center'>
+				<div className='ml-auto p-5 w-60 h-full flex flex-col items-center bg-gray-900'>
 					{/* Cancel Icon on top-right */}
 					<FaTimes
 						className='transition text-xl cursor-pointer self-start'

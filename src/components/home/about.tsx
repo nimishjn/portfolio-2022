@@ -5,36 +5,38 @@ import Wave from 'react-wavify';
 
 export default function About() {
 	return (
-		<section
-			className='home-section flex gap-4 items-center justify-center relative'
-			id='about'
-		>
-			<div className='mr-10 hidden md:block'>
-				<Lottie animationData={AboutMeAnimation} className='max-w-sm' />
-			</div>
-			<div className='md:w-1/2 text-center md:text-left'>
-				<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
-					About Me
-				</h1>
-				<p className='font-extralight leading-loose mb-2 md:mb-5 text-sm md:text-lg'>
-					{about}
-				</p>
-				<p className='font-medium leading-loose text-sm md:text-lg'>
-					<span className='font-bold'>You know the drill </span> -
-					Keep scrolling!
-				</p>
-			</div>
-			<div className='absolute -bottom-10 left-0 right-0 w-screen'>
-				<Wave
-					fill='#101010'
-					paused={false}
-					options={{
-						height: 20,
-						amplitude: 20,
-						speed: 0.2,
-						points: 3,
-					}}
-				/>
+		<section className='home-section relative' id='about'>
+			<div className='max-section-width h-full flex gap-4 items-center justify-center'>
+				<div className='mr-10 hidden md:block'>
+					<Lottie
+						animationData={AboutMeAnimation}
+						className='max-w-sm'
+					/>
+				</div>
+				<div className='md:w-1/2 text-center md:text-left'>
+					<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
+						About Me
+					</h1>
+					<p className='font-extralight leading-loose mb-2 md:mb-5 text-sm md:text-lg'>
+						{about}
+					</p>
+					<p className='font-medium leading-loose text-sm md:text-lg'>
+						<span className='font-bold'>You know the drill </span> -
+						Keep scrolling!
+					</p>
+				</div>
+				<div className='absolute -bottom-10 left-0 right-0 w-screen'>
+					<Wave
+						fill='#101010'
+						paused={false}
+						options={{
+							height: 20,
+							amplitude: 20,
+							speed: 0.2,
+							points: 3,
+						}}
+					/>
+				</div>
 			</div>
 		</section>
 	);
