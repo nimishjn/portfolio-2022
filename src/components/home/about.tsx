@@ -12,16 +12,19 @@ export default function About() {
 			<div className='mr-10 hidden md:block'>
 				<Lottie animationData={AboutMeAnimation} className='max-w-sm' />
 			</div>
-			<div className='md:w-1/2'>
+			<div className='md:w-1/2 text-center md:text-left'>
 				<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
 					About Me
 				</h1>
-				<p className='font-light leading-loose mb-5'>{about}</p>
-				<p>
-					<b>You know the drill </b> - Just keep scrolling!
+				<p className='font-extralight leading-loose mb-2 md:mb-5 text-sm md:text-lg'>
+					{about}
+				</p>
+				<p className='font-medium leading-loose text-sm md:text-lg'>
+					<span className='font-bold'>You know the drill </span> -
+					Keep scrolling!
 				</p>
 			</div>
-			<div className='absolute -bottom-2 left-0 right-0 h-10'>
+			<div className='absolute -bottom-10 left-0 right-0 w-screen'>
 				<Wave
 					fill='#101010'
 					paused={false}
@@ -29,7 +32,7 @@ export default function About() {
 						height: 20,
 						amplitude: 20,
 						speed: 0.2,
-						points: 4,
+						points: 3,
 					}}
 				/>
 			</div>

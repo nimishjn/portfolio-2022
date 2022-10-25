@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import {
+	FaEnvelope,
 	FaGithub,
 	FaHackerrank,
 	FaLinkedinIn,
@@ -76,7 +77,9 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 						to='herosection'
 						onSetActive={onClose}
 					>
-						<h1 className='text-xl font-bold mb-2 cursor-pointer'>Nimish Jain</h1>
+						<h1 className='text-xl font-bold mb-2 cursor-pointer'>
+							Nimish Jain
+						</h1>
 					</LinkScroll>
 					{/* Social Links */}
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl'>
@@ -98,13 +101,13 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<FaLinkedinIn />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.twitter}>
+						<Link passHref href={SocialUrls.email}>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
 								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
 							>
-								<FaTwitter />
+								<FaEnvelope />
 							</a>
 						</Link>
 						<Link passHref href={SocialUrls.hackerrank}>
