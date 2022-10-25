@@ -28,7 +28,7 @@ export default function About() {
 					options={{
 						height: 20,
 						amplitude: 20,
-						speed: 0.20,
+						speed: 0.2,
 						points: 4,
 					}}
 				/>
