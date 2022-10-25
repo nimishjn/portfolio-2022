@@ -9,7 +9,7 @@ import {
 	FaHackerrank,
 	FaLinkedinIn,
 } from 'react-icons/fa';
-import { AiOutlineDownCircle } from 'react-icons/ai';
+import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/urls';
 
 export default function HeroSection() {
@@ -100,14 +100,15 @@ export default function HeroSection() {
 					/>
 				</div>
 				<LinkScroll
-					className='absolute bottom-4 text-xl opacity-40 animate-bounce'
+					className='absolute bottom-4 text-2xl opacity-40 animate-bounce'
 					spy={true}
 					smooth={true}
 					offset={-32}
 					duration={200}
 					to='about'
 				>
-					<AiOutlineDownCircle />
+					<BsChevronCompactDown />
+					<BsChevronCompactDown className='-mt-5' />
 				</LinkScroll>
 			</div>
 		</section>

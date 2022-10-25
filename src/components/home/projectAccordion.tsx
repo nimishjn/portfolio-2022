@@ -19,7 +19,7 @@ export default function ProjectAccordion(props: ProjectProps) {
 						<FaArrowUp
 							className={`${
 								open ? 'rotate-180 transform' : ''
-							} h-5 w-5 text-purple-500 transition duration-300`}
+							} h-5 w-5 transition duration-300`}
 						/>
 					</Disclosure.Button>
 					<Disclosure.Panel className='px-4 pt-4 pb-2 text-sm text-gray-500'>
