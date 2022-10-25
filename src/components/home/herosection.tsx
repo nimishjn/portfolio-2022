@@ -4,10 +4,10 @@ import React from 'react';
 import Image from 'next/image';
 import Button from 'components/common/Button';
 import {
+	FaEnvelope,
 	FaGithub,
 	FaHackerrank,
 	FaLinkedinIn,
-	FaTwitter,
 } from 'react-icons/fa';
 import { AiOutlineDownCircle } from 'react-icons/ai';
 import { SocialUrls } from 'utils/urls';
@@ -53,13 +53,13 @@ export default function HeroSection() {
 							<FaLinkedinIn />
 						</a>
 					</Link>
-					<Link passHref href={SocialUrls.twitter}>
+					<Link passHref href={SocialUrls.email}>
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
 							className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
 						>
-							<FaTwitter />
+							<FaEnvelope />
 						</a>
 					</Link>
 					<Link passHref href={SocialUrls.hackerrank}>

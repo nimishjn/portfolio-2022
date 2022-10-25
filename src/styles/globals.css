@@ -54,4 +54,9 @@ html {
 		transform: translateX(0);
 		z-index: -1;
 	}
+
+	/* Heading 1 */
+	.h1 {
+		@apply text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block;
+	}
 }

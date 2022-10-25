@@ -24,6 +24,9 @@ module.exports = {
 			width: {
 				'1em': '1em',
 			},
+			colors: {
+				'dark-gray': '#101010',
+			},
 		},
 	},
 	plugins: [],

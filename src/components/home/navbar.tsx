@@ -18,7 +18,7 @@ export default function Navbar() {
 
 	return (
 		<nav
-			className='w-full fixed top-0 bg-gray-900 px-3 sm:px-6 md:px-10 lg:px-20 py-1 h-16 flex justify-between items-center transition-all duration-300'
+			className='z-20 w-full fixed top-0 bg-gray-900 px-3 sm:px-6 md:px-10 lg:px-20 py-1 h-16 flex justify-between items-center transition-all duration-300'
 			style={{ marginTop: display ? 0 : '-64px' }}
 		>
 			<LinkScroll
