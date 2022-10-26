@@ -26,6 +26,7 @@ module.exports = {
 			},
 			colors: {
 				'dark-gray': '#101010',
+				'gray-1000': '#0d121c',
 			},
 			fontSize: {
 				'2xs': '0.625rem',

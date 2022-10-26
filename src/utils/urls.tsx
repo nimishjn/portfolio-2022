@@ -11,6 +11,7 @@ export const SocialUrls = {
 	devTo: 'https://dev.to/nimishjn',
 	medium: 'https://nimishjn.medium.com/',
 	freeCodeCamp: 'https://www.freecodecamp.org/nimishjn',
+	discord: 'https://discordapp.com/users/739123334595215391',
 };
 
 export const ResearchProfiles = {
