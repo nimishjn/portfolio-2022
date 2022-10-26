@@ -6,6 +6,11 @@ html {
 	@apply bg-black text-white scroll-smooth font-montserrat;
 }
 
+/* Testing elements:- */
+/* *:active {
+	outline: .1px solid oldlace!important;
+} */
+
 @layer components {
 	/* Every section container of Home Route */
 	.home-section {
@@ -14,6 +19,14 @@ html {
 
 	.max-section-width {
 		@apply max-w-6xl mx-auto;
+	}
+
+	.flex-center {
+		@apply flex justify-center items-center;
+	}
+	
+	.flex-col-center {
+		@apply flex justify-center items-center flex-col;
 	}
 
 	/* Primary Button */

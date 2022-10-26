@@ -27,6 +27,12 @@ module.exports = {
 			colors: {
 				'dark-gray': '#101010',
 			},
+			fontSize: {
+				'2xs': '0.625rem',
+			},
+			aspectRatio: {
+				'a4': '1 / 1.414',
+			}
 		},
 	},
 	plugins: [],

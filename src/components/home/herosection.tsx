@@ -14,7 +14,7 @@ import { SocialUrls } from 'utils/urls';
 
 export default function HeroSection() {
 	return (
-		<section className='home-section relative' id='herosection'>
+		<section className='home-section relative flex-center' id='herosection'>
 			<div className='max-section-width flex flex-col-reverse sm:flex-row gap-5 sm:gap-1 items-center justify-center'>
 				{/* Left */}
 				<div>

@@ -11,7 +11,7 @@ export default function Projects() {
 				</h1>
 				<ProjectAccordion />
 			</div>
-			<div className='absolute -bottom-5 left-0 right-0 w-screen'>
+			<div className='absolute bottom-0 -mb-20 left-0 right-0 w-screen'>
 				<Wave
 					fill='black'
 					paused={false}

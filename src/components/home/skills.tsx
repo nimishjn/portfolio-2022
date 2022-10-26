@@ -7,7 +7,7 @@ import SkillBadge from 'components/common/SkillBadge';
 
 export default function Skills() {
 	return (
-		<section className='home-section bg-dark-gray' id='skills'>
+		<section className='home-section bg-dark-gray flex-center' id='skills'>
 			<div className='max-section-width flex gap-4 items-center justify-center relative text-center md:text-right'>
 				<div className='md:w-1/2'>
 					<h1 className='h1 animate-text-bg before:bg-white hover:text-dark-gray'>

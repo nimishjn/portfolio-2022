@@ -5,7 +5,7 @@ import Wave from 'react-wavify';
 
 export default function About() {
 	return (
-		<section className='home-section relative' id='about'>
+		<section className='home-section relative flex-center' id='about'>
 			<div className='max-section-width h-full flex gap-4 items-center justify-center'>
 				<div className='mr-10 hidden md:block'>
 					<Lottie
@@ -17,15 +17,15 @@ export default function About() {
 					<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
 						About Me
 					</h1>
-					<p className='font-extralight leading-loose mb-2 md:mb-5 text-sm md:text-lg'>
+					<p className='font-extralight leading-loose mb-2 text-sm md:text-lg'>
 						{about}
 					</p>
-					<p className='font-medium leading-loose text-sm md:text-lg'>
-						<span className='font-bold'>You know the drill </span> -
+					<p className='leading-loose text-sm italic'>
+						<span className='font-bold'>You know the drill</span> -
 						Keep scrolling!
 					</p>
 				</div>
-				<div className='absolute -bottom-10 left-0 right-0 w-screen'>
+				<div className='absolute bottom-0 -mb-20 left-0 right-0 w-screen'>
 					<Wave
 						fill='#101010'
 						paused={false}
