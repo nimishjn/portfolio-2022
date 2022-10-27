@@ -20,6 +20,7 @@ module.exports = {
 			},
 			minHeight: {
 				mscreen: 'calc(var(--vh, 1vh) * 100) 100vh',
+				6: '1.5rem',
 			},
 			width: {
 				'1em': '1em',
@@ -32,8 +33,8 @@ module.exports = {
 				'2xs': '0.625rem',
 			},
 			aspectRatio: {
-				'a4': '1 / 1.414',
-			}
+				a4: '1 / 1.414',
+			},
 		},
 	},
 	plugins: [],

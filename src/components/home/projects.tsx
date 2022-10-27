@@ -1,15 +1,30 @@
+import DeveloperStory from 'components/DeveloperStory';
+import Link from 'next/link';
 import React from 'react';
 import Wave from 'react-wavify';
-import ProjectAccordion from './projectAccordion';
 
 export default function Projects() {
 	return (
 		<section className='home-section bg-dark-gray relative' id='projects'>
-			<div className='max-section-width flex flex-col items-center gap-2'>
-				<h1 className='h1 leading-normal self-start animate-text-bg before:bg-white hover:text-dark-gray'>
-					Developer Timeline
+			<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
+				<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
+					Developer Story
 				</h1>
-				<ProjectAccordion />
+				<p className='text-gray-500 text-2xs md:text-sm -mt-4 mb-5 md:-mt-7'>
+					Things you cannot find on{' '}
+					<Link
+						passHref
+						href='https://stackoverflow.com/users/story/join'
+					>
+						<a target='_blank'>StackOverFlow</a>
+					</Link>{' '}
+					anymore :(
+				</p>
+				{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
+				{/* TODO: Implement 'View all' button that redirects to '/story' route */}
+				{/* <div className='relative max-h-96 w-full overflow-auto'> */}
+					<DeveloperStory />
+				{/* </div> */}
 			</div>
 			<div className='absolute bottom-0 -mb-20 left-0 right-0 w-screen'>
 				<Wave
