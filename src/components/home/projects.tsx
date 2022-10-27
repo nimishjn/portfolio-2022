@@ -7,7 +7,7 @@ export default function Projects() {
 		<section className='home-section bg-dark-gray relative' id='projects'>
 			<div className='max-section-width flex flex-col items-center gap-2'>
 				<h1 className='h1 leading-normal self-start animate-text-bg before:bg-white hover:text-dark-gray'>
-					Projects
+					Developer Timeline
 				</h1>
 				<ProjectAccordion />
 			</div>

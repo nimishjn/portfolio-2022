@@ -1,6 +1,6 @@
 import React, { ReactNode, useRef } from 'react';
 
-interface Props extends React.ComponentPropsWithoutRef<"button"> {
+interface Props extends React.ComponentPropsWithoutRef<'button'> {
 	children?: ReactNode;
 	className?: string;
 	variant?: 'primary' | 'secondary';
@@ -19,10 +19,12 @@ function ButtonPrimary({ children, className, ...props }: Props) {
 	const spanElement = useRef<HTMLSpanElement>(null);
 
 	const mouseEnterLeaveHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
-		const relX = e.pageX - spanElement.current?.offsetParent?.offsetLeft;
-		const relY = e.pageY - spanElement.current?.offsetParent?.offsetTop;
-		spanElement.current.style.left = relX + 'px';
-		spanElement.current.style.top = relY + 'px';
+		if (spanElement.current && spanElement.current.offsetParent) {
+			const relX = e.pageX - (spanElement.current.offsetParent as unknown as {offsetLeft: number}).offsetLeft;
+			const relY = e.pageY - (spanElement.current.offsetParent as unknown as {offsetTop: number}).offsetTop;
+			spanElement.current.style.left = relX + 'px';
+			spanElement.current.style.top = relY + 'px';
+		}
 	};
 
 	return (

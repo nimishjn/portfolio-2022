@@ -25,7 +25,7 @@ export const allSocials = [
 		name: 'nimishjain_',
 		icon: <AiFillInstagram />,
 		bgcolor: '#ea0c5f',
-		link: SocialUrls.instagram,
+		link: SocialUrls.instagramDM,
 	},
 	{
 		name: 'nimishjain_',

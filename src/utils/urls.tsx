@@ -3,6 +3,7 @@ export const SocialUrls = {
 	linkedin: 'https://in.linkedin.com/in/nimishjn/',
 	twitter: 'https://twitter.com/nimishjain_',
 	instagram: 'https://www.instagram.com/nimishjain_/',
+	instagramDM: 'https://ig.me/m/nimishjain_',
 	facebook: 'https://www.facebook.com/nimishjain100701',
 	email: 'mailto:nimishjain100701@gmail.com',
 	resume: 'https://resume.nimish-jain.com',

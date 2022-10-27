@@ -100,7 +100,7 @@ export default function HeroSection() {
 					/>
 				</div>
 				<LinkScroll
-					className='absolute bottom-4 text-2xl opacity-40 animate-bounce'
+					className='absolute bottom-6 text-2xl opacity-40 animate-bounce'
 					spy={true}
 					smooth={true}
 					offset={-32}
