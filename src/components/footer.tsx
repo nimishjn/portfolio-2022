@@ -11,11 +11,7 @@ export default function Footer() {
 	const [anonymous, setAnonymous] = useState(false);
 	const submitForm = (e: React.FormEvent) => {
 		e.preventDefault();
-		const scriptURL =
-			'https://script.google.com/macros/s/AKfycbxhd-eQtInVaoQ_hWsLtgQSt7oEXjMMUkASrd2k-gObhuGQZx9STGuh_kX13yE9lLeVrA/exec';
-		// fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-		// 	.then((response) => console.log('Done!', response))
-		// 	.catch((error) => console.log('Error!', error.message));
+		// TODO: Add form submission logic
 
 		(e.target as HTMLFormElement).reset();
 	};

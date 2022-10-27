@@ -9,3 +9,6 @@ export default function handler(req: NextApiRequest, res: NextApiResponse) {
 		});
 	}
 }
+
+// TODO: Connection to database and send email for each POST request
+// TODO: Figure out a way out for Error 404
