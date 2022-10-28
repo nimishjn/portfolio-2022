@@ -1,15 +1,15 @@
 import React from 'react';
 import { AiOutlineDoubleRight } from 'react-icons/ai';
-import { storyTypes } from 'utils/developerStory';
+import {
+	DEFAULT_STORY_TYPE,
+	storyTypes,
+	STORY_TYPES,
+} from 'utils/developerStory';
 import { StoryArrow } from './StoryArrow';
+import StoryContentType from './StoryContentTypes';
 
 interface StoryContentProps extends React.HTMLAttributes<HTMLDivElement> {
-	storyType?:
-		| 'education'
-		| 'experience'
-		| 'project'
-		| 'certificate'
-		| 'other';
+	storyType?: STORY_TYPES;
 	arrowRight?: boolean;
 	arrowLeft?: boolean;
 	fromDate?: string;
@@ -17,9 +17,9 @@ interface StoryContentProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export default function StoryContent({
-	storyType = 'other',
-	fromDate = '2021',
-	toDate = '2021',
+	storyType = DEFAULT_STORY_TYPE,
+	fromDate,
+	toDate,
 	arrowRight,
 	arrowLeft,
 }: StoryContentProps) {
@@ -32,9 +32,7 @@ export default function StoryContent({
 				<StoryArrow className='h-6 text-gray-900 absolute top-6 -left-2.5 border-2 border-transparent box-border rotate-180' />
 			)}
 			<div className='flex self-start text-xs gap-1 items-center'>
-				<p>
-					{storyTypes[storyType as keyof typeof storyTypes].title}
-				</p>
+				<p>{storyTypes[storyType as keyof typeof storyTypes].title}</p>
 				<AiOutlineDoubleRight />
 				{(fromDate || toDate) && (
 					<div className='flex self-start gap-0.5'>
@@ -44,6 +42,7 @@ export default function StoryContent({
 					</div>
 				)}
 			</div>
+			<StoryContentType storyType={storyType} data='hola' />
 		</div>
 	);
 }

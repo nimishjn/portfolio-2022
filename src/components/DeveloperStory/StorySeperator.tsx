@@ -1,10 +1,21 @@
-import { storyTypes } from 'utils/developerStory';
+import {
+	DEFAULT_STORY_TYPE,
+	storyTypes,
+	STORY_TYPES,
+} from 'utils/developerStory';
+
+interface StorySeperatorProps {
+	firstIndex?: boolean;
+	lastIndex?: boolean;
+	storyType?: STORY_TYPES;
+}
 
 export const StorySeperator = ({
 	firstIndex = false,
 	lastIndex = false,
-	storyType = 'other',
-}) => {
+	storyType = DEFAULT_STORY_TYPE,
+	...props
+}: StorySeperatorProps) => {
 	return (
 		<div className='flex-col-center w-full h-full'>
 			{firstIndex ? (
