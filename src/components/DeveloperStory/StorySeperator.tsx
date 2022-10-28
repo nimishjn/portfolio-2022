@@ -23,10 +23,22 @@ export const StorySeperator = ({
 			) : (
 				<span className='w-0.5 bg-gray-500 h-6' />
 			)}
-			<div className='w-6 h-6 aspect-square border-2 border-gray-500 box-border rounded-full flex-center'>
+			<div
+				style={
+					{
+						// backgroundColor: storyTypes[storyType].color,
+						// borderColor: storyTypes[storyType].color,
+					}
+				}
+				className='w-6 h-6 aspect-square border-2 border-gray-500 box-border rounded-full flex-center'
+			>
 				{storyTypes[storyType as keyof typeof storyTypes].icon}
 			</div>
-			{!lastIndex && <span className='w-0.5 bg-gray-500 grow min-h-6' />}
+			{lastIndex ? (
+				<span className='w-0.5 bg-transparent grow' />
+			) : (
+				<span className='w-0.5 bg-gray-500 grow min-h-6' />
+			)}
 		</div>
 	);
 };

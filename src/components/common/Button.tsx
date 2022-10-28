@@ -20,8 +20,20 @@ function ButtonPrimary({ children, className, ...props }: Props) {
 
 	const mouseEnterLeaveHandler = (e: React.MouseEvent<HTMLButtonElement>) => {
 		if (spanElement.current && spanElement.current.offsetParent) {
-			const relX = e.pageX - (spanElement.current.offsetParent as unknown as {offsetLeft: number}).offsetLeft;
-			const relY = e.pageY - (spanElement.current.offsetParent as unknown as {offsetTop: number}).offsetTop;
+			const relX =
+				e.pageX -
+				(
+					spanElement.current.offsetParent as unknown as {
+						offsetLeft: number;
+					}
+				).offsetLeft;
+			const relY =
+				e.pageY -
+				(
+					spanElement.current.offsetParent as unknown as {
+						offsetTop: number;
+					}
+				).offsetTop;
 			spanElement.current.style.left = relX + 'px';
 			spanElement.current.style.top = relY + 'px';
 		}

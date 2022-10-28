@@ -1,14 +1,22 @@
 import { BsInfo } from 'react-icons/bs';
 import { TbBriefcase, TbCertificate, TbCode, TbSchool } from 'react-icons/tb';
-import { GrAchievement } from 'react-icons/gr';
+import AchievementIcon from '../assets/icons/achievement.svg';
 
 export const storyTypes = {
-	education: { icon: <TbSchool />, title: 'Education' },
-	experience: { icon: <TbBriefcase />, title: 'Experinence' },
-	project: { icon: <TbCode />, title: 'Project' },
-	certificate: { icon: <TbCertificate />, title: 'Certificate' },
-	achievement: { icon: <GrAchievement />, title: 'Achievement' },
-	other: { icon: <BsInfo />, title: 'Other' },
+	education: { icon: <TbSchool />, title: 'Education', color: 'red' },
+	experience: { icon: <TbBriefcase />, title: 'Experinence', color: 'blue' },
+	project: { icon: <TbCode />, title: 'Project', color: 'green' },
+	certificate: {
+		icon: <TbCertificate />,
+		title: 'Certificate',
+		color: 'magenta',
+	},
+	achievement: {
+		icon: <AchievementIcon height='0.8em' />,
+		title: 'Achievement',
+		color: 'white',
+	},
+	other: { icon: <BsInfo />, title: 'Other', color: 'darkgray' },
 };
 
 // Story Types

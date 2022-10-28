@@ -16,7 +16,7 @@ export default function DeveloperStory({
 	};
 	return (
 		<div className={outerClass[position || 'alternate'] + ' grid w-full'}>
-			<StoryItem position={position} storyType='certificate' index={0} />
+			<StoryItem position={position} storyType='certificate' index={0} firstIndex={true} />
 			<StoryItem position={position} storyType='education' index={1} />
 			<StoryItem position={position} index={2} />
 			<StoryItem position={position} storyType='project' index={3} />
@@ -25,7 +25,12 @@ export default function DeveloperStory({
 			<StoryItem position={position} storyType='education' index={6} />
 			<StoryItem position={position} index={7} />
 			<StoryItem position={position} storyType='project' index={8} />
-			<StoryItem position={position} storyType='experience' index={9} />
+			<StoryItem
+				position={position}
+				storyType='achievement'
+				index={9}
+				lastIndex={true}
+			/>
 		</div>
 	);
 }

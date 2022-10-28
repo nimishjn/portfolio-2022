@@ -24,7 +24,7 @@ html {
 	.flex-center {
 		@apply flex justify-center items-center;
 	}
-	
+
 	.flex-col-center {
 		@apply flex justify-center items-center flex-col;
 	}
@@ -80,5 +80,61 @@ html {
 
 	.h2 {
 		@apply text-2xl md:text-3xl lg:text-4xl font-bold mb-2 sm:mb-3 md:mb-4 inline-block;
+	}
+
+	/* React Markdown for Developer Story Description */
+	.story-description-react-markdown {
+		@apply text-sm font-light;
+	}
+	.story-description-react-markdown h1 {
+		@apply text-lg font-bold mb-2;
+	}
+
+	.story-description-react-markdown h2 {
+		@apply text-base font-bold mb-1;
+	}
+
+	.story-description-react-markdown h3 {
+		@apply font-bold mb-1;
+	}
+
+	.story-description-react-markdown p {
+		@apply mb-1;
+	}
+
+	.story-description-react-markdown a {
+		@apply text-blue-400;
+	}
+
+	.story-description-react-markdown code {
+		@apply bg-gray-600 bg-opacity-50 px-1 rounded-md pt-0.5 pb-1 box-content;
+	}
+
+	.story-description-react-markdown pre {
+		@apply bg-gray-700 bg-opacity-50 p-1 whitespace-pre-wrap;
+	}
+
+	.story-description-react-markdown pre code {
+		@apply bg-transparent px-0 pt-0 rounded-none;
+	}
+
+	.story-description-react-markdown blockquote {
+		@apply text-lg mb-2 border-l-2 border-gray-500 pl-2 ml-1;
+	}
+
+	.story-description-react-markdown ul {
+		@apply mb-1 list-disc;
+	}
+
+	.story-description-react-markdown ol {
+		@apply mb-1 list-decimal;
+	}
+
+	.story-description-react-markdown li {
+		@apply ml-6;
+	}
+
+	.story-description-react-markdown img {
+		width: fit-content;
 	}
 }
