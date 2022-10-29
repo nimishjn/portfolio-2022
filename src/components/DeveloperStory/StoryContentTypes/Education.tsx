@@ -2,12 +2,12 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import StoryDescription from '../StoryDescription';
-interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
+
+interface EducationProps extends React.HTMLAttributes<HTMLDivElement> {
 	orgName: string;
 	orgLocation: string;
 	imageURL?: string;
 	description: string;
-	skills?: string[];
 	url: string;
 }
 
@@ -16,9 +16,9 @@ export default function Education({
 	orgLocation = 'No location',
 	imageURL,
 	description,
-	url = "site doesn't exist",
+	url,
 	...props
-}: CertificateProps) {
+}: EducationProps) {
 	return (
 		<div className='flex flex-col gap-1 items-start pt-2 w-full'>
 			<div className='flex items-center justify-start gap-2'>
