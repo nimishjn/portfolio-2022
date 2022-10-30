@@ -1,15 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { AchievementProps } from 'utils/developerStory';
 import StoryDescription from '../StoryDescription';
-
-interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
-	title: string;
-	orgName?: string;
-	imageURL?: string;
-	description: string;
-	url: string;
-}
 
 export default function Achievement({
 	title = 'No title',
@@ -42,7 +35,7 @@ export default function Achievement({
 					)}
 				</div>
 			</div>
-			<StoryDescription>{description}</StoryDescription>
+			{description && <StoryDescription>{description}</StoryDescription>}
 			{url && (
 				<Link passHref href={url}>
 					<a

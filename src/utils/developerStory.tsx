@@ -32,4 +32,86 @@ export type POSITION_TYPES =
 	| 'alternate';
 export const DEFAULT_POSITION_TYPES = 'alternate';
 
-// TODO: Design interface for each storyType i.e. EducationStoryProps, ExperienceStoryProps, etc.
+// Interface for each storyType i.e. EducationStoryProps, ExperienceStoryProps, etc.
+export interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
+	title: string;
+	orgName?: string;
+	imageURL?: string;
+	description?: string;
+	url?: string;
+}
+
+export interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
+	title: string;
+	imageURL?: string;
+	description?: string;
+	skills?: string[];
+	url: string;
+}
+
+export interface EducationProps extends React.HTMLAttributes<HTMLDivElement> {
+	orgName: string;
+	orgLocation: string;
+	imageURL?: string;
+	description?: string;
+	url?: string;
+}
+
+export interface ExperienceProps extends React.HTMLAttributes<HTMLDivElement> {
+	orgName: string;
+	orgLocation: string;
+	imageURL?: string;
+	description: string;
+	url?: string;
+}
+
+export interface OtherProps extends React.HTMLAttributes<HTMLDivElement> {
+	title: string;
+	type?: string;
+	imageURL?: string;
+	description?: string;
+	url?: string;
+}
+
+export interface ProjectProps extends React.HTMLAttributes<HTMLDivElement> {
+	projectName: string;
+	orgName: string;
+	imageURL?: string;
+	description: string;
+	repoUrl?: string;
+	viewUrl?: string;
+	techStack?: string[];
+}
+
+// Interface for StoryContentTypes
+export type StoryContentTypeProps =
+	| {
+			storyType: 'achievement';
+			data: AchievementProps;
+			children?: React.ReactNode;
+	  }
+	| {
+			storyType: 'certificate';
+			data: CertificateProps;
+			children?: React.ReactNode;
+	  }
+	| {
+			storyType: 'education';
+			data: EducationProps;
+			children?: React.ReactNode;
+	  }
+	| {
+			storyType: 'experience';
+			data: ExperienceProps;
+			children?: React.ReactNode;
+	  }
+	| {
+			storyType: 'other';
+			data: OtherProps;
+			children?: React.ReactNode;
+	  }
+	| {
+			storyType: 'project';
+			data: ProjectProps;
+			children?: React.ReactNode;
+	  };

@@ -5,13 +5,10 @@ import Experience from './Experience';
 import Other from './Other';
 import Project from './Project';
 import Achievement from './Achievement';
-import { DEFAULT_STORY_TYPE, STORY_TYPES } from 'utils/developerStory';
-
-interface StoryContentTypeProps {
-	storyType?: STORY_TYPES;
-	data?: any;
-	children?: React.ReactNode;
-}
+import {
+	DEFAULT_STORY_TYPE,
+	StoryContentTypeProps,
+} from 'utils/developerStory';
 
 function StoryContentType({
 	storyType = DEFAULT_STORY_TYPE,
@@ -20,17 +17,19 @@ function StoryContentType({
 }: StoryContentTypeProps) {
 	switch (storyType) {
 		case 'education':
-			return <Education />;
+			return <Education orgName={''} orgLocation={''} />;
 		case 'experience':
-			return <Experience />;
+			return (
+				<Experience orgName={''} orgLocation={''} description={''} />
+			);
 		case 'project':
-			return <Project />;
+			return <Project projectName={''} orgName={''} description={''} />;
 		case 'certificate':
-			return <Certificate />;
+			return <Certificate title={''} url={''} />;
 		case 'achievement':
-			return <Achievement />;
+			return <Achievement title={''} />;
 		case 'other':
-			return <Other />;
+			return <Other title={''} />;
 		default:
 			return <>{children}</>;
 	}

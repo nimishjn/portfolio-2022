@@ -1,15 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { CertificateProps } from 'utils/developerStory';
 import StoryDescription from '../StoryDescription';
-
-interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
-	title: string;
-	imageURL?: string;
-	description: string;
-	skills?: string[];
-	url: string;
-}
 
 export default function Certificate({
 	title = 'No title',
@@ -35,7 +28,7 @@ export default function Certificate({
 				)}
 				<h3 className='w-full font-semibold text-xl'>{title}</h3>
 			</div>
-			<StoryDescription>{description}</StoryDescription>
+			{description && <StoryDescription>{description}</StoryDescription>}
 			{url && (
 				<Link passHref href={url}>
 					<a target='_blank'>View</a>

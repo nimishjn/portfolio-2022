@@ -1,15 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { ExperienceProps } from 'utils/developerStory';
 import StoryDescription from '../StoryDescription';
-
-interface ExperienceProps extends React.HTMLAttributes<HTMLDivElement> {
-	orgName: string;
-	orgLocation: string;
-	imageURL?: string;
-	description: string;
-	url: string;
-}
 
 export default function Experience({
 	orgName = 'No name',
@@ -40,7 +33,7 @@ export default function Experience({
 					</h4>
 				</div>
 			</div>
-			<StoryDescription>{description}</StoryDescription>
+			{description && <StoryDescription>{description}</StoryDescription>}
 			{url && (
 				<Link passHref href={url}>
 					<a

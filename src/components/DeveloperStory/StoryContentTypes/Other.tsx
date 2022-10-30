@@ -1,15 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { OtherProps } from 'utils/developerStory';
 import StoryDescription from '../StoryDescription';
-
-interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
-	title: string;
-	type?: string;
-	imageURL?: string;
-	description: string;
-	url: string;
-}
 
 export default function Other({
 	title = 'No title',
@@ -18,7 +11,7 @@ export default function Other({
 	description,
 	url,
 	...props
-}: AchievementProps) {
+}: OtherProps) {
 	return (
 		<div className='flex flex-col gap-1 items-start pt-2 w-full'>
 			<div className='flex items-center justify-start gap-2'>
@@ -36,13 +29,11 @@ export default function Other({
 				<div className='flex flex-col'>
 					<h3 className='w-full font-semibold text-xl'>{title}</h3>
 					{type && (
-						<h4 className='w-full font-normal text-sm'>
-							{type}
-						</h4>
+						<h4 className='w-full font-normal text-sm'>{type}</h4>
 					)}
 				</div>
 			</div>
-			<StoryDescription>{description}</StoryDescription>
+			{description && <StoryDescription>{description}</StoryDescription>}
 			{url && (
 				<Link passHref href={url}>
 					<a

@@ -1,18 +1,8 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+import { ProjectProps } from 'utils/developerStory';
 import StoryDescription from '../StoryDescription';
-
-interface ProjectProps extends React.HTMLAttributes<HTMLDivElement> {
-	projectName: string;
-	orgName: string;
-	imageURL?: string;
-	description: string;
-	repoUrl: string;
-	viewUrl: string;
-	techStack?: string[];
-	url: string;
-}
 
 export default function Project({
 	projectName = 'No project name',
