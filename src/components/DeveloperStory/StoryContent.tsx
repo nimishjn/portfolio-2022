@@ -44,7 +44,7 @@ export default function StoryContent({
 					</>
 				)}
 			</div>
-			<StoryContentType storyType={storyType} data='hola' />
+			<StoryContentType storyType={storyType} />
 		</div>
 	);
 }

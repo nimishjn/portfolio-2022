@@ -14,7 +14,8 @@ function StoryContentType({
 	storyType = DEFAULT_STORY_TYPE,
 	data,
 	children,
-}: StoryContentTypeProps) {
+}: any) {
+	// Change 'any' to StoryContentTypeProps
 	switch (storyType) {
 		case 'education':
 			return <Education orgName={''} orgLocation={''} />;
