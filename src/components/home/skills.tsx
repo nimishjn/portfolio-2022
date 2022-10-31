@@ -1,7 +1,7 @@
 import React from 'react';
 import Lottie from 'lottie-react';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
-import { allSkills } from 'utils/allSkills';
+import { allSkills } from 'utils/Skills';
 import Link from 'next/link';
 import SkillBadge from 'components/common/SkillBadge';
 

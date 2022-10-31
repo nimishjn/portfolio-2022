@@ -4,7 +4,7 @@ import { GiNothingToSay } from 'react-icons/gi';
 import { RiSendPlaneFill } from 'react-icons/ri';
 import Lottie from 'lottie-react';
 import ConnectionAnimation from '../assets/lottie/social-media-network.json';
-import { allSocials } from 'utils/allSocials';
+import { allSocials } from 'utils/Socials';
 import SkillBadge from './common/SkillBadge';
 
 export default function Footer() {
