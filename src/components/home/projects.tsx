@@ -23,21 +23,20 @@ export default function Projects() {
 				{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
 				{/* TODO: Implement 'View all' button that redirects to '/story' route */}
 				{/* <div className='relative max-h-96 w-full overflow-auto'> */}
-					<DeveloperStory />
+				<DeveloperStory />
 				{/* </div> */}
 			</div>
-			<div className='absolute bottom-0 -mb-20 left-0 right-0 w-screen'>
-				<Wave
-					fill='black'
-					paused={false}
-					options={{
-						height: 20,
-						amplitude: 20,
-						speed: 0.2,
-						points: 3,
-					}}
-				/>
-			</div>
+			<Wave
+				fill='black'
+				paused={false}
+				options={{
+					height: 20,
+					amplitude: 20,
+					speed: 0.2,
+					points: 3,
+				}}
+				className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-dark-gray'
+			/>
 		</section>
 	);
 }

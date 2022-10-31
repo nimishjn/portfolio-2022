@@ -17,7 +17,7 @@ export default function Footer() {
 	};
 	return (
 		<footer
-			className='contact bg-dark-gray min-w-full py-16 px-3 sm:px-6 md:px-10 lg:px-20'
+			className='contact bg-dark-gray min-w-full pb-5 pt-16 md:pt-32 px-3 sm:px-6 md:px-10 lg:px-20'
 			id='contact'
 		>
 			<div className='max-section-width flex flex-col md:flex-row items-center justify-center gap-2'>
