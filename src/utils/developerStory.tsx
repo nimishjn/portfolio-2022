@@ -34,6 +34,8 @@ export const DEFAULT_POSITION_TYPES = 'alternate';
 
 // Interface for each storyType i.e. EducationStoryProps, ExperienceStoryProps, etc.
 export interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
+	fromDate: string;
+	toDate: string;
 	title: string;
 	orgName?: string;
 	imageURL?: string;
@@ -42,6 +44,8 @@ export interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
+	fromDate: string;
+	toDate: string;
 	title: string;
 	imageURL?: string;
 	description?: string;
@@ -50,6 +54,8 @@ export interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface EducationProps extends React.HTMLAttributes<HTMLDivElement> {
+	fromDate: string;
+	toDate: string;
 	orgName: string;
 	orgLocation: string;
 	imageURL?: string;
@@ -58,6 +64,8 @@ export interface EducationProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface ExperienceProps extends React.HTMLAttributes<HTMLDivElement> {
+	fromDate: string;
+	toDate: string;
 	orgName: string;
 	orgLocation: string;
 	imageURL?: string;
@@ -66,6 +74,8 @@ export interface ExperienceProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface OtherProps extends React.HTMLAttributes<HTMLDivElement> {
+	fromDate: string;
+	toDate: string;
 	title: string;
 	type?: string;
 	imageURL?: string;
@@ -74,6 +84,8 @@ export interface OtherProps extends React.HTMLAttributes<HTMLDivElement> {
 }
 
 export interface ProjectProps extends React.HTMLAttributes<HTMLDivElement> {
+	fromDate: string;
+	toDate: string;
 	projectName: string;
 	orgName: string;
 	imageURL?: string;
@@ -87,31 +99,43 @@ export interface ProjectProps extends React.HTMLAttributes<HTMLDivElement> {
 export type StoryContentTypeProps =
 	| {
 			storyType: 'achievement';
+			arrowRight?: boolean;
+			arrowLeft?: boolean;
 			data: AchievementProps;
 			children?: React.ReactNode;
 	  }
 	| {
 			storyType: 'certificate';
+			arrowRight?: boolean;
+			arrowLeft?: boolean;
 			data: CertificateProps;
 			children?: React.ReactNode;
 	  }
 	| {
 			storyType: 'education';
+			arrowRight?: boolean;
+			arrowLeft?: boolean;
 			data: EducationProps;
 			children?: React.ReactNode;
 	  }
 	| {
 			storyType: 'experience';
+			arrowRight?: boolean;
+			arrowLeft?: boolean;
 			data: ExperienceProps;
 			children?: React.ReactNode;
 	  }
 	| {
 			storyType: 'other';
+			arrowRight?: boolean;
+			arrowLeft?: boolean;
 			data: OtherProps;
 			children?: React.ReactNode;
 	  }
 	| {
 			storyType: 'project';
+			arrowRight?: boolean;
+			arrowLeft?: boolean;
 			data: ProjectProps;
 			children?: React.ReactNode;
 	  };

@@ -1,7 +1,15 @@
 import React from 'react';
 import {
+	AchievementProps,
+	CertificateProps,
 	DEFAULT_POSITION_TYPES,
+	DEFAULT_STORY_TYPE,
+	EducationProps,
+	ExperienceProps,
+	OtherProps,
 	POSITION_TYPES,
+	ProjectProps,
+	StoryContentTypeProps,
 	STORY_TYPES,
 } from 'utils/developerStory';
 import StoryContent from './StoryContent';
@@ -15,14 +23,22 @@ interface StoryItemProps extends React.HTMLAttributes<HTMLDivElement> {
 	lastIndex?: boolean;
 	storyType?: STORY_TYPES;
 	index: number;
+	data:
+		| AchievementProps
+		| CertificateProps
+		| EducationProps
+		| ExperienceProps
+		| OtherProps
+		| ProjectProps;
 }
 
 export const StoryItem = ({
 	position = DEFAULT_POSITION_TYPES,
 	firstIndex = false,
 	lastIndex = false,
-	storyType = 'other',
+	storyType = DEFAULT_STORY_TYPE,
 	index,
+	data,
 	...props
 }: StoryItemProps) => {
 	const StorySeperatorProps = {
@@ -31,15 +47,15 @@ export const StoryItem = ({
 		storyType: storyType,
 	};
 
-	const StoryContentProps = {
+	const StoryContentProps:any = {
 		arrowRight:
 			position === 'right' ||
 			(position === 'alternate' && index % 2 === 0),
 		arrowLeft:
 			position === 'left' ||
 			(position === 'alternate' && index % 2 !== 0),
-		index: index,
 		storyType: storyType,
+		data: data,
 	};
 
 	switch (position) {

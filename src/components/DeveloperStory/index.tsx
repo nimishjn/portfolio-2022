@@ -24,20 +24,114 @@ export default function DeveloperStory({
 			}
 		>
 			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					title: 'Certificate',
+					url: 'https://i.imgur.com/4ZQ3Z4u.png',
+					description: 'This is a description',
+				}}
 				position={position}
 				storyType='certificate'
 				index={0}
 				firstIndex={true}
 			/>
-			<StoryItem position={position} storyType='education' index={1} />
-			<StoryItem position={position} index={2} />
-			<StoryItem position={position} storyType='project' index={3} />
-			<StoryItem position={position} storyType='experience' index={4} />
-			<StoryItem position={position} storyType='certificate' index={5} />
-			<StoryItem position={position} storyType='education' index={6} />
-			<StoryItem position={position} index={7} />
-			<StoryItem position={position} storyType='project' index={8} />
 			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					orgName: 'Education',
+					orgLocation: 'djoj',
+				}}
+				position={position}
+				storyType='education'
+				index={1}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					title: 'Other Data',
+				}}
+				position={position}
+				storyType='other'
+				index={2}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					projectName: 'Project 1',
+					orgName: 'Org 1',
+					description: 'This is a description',
+				}}
+				position={position}
+				storyType='project'
+				index={3}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					orgName: 'Org 2',
+					orgLocation: 'Location 2',
+					description: 'This is a description',
+				}}
+				position={position}
+				storyType='experience'
+				index={4}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					title: 'Certificate',
+					url: 'https://i.imgur.com/4ZQ3Z4u.png',
+					description: 'This is a description',
+				}}
+				position={position}
+				storyType='certificate'
+				index={5}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					orgName: 'Education',
+					orgLocation: 'djoj',
+				}}
+				position={position}
+				storyType='education'
+				index={6}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					title: 'Other Data',
+				}}
+				position={position}
+				index={7}
+				storyType='other'
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					projectName: 'Project 1',
+					orgName: 'Org 1',
+					description: 'This is a description',
+				}}
+				position={position}
+				storyType='project'
+				index={8}
+			/>
+			<StoryItem
+				data={{
+					fromDate: '2020-01-01',
+					toDate: '2020-01-01',
+					title: "I'm a title",
+				}}
 				position={position}
 				storyType='achievement'
 				index={9}
