@@ -47,6 +47,7 @@ export const StoryItem = ({
 		storyType: storyType,
 	};
 
+	// TODO: Remove 'any' and create fresh interface for StoryContentProps below
 	const StoryContentProps:any = {
 		arrowRight:
 			position === 'right' ||

@@ -79,8 +79,8 @@ export const navbarData = [
 		section: 'skills',
 	},
 	{
-		title: 'Projects',
-		section: 'projects',
+		title: 'Developer Story',
+		section: 'developerstory',
 	},
 	{
 		title: 'Research',

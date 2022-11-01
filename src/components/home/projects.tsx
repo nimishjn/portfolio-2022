@@ -1,11 +1,19 @@
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Wave from 'react-wavify';
 
 export default function Projects() {
+	const [position, setPosition] = useState('left');
+	useEffect(() => {
+		setPosition(window.innerWidth < 500 ? 'left' : 'alternate');
+	}, []);
+
 	return (
-		<section className='home-section bg-dark-gray relative' id='projects'>
+		<section
+			className='home-section bg-dark-gray relative'
+			id='developerstory'
+		>
 			<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
 				<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
 					Developer Story
@@ -23,7 +31,7 @@ export default function Projects() {
 				{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
 				{/* TODO: Implement 'View all' button that redirects to '/story' route */}
 				{/* <div className='relative max-h-96 w-full overflow-auto'> */}
-				<DeveloperStory position='alternate' />
+				<DeveloperStory position={position as any} />
 				{/* </div> */}
 			</div>
 			<Wave

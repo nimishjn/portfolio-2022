@@ -1,5 +1,6 @@
 import React from 'react';
 import { DEFAULT_POSITION_TYPES, POSITION_TYPES } from 'utils/developerStory';
+import { Experiences, Projects } from 'utils/portfolioData';
 import { StoryItem } from './StoryItem';
 
 interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
@@ -24,118 +25,35 @@ export default function DeveloperStory({
 			}
 		>
 			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					title: 'Certificate',
-					url: 'https://i.imgur.com/4ZQ3Z4u.png',
-					description: 'This is a description',
-				}}
+				data={Experiences.csivit}
 				position={position}
-				storyType='certificate'
+				storyType='experience'
 				index={0}
 				firstIndex={true}
 			/>
 			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					orgName: 'Education',
-					orgLocation: 'djoj',
-				}}
+				data={Experiences.adgvit}
 				position={position}
-				storyType='education'
+				storyType='experience'
 				index={1}
 			/>
 			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					title: 'Other Data',
-				}}
+				data={Projects.portfolio}
 				position={position}
-				storyType='other'
+				storyType='project'
 				index={2}
 			/>
 			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					projectName: 'Project 1',
-					orgName: 'Org 1',
-					description: 'This is a description',
-				}}
+				data={Experiences.designAndCode}
 				position={position}
-				storyType='project'
+				storyType='experience'
 				index={3}
 			/>
 			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					orgName: 'Org 2',
-					orgLocation: 'Location 2',
-					description: 'This is a description',
-				}}
+				data={Experiences.nishkaera}
 				position={position}
 				storyType='experience'
 				index={4}
-			/>
-			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					title: 'Certificate',
-					url: 'https://i.imgur.com/4ZQ3Z4u.png',
-					description: 'This is a description',
-				}}
-				position={position}
-				storyType='certificate'
-				index={5}
-			/>
-			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					orgName: 'Education',
-					orgLocation: 'djoj',
-				}}
-				position={position}
-				storyType='education'
-				index={6}
-			/>
-			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					title: 'Other Data',
-				}}
-				position={position}
-				index={7}
-				storyType='other'
-			/>
-			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					projectName: 'Project 1',
-					orgName: 'Org 1',
-					description: 'This is a description',
-				}}
-				position={position}
-				storyType='project'
-				index={8}
-			/>
-			<StoryItem
-				data={{
-					fromDate: '2020-01-01',
-					toDate: '2020-01-01',
-					title: "I'm a title",
-				}}
-				position={position}
-				storyType='achievement'
-				index={9}
-				lastIndex={true}
 			/>
 		</div>
 	);
