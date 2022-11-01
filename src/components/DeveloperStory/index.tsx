@@ -1,22 +1,34 @@
 import React from 'react';
+import { DEFAULT_POSITION_TYPES, POSITION_TYPES } from 'utils/developerStory';
 import { StoryItem } from './StoryItem';
 
 interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
-	position?: 'left' | 'right' | 'alternate';
+	position?: POSITION_TYPES;
 }
 
 export default function DeveloperStory({
-	position = 'alternate',
+	position = DEFAULT_POSITION_TYPES,
 	...props
 }: DeveloperStoryProps) {
 	const outerClass = {
 		left: 'grid-cols-[minmax(20px,25px)_1fr]',
 		right: 'grid-cols-[1fr_minmax(20px,25px)]',
 		alternate: 'grid-cols-[1fr_minmax(20px,25px)_1fr]',
+		'left-with-blank': 'grid-cols-[1fr_minmax(20px,25px)_1fr]',
+		'right-with-blank': 'grid-cols-[1fr_minmax(20px,25px)_1fr]',
 	};
 	return (
-		<div className={outerClass[position || 'alternate'] + ' grid w-full'}>
-			<StoryItem position={position} storyType='certificate' index={0} firstIndex={true} />
+		<div
+			className={
+				outerClass[position || DEFAULT_POSITION_TYPES] + ' grid w-full'
+			}
+		>
+			<StoryItem
+				position={position}
+				storyType='certificate'
+				index={0}
+				firstIndex={true}
+			/>
 			<StoryItem position={position} storyType='education' index={1} />
 			<StoryItem position={position} index={2} />
 			<StoryItem position={position} storyType='project' index={3} />

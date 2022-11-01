@@ -7,10 +7,9 @@ html {
 }
 
 /* Testing elements:- */
-*:active {
+/* *:active {
 	outline: .1px solid oldlace!important;
-	transition: all .2s ease-in-out;
-}
+} */
 
 @layer components {
 	/* Every section container of Home Route */

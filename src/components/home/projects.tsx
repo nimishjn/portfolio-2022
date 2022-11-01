@@ -23,7 +23,7 @@ export default function Projects() {
 				{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
 				{/* TODO: Implement 'View all' button that redirects to '/story' route */}
 				{/* <div className='relative max-h-96 w-full overflow-auto'> */}
-				<DeveloperStory />
+				<DeveloperStory position='alternate' />
 				{/* </div> */}
 			</div>
 			<Wave
