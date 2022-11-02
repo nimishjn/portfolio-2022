@@ -1,3 +1,4 @@
+import { allEducation } from './constants/Education';
 import { allExperiences } from './constants/Experiences';
 import { allProjects } from './constants/Projects';
 
@@ -26,5 +27,20 @@ export const developerStoryData = [
 		id: 'exp-nishkaera',
 		storyType: 'experience',
 		data: allExperiences.nishkaera,
+	},
+	{
+		id: 'edu-vit',
+		storyType: 'education',
+		data: allEducation.vit,
+	},
+	{
+		id: 'edu-dpsrkp',
+		storyType: 'education',
+		data: allEducation.dpsrkp,
+	},
+	{
+		id: 'edu-smsslg',
+		storyType: 'education',
+		data: allEducation.smsslg,
 	},
 ];

@@ -5,7 +5,7 @@ export const allExperiences = {
 		orgName: 'Computer Society of India',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',
 		url: 'https://csivit.com',
-		imageURL: '/images/csi-logo.jpeg',
+		imageURL: '/images/experience/csi-logo.jpeg',
 		description: `
 - Organizing committee member of Devspace'21, an annual flagship hackathon with over 1400 registrations.
 - Worked in a team of 4 to create 'Spacey' discord bot for Devspace'21.
@@ -23,7 +23,7 @@ export const allExperiences = {
 		orgName: 'Apple Developer Group',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',
 		url: 'https://adgvit.com',
-		imageURL: '/images/adg-logo.jpeg',
+		imageURL: '/images/experience/adg-logo.jpeg',
 		description: `
 - Worked in a team of 5 to build a static responsive tutorial website for ADG Connect App.
 - Worked in a team of 3 to build the official website of ADG, 2022.
@@ -35,7 +35,7 @@ export const allExperiences = {
 		orgName: 'Design and Code Community',
 		orgLocation: 'Discord Server',
 		url: 'https://designandcode.us',
-		imageURL: '/images/dc-logo.jpeg',
+		imageURL: '/images/experience/dc-logo.jpeg',
 		description: `
 - Take administrative decisions for the community alongside the Founder.
 - Moderating the official discord server with over 4000 members.
@@ -49,7 +49,7 @@ export const allExperiences = {
 		orgName: 'Nishkaera',
 		orgLocation: 'Mumbai, India',
 		url: 'https://nishkaera.com',
-		imageURL: '/images/nishkaera-logo.jpeg',
+		imageURL: '/images/experience/nishkaera-logo.jpeg',
 		description: `
 - Responsible for developing company’s website, apps and other related work.
 - Developed the webinar section.
