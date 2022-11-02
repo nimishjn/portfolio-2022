@@ -22,6 +22,9 @@ module.exports = {
 				mscreen: 'calc(var(--vh, 1vh) * 100) 100vh',
 				6: '1.5rem',
 			},
+			maxHeight: {
+				'12ch': '12ch',
+			},
 			width: {
 				'1em': '1em',
 			},

@@ -10,7 +10,7 @@ import {
 	FaLinkedinIn,
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
-import { SocialUrls } from 'utils/urls';
+import { SocialUrls } from 'utils/constants/urls';
 
 export default function HeroSection() {
 	return (

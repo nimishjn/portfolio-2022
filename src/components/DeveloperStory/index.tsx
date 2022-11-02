@@ -1,7 +1,8 @@
 import React from 'react';
 import { DEFAULT_POSITION_TYPES, POSITION_TYPES } from 'utils/developerStory';
-import { Experiences, Projects } from 'utils/portfolioData';
+import { allExperiences } from 'utils/constants/Experiences';
 import { StoryItem } from './StoryItem';
+import { allProjects } from 'utils/constants/Projects';
 
 interface DeveloperStoryProps extends React.HTMLAttributes<HTMLDivElement> {
 	position?: POSITION_TYPES;
@@ -25,32 +26,32 @@ export default function DeveloperStory({
 			}
 		>
 			<StoryItem
-				data={Experiences.csivit}
+				data={allExperiences.csivit}
 				position={position}
 				storyType='experience'
 				index={0}
 				firstIndex={true}
 			/>
 			<StoryItem
-				data={Experiences.adgvit}
+				data={allExperiences.adgvit}
 				position={position}
 				storyType='experience'
 				index={1}
 			/>
 			<StoryItem
-				data={Projects.portfolio}
+				data={allProjects.portfolio}
 				position={position}
 				storyType='project'
 				index={2}
 			/>
 			<StoryItem
-				data={Experiences.designAndCode}
+				data={allExperiences.designAndCode}
 				position={position}
 				storyType='experience'
 				index={3}
 			/>
 			<StoryItem
-				data={Experiences.nishkaera}
+				data={allExperiences.nishkaera}
 				position={position}
 				storyType='experience'
 				index={4}

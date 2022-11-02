@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as LinkScroll } from 'react-scroll';
-import { SocialUrls } from 'utils/urls';
+import { SocialUrls } from 'utils/constants/urls';
 import { navbarData } from './navbar';
 
 export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {

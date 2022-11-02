@@ -1,7 +1,7 @@
 import { FaResearchgate } from 'react-icons/fa';
 import { SiGooglescholar, SiOrcid, SiPublons } from 'react-icons/si';
 import { ResearchProfiles } from './urls';
-import SciProfiles from '../assets/icons/sci-profiles.svg';
+import SciProfiles from '../../assets/icons/sci-profiles.svg';
 
 export const allResearchPapers = [
 	{

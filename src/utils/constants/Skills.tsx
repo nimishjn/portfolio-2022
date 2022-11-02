@@ -27,9 +27,9 @@ import {
 	SiVisualstudiocode,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
-import CIcon from '../assets/icons/c-original.svg';
-import CppIcon from '../assets/icons/cplusplus-original.svg';
-import Matlab from '../assets/icons/matlab.svg';
+import CIcon from '../../assets/icons/c-original.svg';
+import CppIcon from '../../assets/icons/cplusplus-original.svg';
+import Matlab from '../../assets/icons/matlab.svg';
 
 export const allSkills = [
 	{

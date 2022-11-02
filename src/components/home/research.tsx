@@ -2,7 +2,7 @@ import React from 'react';
 import Lottie from 'lottie-react';
 import ResearchAnimation from '../../assets/lottie/data-analysis.json';
 import SkillBadge from 'components/common/SkillBadge';
-import { allResearchPapers, allResearchUrls } from 'utils/Research';
+import { allResearchPapers, allResearchUrls } from 'utils/constants/Research';
 import Image from 'next/image';
 import Link from 'next/link';
 

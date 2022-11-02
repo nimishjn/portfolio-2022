@@ -102,40 +102,40 @@ export type StoryContentTypeProps =
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
 			data: AchievementProps;
-			children?: React.ReactNode;
+			randomClassName?: string;
 	  }
 	| {
 			storyType: 'certificate';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
 			data: CertificateProps;
-			children?: React.ReactNode;
+			randomClassName?: string;
 	  }
 	| {
 			storyType: 'education';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
 			data: EducationProps;
-			children?: React.ReactNode;
+			randomClassName?: string;
 	  }
 	| {
 			storyType: 'experience';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
 			data: ExperienceProps;
-			children?: React.ReactNode;
+			randomClassName?: string;
 	  }
 	| {
 			storyType: 'other';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
 			data: OtherProps;
-			children?: React.ReactNode;
+			randomClassName?: string;
 	  }
 	| {
 			storyType: 'project';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
 			data: ProjectProps;
-			children?: React.ReactNode;
+			randomClassName?: string;
 	  };
