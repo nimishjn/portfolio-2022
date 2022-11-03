@@ -6,6 +6,7 @@ export const allProjects: { [key: string]: ProjectProps } = {
 		toDate: 'current',
 		projectName: 'Portfolio Website',
 		orgName: 'Personal Project',
+		imageURL: '/images/project/portfolio-logo.jpeg',
 		description: `
 - A portfolio website built using Next.js, Tailwind CSS, and TypeScript.
 - The website is hosted on Vercel and the source code is available on GitHub.
@@ -20,6 +21,7 @@ export const allProjects: { [key: string]: ProjectProps } = {
 		toDate: 'Oct 2022',
 		projectName: 'LaserTag Frontend',
 		orgName: 'Computer Society of India',
+		imageURL: '/images/project/lasertag-logo.jpeg',
 		description: `
 A great disturbance in the force can be felt again. Is it the rise of a skywalker or the rise of a phantom menace? Come join CSI-VIT in a battle of LaserTag lightsabers to help restore balance to the force.
 
@@ -40,6 +42,7 @@ Some features include:
 		toDate: 'Mar 2022',
 		projectName: 'Core Committee Selections',
 		orgName: 'Computer Society of India',
+		imageURL: '/images/project/ccs-logo.png',
 		description: `
 The recruitment portal for CSI Core Committee Selections, 2022. A candidate can take 30 minutes subjective quiz in 4 different domains. After clearing round 1, a candidate can view different problem statements and submit links to their projects. There is a profile section, where a user may submit links to their works in all 4 domains.
 
@@ -61,6 +64,7 @@ Some features include:
 		toDate: 'Dec 2021',
 		projectName: 'Contact Management System',
 		orgName: 'Academic Project',
+		imageURL: '/images/project/cms-logo.png',
 		description: `
 An academic project which is used to perform the following functionalities:
 - Sign up
@@ -84,6 +88,7 @@ An academic project which is used to perform the following functionalities:
 		toDate: 'Dec 2021',
 		projectName: 'Otôbus Backend',
 		orgName: 'Academic Project',
+		imageURL: '/images/project/otobus-logo.jpeg',
 		description: `
 The backend of otôbus, a bus management system, a web based application. 
 
@@ -110,6 +115,7 @@ Features of backend includes:
 		toDate: 'Dec 2021',
 		projectName: 'Otôbus Frontend',
 		orgName: 'Academic Project',
+		imageURL: '/images/project/otobus-logo.jpeg',
 		description: `
 The frontend of otôbus, a bus management system, a web based application. 
 
@@ -146,6 +152,7 @@ Features of backend includes:
 		toDate: 'Sep 2021',
 		projectName: 'Official ADG-VIT Website',
 		orgName: 'Apple Developer Group',
+		imageURL: '/images/project/adg-logo.jpeg',
 		description: `
 The official website of ADG-VIT, a student community at VIT that brings together like-minded individuals who are interested in Developing their Dream.
 

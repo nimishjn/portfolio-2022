@@ -14,6 +14,7 @@ export default function StoryDescription({
 
 	return (
 		<div className='relative'>
+			<h3 className='font-medium text-gray-300'>Description</h3>
 			<ReactMarkdown
 				components={{
 					h4: 'h3',
@@ -46,7 +47,7 @@ export default function StoryDescription({
 			>
 				{children}
 			</ReactMarkdown>
-			{children.length > 400 && (
+			{(children.length > 400 || children.split(/\r\n|\r|\n/).length > 5) && (
 				<>
 					{readMoreExpanded ? (
 						<span

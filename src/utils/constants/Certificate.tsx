@@ -6,13 +6,15 @@ export const allCertificates: { [key: string]: CertificateProps } = {
 		toDate: 'May 2021',
 		title: 'Responsive Web Design',
 		url: 'https://freecodecamp.org/certification/nimishjn/responsive-web-design',
-        imageURL: '/images/certificates/fcc1.png',
+		imageURL: '/images/certificates/fcc1.png',
+		skills: ['skill_html', 'skill_css'],
 	},
-    fcc2: {
+	fcc2: {
 		fromDate: 'Jun 2021',
 		toDate: 'Jun 2021',
 		title: 'JavaScript Algorithms and Data Structures',
 		url: 'https://freecodecamp.org/certification/nimishjn/javascript-algorithms-and-data-structures',
-        imageURL: '/images/certificates/fcc2.png',
+		imageURL: '/images/certificates/fcc2.png',
+		skills: ['skill_javascript'],
 	},
 };

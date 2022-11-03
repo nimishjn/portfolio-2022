@@ -27,8 +27,10 @@ export default function StoryContent({
 	arrowLeft,
 	data,
 }: StoryContentTypeProps) {
+	const renderDates = data.fromDate || data.toDate;
+	const renderToDate = data.toDate && data.toDate !== data.fromDate;
 	return (
-		<div className='relative bg-black break-words p-2 pt-4 flex flex-col items-center mx-2 mb-2 border rounded-sm'>
+		<div className='relative bg-black break-words p-2 pt-5 flex flex-col items-center mx-2 mb-2 border rounded-sm'>
 			{arrowRight && (
 				<StoryArrow className='h-4 text-white absolute top-7 -right-2.5 border-2 border-transparent box-border' />
 			)}
@@ -36,16 +38,20 @@ export default function StoryContent({
 				<StoryArrow className='h-4 text-white absolute top-7 -left-2.5 border-2 border-transparent box-border rotate-180' />
 			)}
 			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-0.5 px-1 top-0 left-0 rounded-br-sm'>
-				<p>{storyTypes[storyType as keyof typeof storyTypes].title}</p>
-				{(data.fromDate || data.toDate) && (
+				<p className='font-medium'>
+					{storyTypes[storyType as keyof typeof storyTypes].title}
+				</p>
+				{renderDates && (
 					<>
 						<BsDot />
 						<div className='flex items-center self-start gap-1'>
-							<p className='font-extralight'>{data.fromDate}</p>
-							{data.toDate && data.toDate && (
-								<BsArrowRight className='text-2xs' />
+							<p className='font-normal'>{data.fromDate}</p>
+							{renderToDate && (
+								<>
+									<BsArrowRight className='text-2xs' />
+									<p className='font-normal'>{data.toDate}</p>
+								</>
 							)}
-							<p className='font-extralight'>{data.toDate}</p>
 						</div>
 					</>
 				)}

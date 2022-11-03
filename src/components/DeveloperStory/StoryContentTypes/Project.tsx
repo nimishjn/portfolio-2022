@@ -38,14 +38,19 @@ export default function Project({
 				</div>
 			</div>
 			{techStack.length > 0 && (
-				<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3'>
-					{techStack.map((tech, index) => {
-						const skill = findSkill(tech);
-						if (skill)
-							return <SkillBadge skill={skill} key={index} />;
-						else return null;
-					})}
-				</ul>
+				<div>
+					<h3 className='font-medium text-gray-300'>
+						Associated skills
+					</h3>
+					<ul className='flex flex-wrap items-start gap-3'>
+						{techStack.map((tech, index) => {
+							const skill = findSkill(tech);
+							if (skill)
+								return <SkillBadge skill={skill} key={index} />;
+							else return null;
+						})}
+					</ul>
+				</div>
 			)}
 			<StoryDescription>{description}</StoryDescription>
 			<div className='flex gap-2'>
