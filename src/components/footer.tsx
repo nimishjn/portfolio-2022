@@ -11,9 +11,23 @@ export default function Footer() {
 	const [anonymous, setAnonymous] = useState(false);
 	const submitForm = (e: React.FormEvent) => {
 		e.preventDefault();
-		// TODO: Add form submission logic
-
-		(e.target as HTMLFormElement).reset();
+		const form = e.target as HTMLFormElement;
+		const message = form.getElementsByTagName('textarea')[0].value;
+		const name = form.getElementsByTagName('input')[0].value;
+		const email = form.getElementsByTagName('input')[1].value;
+		fetch('/api/contact', {
+			method: 'POST',
+			body: JSON.stringify(
+				anonymous ? { message } : { name, email, message }
+			),
+		})
+			.then((res) => {
+				form.reset();
+				alert('Message sent successfully!');
+			})
+			.catch((err) => {
+				alert('Error sending message!');
+			});
 	};
 	return (
 		<footer
@@ -82,6 +96,7 @@ export default function Footer() {
 							<input
 								type='text'
 								placeholder='Enter your name'
+								id='contact-name'
 								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
 								maxLength={100}
 								disabled={anonymous}
@@ -99,6 +114,7 @@ export default function Footer() {
 							<input
 								type='email'
 								placeholder='Enter your email'
+								id='contact-email'
 								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
 								maxLength={100}
 								disabled={anonymous}
@@ -115,6 +131,7 @@ export default function Footer() {
 							</label>
 							<textarea
 								placeholder='Feel free to write anything. Feedback and advice are highly appreciated!'
+								id='contact-message'
 								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent transition-all border ease-linear'
 								maxLength={1000}
 								rows={5}
