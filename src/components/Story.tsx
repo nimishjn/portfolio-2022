@@ -39,9 +39,6 @@ export default function Story() {
 						</Link>{' '}
 						anymore :(
 					</p>
-					{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
-					{/* TODO: Implement 'View all' button that redirects to '/story' route */}
-					{/* <div className='relative max-h-96 w-full overflow-auto'> */}
 					<DeveloperStoryFilter
 						setFilteredStoryData={setFilteredStoryData}
 					/>
@@ -50,7 +47,6 @@ export default function Story() {
 						position={position as any}
 						expandable
 					/>
-					{/* </div> */}
 				</div>
 			</section>
 			<Footer />

@@ -1,6 +1,5 @@
 import React from 'react';
 
-// TODO: Figure out an alternative to 'any' type
 export const StoryArrow = (props: React.HTMLAttributes<HTMLOrSVGElement>) => {
 	return (
 		<svg

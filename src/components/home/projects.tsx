@@ -30,8 +30,6 @@ export default function Projects() {
 					</Link>{' '}
 					anymore :(
 				</p>
-				{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
-				{/* TODO: Implement 'View all' button that redirects to '/story' route */}
 				<DeveloperStory
 					developerStoryData={developerStoryData}
 					position={position as any}

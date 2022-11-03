@@ -32,6 +32,14 @@ interface StoryItemProps extends React.HTMLAttributes<HTMLDivElement> {
 		| ProjectProps;
 }
 
+interface StoryContentPropsInterface {
+	arrowRight: boolean;
+	arrowLeft: boolean;
+	storyType: STORY_TYPES;
+	// TODO: Remove 'any' and create fresh interface for 'data' below
+	data: any;
+}
+
 export const StoryItem = ({
 	position = DEFAULT_POSITION_TYPES,
 	firstIndex = false,
@@ -47,8 +55,7 @@ export const StoryItem = ({
 		storyType: storyType,
 	};
 
-	// TODO: Remove 'any' and create fresh interface for StoryContentProps below
-	const StoryContentProps:any = {
+	const StoryContentProps: StoryContentPropsInterface = {
 		arrowRight:
 			position === 'right' ||
 			(position === 'alternate' && index % 2 === 0),
