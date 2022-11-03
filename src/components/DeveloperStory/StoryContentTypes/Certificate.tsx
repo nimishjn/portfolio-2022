@@ -31,7 +31,12 @@ export default function Certificate({
 			{description && <StoryDescription>{description}</StoryDescription>}
 			{url && (
 				<Link passHref href={url}>
-					<a target='_blank'>View</a>
+					<a
+						target='_blank'
+						className='text-sm bg-white text-black px-2 py-0.5 rounded-sm'
+					>
+						View
+					</a>
 				</Link>
 			)}
 		</div>

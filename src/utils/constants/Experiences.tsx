@@ -1,4 +1,6 @@
-export const allExperiences = {
+import { ExperienceProps } from 'utils/developerStory';
+
+export const allExperiences: { [key: string]: ExperienceProps } = {
 	csivit: {
 		fromDate: 'Jan 2021',
 		toDate: 'current',

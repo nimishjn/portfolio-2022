@@ -1,7 +1,9 @@
+import SkillBadge from 'components/common/SkillBadge';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import { ProjectProps } from 'utils/developerStory';
+import { findSkill } from 'utils/findSkill';
 import StoryDescription from '../StoryDescription';
 
 export default function Project({
@@ -35,6 +37,16 @@ export default function Project({
 					<h4 className='w-full font-normal text-sm'>{orgName}</h4>
 				</div>
 			</div>
+			{techStack.length > 0 && (
+				<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3'>
+					{techStack.map((tech, index) => {
+						const skill = findSkill(tech);
+						if (skill)
+							return <SkillBadge skill={skill} key={index} />;
+						else return null;
+					})}
+				</ul>
+			)}
 			<StoryDescription>{description}</StoryDescription>
 			<div className='flex gap-2'>
 				{repoUrl && (

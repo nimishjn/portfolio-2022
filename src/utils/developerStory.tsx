@@ -33,7 +33,7 @@ export type POSITION_TYPES =
 export const DEFAULT_POSITION_TYPES = 'alternate';
 
 // Interface for each storyType i.e. EducationStoryProps, ExperienceStoryProps, etc.
-export interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface AchievementProps {
 	fromDate: string;
 	toDate: string;
 	title: string;
@@ -43,7 +43,7 @@ export interface AchievementProps extends React.HTMLAttributes<HTMLDivElement> {
 	url?: string;
 }
 
-export interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface CertificateProps {
 	fromDate: string;
 	toDate: string;
 	title: string;
@@ -53,7 +53,7 @@ export interface CertificateProps extends React.HTMLAttributes<HTMLDivElement> {
 	url: string;
 }
 
-export interface EducationProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface EducationProps {
 	fromDate: string;
 	toDate: string;
 	orgName: string;
@@ -63,7 +63,7 @@ export interface EducationProps extends React.HTMLAttributes<HTMLDivElement> {
 	url?: string;
 }
 
-export interface ExperienceProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ExperienceProps {
 	fromDate: string;
 	toDate: string;
 	orgName: string;
@@ -73,7 +73,7 @@ export interface ExperienceProps extends React.HTMLAttributes<HTMLDivElement> {
 	url?: string;
 }
 
-export interface OtherProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface OtherProps {
 	fromDate: string;
 	toDate: string;
 	title: string;
@@ -83,7 +83,7 @@ export interface OtherProps extends React.HTMLAttributes<HTMLDivElement> {
 	url?: string;
 }
 
-export interface ProjectProps extends React.HTMLAttributes<HTMLDivElement> {
+export interface ProjectProps {
 	fromDate: string;
 	toDate: string;
 	projectName: string;
