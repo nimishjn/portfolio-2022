@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import { FaMoon, FaSun } from 'react-icons/fa';
 import { Link as LinkScroll } from 'react-scroll';
 import NavbarDropdown from './sidebar';
-import DarkLightModeSwitch from '../../assets/lottie/light-dark-mode-button.json';
 
 export default function Navbar() {
 	const [display, setDisplay] = useState(false);
-	const [theme, setTheme] = useState('light');
 
 	const displayNavbar = () => {
 		setDisplay(true);
@@ -55,14 +52,6 @@ export default function Navbar() {
 					<div className='md:hidden'>
 						<NavbarDropdown />
 					</div>
-					<button
-						onClick={() =>
-							setTheme(theme === 'light' ? 'dark' : 'light')
-						}
-						className='text-xl'
-					>
-						{theme === 'light' ? <FaSun /> : <FaMoon />}
-					</button>
 				</div>
 			</div>
 		</nav>

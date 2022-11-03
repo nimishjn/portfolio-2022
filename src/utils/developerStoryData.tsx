@@ -2,8 +2,32 @@ import { allCertificates } from './constants/Certificate';
 import { allEducation } from './constants/Education';
 import { allExperiences } from './constants/Experiences';
 import { allProjects } from './constants/Projects';
+import {
+	AchievementProps,
+	CertificateProps,
+	EducationProps,
+	ExperienceProps,
+	OtherProps,
+	ProjectProps,
+	STORY_TYPES,
+} from './developerStory';
 
-export const developerStoryData = [
+export interface singleDeveloperStoryDataProps {
+	id: string;
+	storyType: STORY_TYPES;
+	data:
+		| EducationProps
+		| AchievementProps
+		| CertificateProps
+		| ExperienceProps
+		| OtherProps
+		| ProjectProps;
+}
+
+export interface DeveloperStoryDataProps
+	extends Array<singleDeveloperStoryDataProps> {}
+
+export const developerStoryData: DeveloperStoryDataProps = [
 	{
 		id: 'exp-csivit',
 		storyType: 'experience',

@@ -1,7 +1,9 @@
+import Button from 'components/common/Button';
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Wave from 'react-wavify';
+import { developerStoryData } from 'utils/developerStoryData';
 
 export default function Projects() {
 	const [position, setPosition] = useState('left');
@@ -30,9 +32,14 @@ export default function Projects() {
 				</p>
 				{/* TODO: Implement limited Developer Story for home page and 'View all' button */}
 				{/* TODO: Implement 'View all' button that redirects to '/story' route */}
-				{/* <div className='relative max-h-96 w-full overflow-auto'> */}
-				<DeveloperStory position={position as any} limitTo={3} />
-				{/* </div> */}
+				<DeveloperStory
+					developerStoryData={developerStoryData}
+					position={position as any}
+					limitTo={3}
+				/>
+				<Button variant='primary' className='self-center'>
+					<Link href='/story'>View all</Link>
+				</Button>
 			</div>
 			<Wave
 				fill='black'
