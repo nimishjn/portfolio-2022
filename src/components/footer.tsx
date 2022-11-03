@@ -15,6 +15,7 @@ export default function Footer() {
 		const message = form.getElementsByTagName('textarea')[0].value;
 		const name = form.getElementsByTagName('input')[0].value;
 		const email = form.getElementsByTagName('input')[1].value;
+		form.getElementsByTagName('button')[1].disabled = true;
 		fetch('/api/contact', {
 			method: 'POST',
 			body: JSON.stringify(
@@ -23,9 +24,11 @@ export default function Footer() {
 		})
 			.then((res) => {
 				form.reset();
+				form.getElementsByTagName('button')[1].disabled = false;
 				alert('Message sent successfully!');
 			})
 			.catch((err) => {
+				form.getElementsByTagName('button')[1].disabled = false;
 				alert('Error sending message!');
 			});
 	};
@@ -138,7 +141,7 @@ export default function Footer() {
 								required
 							/>
 						</div>
-						<button className='bg-white text-black rounded-sm py-1 px-2 flex items-center justify-center gap-1'>
+						<button className='bg-white text-black rounded-sm py-1 px-2 flex items-center justify-center gap-1 disabled:opacity-30'>
 							Send <RiSendPlaneFill />
 						</button>
 					</form>
