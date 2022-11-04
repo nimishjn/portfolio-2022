@@ -1,5 +1,7 @@
+import SkillBadge from 'components/common/SkillBadge';
 import React from 'react';
 import { OtherProps } from 'utils/developerStory';
+import { findSkill } from 'utils/findSkill';
 import StoryComponent from '../StoryComponent';
 import StoryDescription from '../StoryDescription';
 
@@ -9,6 +11,7 @@ export default function Other({
 	imageURL,
 	description,
 	url,
+	techStack = [],
 	...props
 }: OtherProps) {
 	return (
@@ -22,6 +25,21 @@ export default function Other({
 					)}
 				</div>
 			</StoryComponent.HeaderWrapper>
+			{techStack.length > 0 && (
+				<div>
+					<h3 className='font-medium text-gray-300'>
+						Associated skills
+					</h3>
+					<ul className='flex flex-wrap items-start gap-2'>
+						{techStack.map((tech, index) => {
+							const skill = findSkill(tech);
+							if (skill)
+								return <SkillBadge skill={skill} key={index} />;
+							else return null;
+						})}
+					</ul>
+				</div>
+			)}
 			{description && <StoryDescription>{description}</StoryDescription>}
 			<StoryComponent.Button url={url}>View</StoryComponent.Button>
 		</>

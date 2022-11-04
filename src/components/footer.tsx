@@ -133,7 +133,7 @@ export default function Footer() {
 								<span className='text-red-600'> *</span>
 							</label>
 							<textarea
-								placeholder='Feel free to write anything. Feedback and advice are highly appreciated!'
+								placeholder='Feel free to write anything. Feedbacks and advices are highly appreciated!'
 								id='contact-message'
 								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent border'
 								maxLength={1000}

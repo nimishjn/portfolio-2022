@@ -1,6 +1,5 @@
 import React from 'react';
 import { BsArrowRight, BsDot } from 'react-icons/bs';
-import { MdOutlineArrowRightAlt } from 'react-icons/md';
 import {
 	AchievementProps,
 	CertificateProps,

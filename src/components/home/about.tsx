@@ -2,6 +2,7 @@ import React from 'react';
 import Lottie from 'lottie-react';
 import AboutMeAnimation from '../../assets/lottie/about-me.json';
 import Wave from 'react-wavify';
+import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 
 export default function About() {
 	return (
@@ -17,9 +18,13 @@ export default function About() {
 					<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
 						About Me
 					</h1>
-					<p className='font-extralight leading-loose mb-2 text-sm md:text-lg'>
+					<ReactMarkdown
+						allowedElements={['p', 'a', 'b', 'i', 'strong', 'em']}
+						skipHtml
+						className='flex flex-col items-start gap-2 font-extralight leading-loose tracking-wide mb-2 text-sm md:text-base '
+					>
 						{about}
-					</p>
+					</ReactMarkdown>
 					<p className='leading-loose text-sm italic'>
 						<span className='font-bold'>You know the drill</span> -
 						Keep scrolling!
@@ -41,5 +46,13 @@ export default function About() {
 	);
 }
 
-const about =
-	"Hey, I am Nimish, a pre-final B. Tech undergrad studying Information Technology at Vellore Institute of Technology, Vellore. I am a full-stack developer who can do any design one throws at me, and a data analytics researcher in the data preprocessing domain. I've had conference papers and book chapters published in IEEE Xplore, Elsevier, and Springer. Music, Netflix, and basketball are my things.";
+const about = `
+I am a full stack developer with over one year of experience in **ReactJs**, **NextJs** and **NodeJs**.
+I have a passion for building software that is elegant, simple, and functional.
+I am not a one-trick programmer. I can build anything from the ground up and have a keen eye for design.
+If you have an idea, I have a web solution for you.
+I've also had conference papers and book chapters published in IEEE Xplore, Elsevier, and Springer as a **researcher**.
+I enjoy music, binge-watching Netflix, and playing basketball.
+
+I am currently open to new opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hello, then ***[get in touch](#contact)***.
+`;

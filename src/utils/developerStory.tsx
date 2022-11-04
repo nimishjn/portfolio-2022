@@ -95,6 +95,7 @@ export interface OtherProps {
 	imageURL?: StaticImageData;
 	description?: string;
 	url?: string;
+	techStack?: string[];
 }
 
 export interface ProjectProps {

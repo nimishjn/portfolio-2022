@@ -1,6 +1,7 @@
 import { allCertificates } from './constants/Certificate';
 import { allEducation } from './constants/Education';
 import { allExperiences } from './constants/Experiences';
+import { allOthers } from './constants/Others';
 import { allProjects } from './constants/Projects';
 import {
 	AchievementProps,
@@ -72,6 +73,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'project-cms2022',
 		storyType: 'project',
 		data: allProjects.cms2022,
+	},
+	{
+		id: 'blog-toggletheme',
+		storyType: 'other',
+		data: allOthers.blog1,
 	},
 	{
 		id: 'project-adgwebsite2022',
