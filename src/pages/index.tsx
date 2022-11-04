@@ -22,9 +22,8 @@ const Home: NextPage = () => {
 				<title>Nimish Jain | Home</title>
 				<meta
 					name='description'
-					content='A Full-Stack Developer & a Data Analytics Researcher'
+					content='A Full-Stack Developer | A Data Analytics Researcher'
 				/>
-				<link rel='icon' href='/favicon.ico' />
 			</Head>
 			<main className='min-h-screen min-w-full'>
 				<HeroSection />
