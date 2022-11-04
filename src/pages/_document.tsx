@@ -24,7 +24,53 @@ export default function Document() {
 				/>
 				<link rel='manifest' href='/favicon/site.webmanifest' />
 
-				{/* Loading Fonts */}
+				{/* SEO - Facebook */}
+				<meta property='og:url' content='https://nimish-portfolio.vercel.app' />
+				<meta property='og:type' content='website' />
+				<meta
+					property='og:title'
+					content='Nimish Jain | Portfolio Website'
+				/>
+				<meta
+					property='og:description'
+					content='A Full-Stack Developer | A Data Analytics Researcher'
+				/>
+				<meta
+					property='og:image'
+					content='https://nimish-portfolio.vercel.app/banner.png'
+				/>
+
+				{/* SEO - Twitter */}
+				<meta property='twitter:card' content='summary_large_image' />
+				<meta
+					property='twitter:url'
+					content='https://nimish-portfolio.vercel.app'
+				/>
+				<meta
+					property='twitter:title'
+					content='Nimish Jain | Portfolio Website'
+				/>
+				<meta
+					property='twitter:description'
+					content='A Full-Stack Developer | A Data Analytics Researcher'
+				/>
+				<meta
+					property='twitter:image'
+					content='https://nimish-portfolio.vercel.app/banner.png'
+				/>
+
+				{/* SEO - Google */}
+				<meta
+					name='description'
+					content='A Full-Stack Developer | A Data Analytics Researcher'
+				/>
+				<meta
+					name='keywords'
+					content='Nimish Jain, Portfolio, Developer, Full-Stack Development'
+				/>
+				<meta name='author' content='Nimish Jain' />
+
+				{/* Loading Fonts - League Spartan and Montserrat */}
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
 				<link rel='preconnect' href='https://fonts.gstatic.com' />
 				<link

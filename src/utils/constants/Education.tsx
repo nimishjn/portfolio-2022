@@ -22,7 +22,7 @@ export const allEducation: { [key: string]: EducationProps } = {
 	},
 	vit: {
 		fromDate: '2020',
-		toDate: '2024',
+		toDate: 'Present (2024)',
 		orgName: 'Vellore Institute of Technology',
 		orgLocation: 'Vellore, India',
 		imageURL: vitImg,
