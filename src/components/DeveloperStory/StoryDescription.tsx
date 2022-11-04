@@ -47,18 +47,19 @@ export default function StoryDescription({
 			>
 				{children}
 			</ReactMarkdown>
-			{(children.length > 400 || children.split(/\r\n|\r|\n/).length > 5) && (
+			{(children.length > 400 ||
+				children.split(/\r\n|\r|\n/).length > 5) && (
 				<>
 					{readMoreExpanded ? (
 						<span
-							className='flex-center gap-1 text-sm text-center w-full cursor-pointer'
+							className='flex-center gap-1 text-sm text-center w-full cursor-pointer text-gray-300'
 							onClick={() => setReadMoreExpanded(false)}
 						>
 							Read Less <MdOutlineExpandLess />
 						</span>
 					) : (
 						<span
-							className='absolute flex-center gap-1 text-sm pt-3 text-center w-full bottom-0 bg-gradient-to-t from-black via-[rgba(0,0,0,70%)] to-transparent cursor-pointer'
+							className='absolute flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bottom-0 bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
 							onClick={() => setReadMoreExpanded(true)}
 						>
 							Read More <MdOutlineExpandMore />

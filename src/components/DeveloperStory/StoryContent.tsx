@@ -11,9 +11,8 @@ import {
 	ProjectProps,
 	StoryContentTypeProps,
 	storyTypes,
-	STORY_TYPES,
 } from 'utils/developerStory';
-import { StoryArrow } from './StoryArrow';
+import StoryComponent from './StoryComponent';
 import Achievement from './StoryContentTypes/Achievement';
 import Certificate from './StoryContentTypes/Certificate';
 import Education from './StoryContentTypes/Education';
@@ -30,14 +29,14 @@ export default function StoryContent({
 	const renderDates = data.fromDate || data.toDate;
 	const renderToDate = data.toDate && data.toDate !== data.fromDate;
 	return (
-		<div className='relative bg-black break-words p-2 pt-5 flex flex-col items-center mx-2 mb-2 border rounded-sm'>
+		<div className='relative bg-black break-words p-3 pt-9 flex flex-col items-center mx-2 mb-2 border rounded-sm'>
 			{arrowRight && (
-				<StoryArrow className='h-4 text-white absolute top-7 -right-2.5 border-2 border-transparent box-border' />
+				<StoryComponent.Arrow className='h-4 text-white absolute top-7 -right-2.5 border-2 border-transparent box-border' />
 			)}
 			{arrowLeft && (
-				<StoryArrow className='h-4 text-white absolute top-7 -left-2.5 border-2 border-transparent box-border rotate-180' />
+				<StoryComponent.Arrow className='h-4 text-white absolute top-7 -left-2.5 border-2 border-transparent box-border rotate-180' />
 			)}
-			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-0.5 px-1 top-0 left-0 rounded-br-sm'>
+			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-1 px-2 top-0 left-0 rounded-br-sm'>
 				<p className='font-medium'>
 					{storyTypes[storyType as keyof typeof storyTypes].title}
 				</p>
@@ -56,20 +55,24 @@ export default function StoryContent({
 					</>
 				)}
 			</div>
-			{storyType === 'education' && (
-				<Education {...(data as EducationProps)} />
-			)}
-			{storyType === 'experience' && (
-				<Experience {...(data as ExperienceProps)} />
-			)}
-			{storyType === 'project' && <Project {...(data as ProjectProps)} />}
-			{storyType === 'certificate' && (
-				<Certificate {...(data as CertificateProps)} />
-			)}
-			{storyType === 'achievement' && (
-				<Achievement {...(data as AchievementProps)} />
-			)}
-			{storyType === 'other' && <Other {...(data as OtherProps)} />}
+			<div className='flex flex-col gap-3 items-start w-full'>
+				{storyType === 'education' && (
+					<Education {...(data as EducationProps)} />
+				)}
+				{storyType === 'experience' && (
+					<Experience {...(data as ExperienceProps)} />
+				)}
+				{storyType === 'project' && (
+					<Project {...(data as ProjectProps)} />
+				)}
+				{storyType === 'certificate' && (
+					<Certificate {...(data as CertificateProps)} />
+				)}
+				{storyType === 'achievement' && (
+					<Achievement {...(data as AchievementProps)} />
+				)}
+				{storyType === 'other' && <Other {...(data as OtherProps)} />}
+			</div>
 		</div>
 	);
 }

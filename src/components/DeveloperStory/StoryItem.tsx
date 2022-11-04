@@ -12,8 +12,8 @@ import {
 	StoryContentTypeProps,
 	STORY_TYPES,
 } from 'utils/developerStory';
+import StoryComponent from './StoryComponent';
 import StoryContent from './StoryContent';
-import { StoryEmptySpace } from './StoryEmptySpace';
 import { StorySeperator } from './StorySeperator';
 
 // TODO: Add global storyType to StoryItemProps located in /utils/developerStory.tsx
@@ -77,7 +77,7 @@ export const StoryItem = ({
 		case 'left-with-blank':
 			return (
 				<>
-					<StoryEmptySpace />
+					<StoryComponent.EmptySpace />
 					<StorySeperator {...StorySeperatorProps} />
 					<StoryContent {...StoryContentProps} />
 				</>
@@ -94,7 +94,7 @@ export const StoryItem = ({
 				<>
 					<StoryContent {...StoryContentProps} />
 					<StorySeperator {...StorySeperatorProps} />
-					<StoryEmptySpace />
+					<StoryComponent.EmptySpace />
 				</>
 			);
 		case 'alternate':
@@ -105,11 +105,11 @@ export const StoryItem = ({
 						<>
 							<StoryContent {...StoryContentProps} />
 							<StorySeperator {...StorySeperatorProps} />
-							<StoryEmptySpace />
+							<StoryComponent.EmptySpace />
 						</>
 					) : (
 						<>
-							<StoryEmptySpace />
+							<StoryComponent.EmptySpace />
 							<StorySeperator {...StorySeperatorProps} />
 							<StoryContent {...StoryContentProps} />
 						</>

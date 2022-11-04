@@ -135,7 +135,7 @@ export default function Footer() {
 							<textarea
 								placeholder='Feel free to write anything. Feedback and advice are highly appreciated!'
 								id='contact-message'
-								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent transition-all border ease-linear'
+								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent border'
 								maxLength={1000}
 								rows={5}
 								required

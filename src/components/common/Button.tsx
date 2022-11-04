@@ -63,3 +63,10 @@ function ButtonSecondary({ children, className, ...props }: Props) {
 		</button>
 	);
 }
+
+/** Note:
+ *  PrimaryButton background effect can only work in herosection.
+ *
+ *  TODO:
+ *  - Fix the above issue.
+ */

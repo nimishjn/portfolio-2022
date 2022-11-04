@@ -8,6 +8,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	csivit: {
 		fromDate: 'Jan 2021',
 		toDate: 'Present',
+		positionHeld: 'Senior Core Member',
 		orgName: 'Computer Society of India',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',
 		url: 'https://csivit.com',
@@ -26,6 +27,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	adgvit: {
 		fromDate: 'Jan 2021',
 		toDate: 'Present',
+		positionHeld: 'Senior Core Member',
 		orgName: 'Apple Developer Group',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',
 		url: 'https://adgvit.com',
@@ -38,6 +40,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	designAndCode: {
 		fromDate: 'Nov 2021',
 		toDate: 'Aug 2022',
+		positionHeld: 'Core Team',
 		orgName: 'Design and Code Community',
 		orgLocation: 'Discord Server',
 		url: 'https://designandcode.us',
@@ -52,6 +55,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	nishkaera: {
 		fromDate: 'Aug 2021',
 		toDate: 'Oct 2021',
+		positionHeld: 'Web Developer Intern',
 		orgName: 'Nishkaera',
 		orgLocation: 'Mumbai, India',
 		url: 'https://nishkaera.com',

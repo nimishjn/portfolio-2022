@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { ExperienceProps } from 'utils/developerStory';
+import StoryComponent from '../StoryComponent';
 import StoryDescription from '../StoryDescription';
 
 export default function Experience({
+	positionHeld,
 	orgName = 'No name',
 	orgLocation = 'No location',
 	imageURL,
@@ -13,38 +13,21 @@ export default function Experience({
 	...props
 }: ExperienceProps) {
 	return (
-		<div className='flex flex-col gap-1 items-start pt-2 w-full'>
-			<div className='flex items-center justify-start gap-2'>
-				{imageURL && (
-					<div className='w-24 overflow-hidden aspect-square'>
-						<Image
-							src={imageURL}
-							alt={orgName}
-							height={200}
-							width={200}
-							objectFit='cover'
-							placeholder='blur'
-						/>
-					</div>
-				)}
+		<>
+			<StoryComponent.HeaderWrapper>
+				<StoryComponent.SquareLogo imageURL={imageURL} />
 				<div className='flex flex-col'>
-					<h3 className='w-full font-semibold text-xl'>{orgName}</h3>
-					<h4 className='w-full font-normal text-sm'>
+					<h3 className='w-full font-semibold text-xl'>
+						{positionHeld}
+					</h3>
+					<h4 className='w-full font-medium text-sm'>{orgName}</h4>
+					<h4 className='w-full font-normal text-xs text-gray-200'>
 						{orgLocation}
 					</h4>
 				</div>
-			</div>
+			</StoryComponent.HeaderWrapper>
 			{description && <StoryDescription>{description}</StoryDescription>}
-			{url && (
-				<Link passHref href={url}>
-					<a
-						target='_blank'
-						className='text-sm bg-white text-black px-2 py-0.5 rounded-sm'
-					>
-						View
-					</a>
-				</Link>
-			)}
-		</div>
+			<StoryComponent.Button url={url}>View</StoryComponent.Button>
+		</>
 	);
 }

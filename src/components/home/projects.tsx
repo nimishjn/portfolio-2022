@@ -1,4 +1,3 @@
-import Button from 'components/common/Button';
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
@@ -28,16 +27,16 @@ export default function Projects() {
 					>
 						<a target='_blank'>StackOverFlow</a>
 					</Link>{' '}
-					{'anymore :('}
+					anymore :(
 				</p>
 				<DeveloperStory
 					developerStoryData={developerStoryData}
 					position={position as any}
 					limitTo={3}
 				/>
-				<Button variant='primary' className='self-center'>
+				<button className='mt-5 self-center border-1 border-blue-900 px-3 py-1 bg-blue-900 text-white hover:bg-transparent transition-colors duration-200'>
 					<Link href='/story'>View all</Link>
-				</Button>
+				</button>
 			</div>
 			<Wave
 				fill='black'

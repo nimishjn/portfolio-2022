@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-interface SkillProps  {
+interface SkillProps {
 	skill: {
 		name: string;
 		icon: React.ReactNode;
@@ -9,7 +9,7 @@ interface SkillProps  {
 		link: string;
 		color?: string;
 	};
-	index: number;
+	index?: number;
 }
 
 export default function SkillBadge({ skill, index }: SkillProps) {
@@ -28,3 +28,8 @@ export default function SkillBadge({ skill, index }: SkillProps) {
 		</Link>
 	);
 }
+
+/** Note:
+ *  'skill.bgcolor' is used for the border color of the badge.
+ *  'skill.color' is used for the text color of the badge.
+ */

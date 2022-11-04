@@ -1,9 +1,8 @@
 import SkillBadge from 'components/common/SkillBadge';
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { ProjectProps } from 'utils/developerStory';
 import { findSkill } from 'utils/findSkill';
+import StoryComponent from '../StoryComponent';
 import StoryDescription from '../StoryDescription';
 
 export default function Project({
@@ -17,27 +16,16 @@ export default function Project({
 	...props
 }: ProjectProps) {
 	return (
-		<div className='flex flex-col gap-1 items-start pt-2 w-full'>
-			<div className='flex items-center justify-start gap-2'>
-				{imageURL && (
-					<div className='w-24 overflow-hidden aspect-square'>
-						<Image
-							src={imageURL}
-							alt={orgName}
-							height={200}
-							width={200}
-							objectFit='cover'
-							placeholder='blur'
-						/>
-					</div>
-				)}
+		<>
+			<StoryComponent.HeaderWrapper>
+				<StoryComponent.SquareLogo imageURL={imageURL} />
 				<div className='flex flex-col'>
 					<h3 className='w-full font-semibold text-xl'>
 						{projectName}
 					</h3>
 					<h4 className='w-full font-normal text-sm'>{orgName}</h4>
 				</div>
-			</div>
+			</StoryComponent.HeaderWrapper>
 			{techStack.length > 0 && (
 				<div>
 					<h3 className='font-medium text-gray-300'>
@@ -55,27 +43,13 @@ export default function Project({
 			)}
 			<StoryDescription>{description}</StoryDescription>
 			<div className='flex gap-2'>
-				{repoUrl && (
-					<Link passHref href={repoUrl}>
-						<a
-							target='_blank'
-							className='text-sm bg-white text-black px-2 py-0.5 rounded-sm'
-						>
-							Code
-						</a>
-					</Link>
-				)}
-				{viewUrl && (
-					<Link passHref href={viewUrl}>
-						<a
-							target='_blank'
-							className='text-sm bg-white text-black px-2 py-0.5 rounded-sm'
-						>
-							View
-						</a>
-					</Link>
-				)}
+				<StoryComponent.Button url={repoUrl}>
+					Code
+				</StoryComponent.Button>
+				<StoryComponent.Button url={viewUrl}>
+					View
+				</StoryComponent.Button>
 			</div>
-		</div>
+		</>
 	);
 }

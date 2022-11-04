@@ -67,6 +67,7 @@ export interface EducationProps {
 export interface ExperienceProps {
 	fromDate: string;
 	toDate: string;
+	positionHeld: string;
 	orgName: string;
 	orgLocation: string;
 	imageURL?: StaticImageData;
