@@ -21,7 +21,7 @@ export default function Story() {
 				id='developerstory'
 			>
 				<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
-					<div className='sticky top-2 md:top-5 bg-white text-black px-2 md:px-3 py-2 rounded-full text-xl z-50'>
+					<div className='sticky top-2 md:top-4 text-white border-2 borde-white px-2 md:px-3 py-2 rounded-full text-xl z-50 bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
 						<Link href='/'>
 							<a className='flex items-center gap-1'>
 								<AiFillHome />

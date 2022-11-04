@@ -39,6 +39,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allExperiences.adgvit,
 	},
 	{
+		id: 'edu-vit',
+		storyType: 'education',
+		data: allEducation.vit,
+	},
+	{
 		id: 'project-portfolio',
 		storyType: 'project',
 		data: allProjects.portfolio,
@@ -97,11 +102,6 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'cert-fcc1',
 		storyType: 'certificate',
 		data: allCertificates.fcc1,
-	},
-	{
-		id: 'edu-vit',
-		storyType: 'education',
-		data: allEducation.vit,
 	},
 	{
 		id: 'edu-dpsrkp',

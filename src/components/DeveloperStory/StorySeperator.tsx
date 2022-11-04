@@ -19,25 +19,25 @@ export const StorySeperator = ({
 	return (
 		<div className='flex-col-center w-full h-full'>
 			{firstIndex ? (
-				<span className='w-0.5 bg-transparent h-6' />
+				<span className='w-1px bg-transparent h-6' />
 			) : (
-				<span className='w-0.5 bg-gray-500 h-6' />
+				<span className='w-1px bg-white h-6' />
 			)}
 			<div
 				style={
 					{
-						// backgroundColor: storyTypes[storyType].color,
+						backgroundColor: storyTypes[storyType].color,
 						// borderColor: storyTypes[storyType].color,
 					}
 				}
-				className='w-6 h-6 aspect-square border-2 border-gray-500 box-border rounded-full flex-center'
+				className='w-6 h-6 aspect-square border-1 border-white box-border rounded-full flex-center'
 			>
 				{storyTypes[storyType as keyof typeof storyTypes].icon}
 			</div>
 			{lastIndex ? (
-				<span className='w-0.5 bg-transparent grow' />
+				<span className='w-1px bg-transparent grow' />
 			) : (
-				<span className='w-0.5 bg-gray-500 grow min-h-6' />
+				<span className='w-1px bg-white grow min-h-6' />
 			)}
 		</div>
 	);

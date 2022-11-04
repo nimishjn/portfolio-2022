@@ -4,20 +4,32 @@ import { TbBriefcase, TbCertificate, TbCode, TbSchool } from 'react-icons/tb';
 import AchievementIcon from '../assets/icons/achievement.svg';
 
 export const storyTypes = {
-	education: { icon: <TbSchool />, title: 'Education', color: 'red' },
-	experience: { icon: <TbBriefcase />, title: 'Experinence', color: 'blue' },
-	project: { icon: <TbCode />, title: 'Project', color: 'green' },
+	education: { icon: <TbSchool />, title: 'Education', color: '#990000' },
+	experience: {
+		icon: <TbBriefcase />,
+		title: 'Experinence',
+		color: '#000066',
+	},
+	project: { icon: <TbCode />, title: 'Project', color: '#006600' },
 	certificate: {
 		icon: <TbCertificate />,
 		title: 'Certificate',
-		color: 'magenta',
+		color: '#660033',
 	},
 	achievement: {
 		icon: <AchievementIcon height='0.8em' />,
 		title: 'Achievement',
-		color: 'white',
+		color: '#330066',
 	},
-	other: { icon: <BsInfo />, title: 'Other', color: 'darkgray' },
+	other: { icon: <BsInfo />, title: 'Other', color: '#006666' },
+};
+
+const findStoryType = (storyType: string) => {
+	const type = storyTypes[storyType as keyof typeof storyTypes];
+	if (!type) {
+		return storyTypes.other;
+	}
+	return type;
 };
 
 // Story Types

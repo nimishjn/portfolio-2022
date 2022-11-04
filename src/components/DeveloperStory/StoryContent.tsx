@@ -29,14 +29,14 @@ export default function StoryContent({
 	const renderDates = data.fromDate || data.toDate;
 	const renderToDate = data.toDate && data.toDate !== data.fromDate;
 	return (
-		<div className='relative bg-black break-words p-3 pt-9 flex flex-col items-center mx-2 mb-2 border rounded-sm'>
+		<div className='relative bg-black break-words p-3 pt-9 flex flex-col items-center mx-2 mb-2 border border-white rounded-sm'>
 			{arrowRight && (
 				<StoryComponent.Arrow className='h-4 text-white absolute top-7 -right-2.5 border-2 border-transparent box-border' />
 			)}
 			{arrowLeft && (
 				<StoryComponent.Arrow className='h-4 text-white absolute top-7 -left-2.5 border-2 border-transparent box-border rotate-180' />
 			)}
-			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-1 px-2 top-0 left-0 rounded-br-sm'>
+			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-1 px-2 -top-[1px] -left-[1px] rounded-br-sm rounded-tl-sm border border-white'>
 				<p className='font-medium'>
 					{storyTypes[storyType as keyof typeof storyTypes].title}
 				</p>

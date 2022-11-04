@@ -27,6 +27,7 @@ module.exports = {
 			},
 			width: {
 				'1em': '1em',
+				'1px': '1px',
 			},
 			colors: {
 				'dark-gray': '#101010',

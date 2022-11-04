@@ -64,7 +64,11 @@ export const DeveloperStoryFilter = ({
 										' px-2 py-1 border-1 cursor-pointer box-border block'
 									}
 								>
-									{key}
+									{
+										storyTypes[
+											key as unknown as keyof typeof storyTypes
+										].title
+									}
 								</span>
 							)}
 						</RadioGroup.Option>
