@@ -1,14 +1,24 @@
 import { ProjectProps } from 'utils/developerStory';
+import portfolioImg from '/public/images/project/portfolio-logo.jpeg';
+import laserTag2022Img from '/public/images/project/lasertag-logo.jpeg';
+import ccs2022Img from '/public/images/project/ccs-logo.png';
+import cmsImg from '/public/images/project/cms-logo.png';
+import otobusImg from '/public/images/project/otobus-logo.jpeg';
+import adgLogo from '/public/images/project/adg-logo.jpeg';
+import riddlerImg from '/public/images/project/riddler-logo.png';
 
 export const allProjects: { [key: string]: ProjectProps } = {
 	portfolio: {
 		fromDate: 'Oct 2022',
-		toDate: 'current',
+		toDate: 'Present',
 		projectName: 'Portfolio Website',
 		orgName: 'Personal Project',
-		imageURL: '/images/project/portfolio-logo.jpeg',
+		imageURL: portfolioImg,
 		description: `
-- A portfolio website built using Next.js, Tailwind CSS, and TypeScript.
+- A portfolio website to showcase my projects and skills.
+- Developed Developer Story that was originally offered by StackOverFlow.
+- The Developer Story is a collection of all my experiences, education, projects, certificates and achievements.
+- Implemented a working contact form using Mailjet API.
 - The website is hosted on Vercel and the source code is available on GitHub.
         `,
 		repoUrl: 'https://github.com/nimishjn/portfolio-2022',
@@ -21,7 +31,7 @@ export const allProjects: { [key: string]: ProjectProps } = {
 		toDate: 'Oct 2022',
 		projectName: 'LaserTag Frontend',
 		orgName: 'Computer Society of India',
-		imageURL: '/images/project/lasertag-logo.jpeg',
+		imageURL: laserTag2022Img,
 		description: `
 A great disturbance in the force can be felt again. Is it the rise of a skywalker or the rise of a phantom menace? Come join CSI-VIT in a battle of LaserTag lightsabers to help restore balance to the force.
 
@@ -42,7 +52,7 @@ Some features include:
 		toDate: 'Mar 2022',
 		projectName: 'Core Committee Selections',
 		orgName: 'Computer Society of India',
-		imageURL: '/images/project/ccs-logo.png',
+		imageURL: ccs2022Img,
 		description: `
 The recruitment portal for CSI Core Committee Selections, 2022. A candidate can take 30 minutes subjective quiz in 4 different domains. After clearing round 1, a candidate can view different problem statements and submit links to their projects. There is a profile section, where a user may submit links to their works in all 4 domains.
 
@@ -64,7 +74,7 @@ Some features include:
 		toDate: 'Dec 2021',
 		projectName: 'Contact Management System',
 		orgName: 'Academic Project',
-		imageURL: '/images/project/cms-logo.png',
+		imageURL: cmsImg,
 		description: `
 An academic project which is used to perform the following functionalities:
 - Sign up
@@ -88,7 +98,7 @@ An academic project which is used to perform the following functionalities:
 		toDate: 'Dec 2021',
 		projectName: 'Otôbus Backend',
 		orgName: 'Academic Project',
-		imageURL: '/images/project/otobus-logo.jpeg',
+		imageURL: otobusImg,
 		description: `
 The backend of otôbus, a bus management system, a web based application. 
 
@@ -115,7 +125,7 @@ Features of backend includes:
 		toDate: 'Dec 2021',
 		projectName: 'Otôbus Frontend',
 		orgName: 'Academic Project',
-		imageURL: '/images/project/otobus-logo.jpeg',
+		imageURL: otobusImg,
 		description: `
 The frontend of otôbus, a bus management system, a web based application. 
 
@@ -152,7 +162,7 @@ Features of backend includes:
 		toDate: 'Sep 2021',
 		projectName: 'Official ADG-VIT Website',
 		orgName: 'Apple Developer Group',
-		imageURL: '/images/project/adg-logo.jpeg',
+		imageURL: adgLogo,
 		description: `
 The official website of ADG-VIT, a student community at VIT that brings together like-minded individuals who are interested in Developing their Dream.
 
@@ -175,6 +185,7 @@ The website consists of the following feature:
 		toDate: 'Aug 2021',
 		projectName: 'Riddler Frontend',
 		orgName: 'Computer Society of India',
+		imageURL: riddlerImg,
 		description: `
 Riddler is a one-of-a-kind online cryptic hunt where players dive into the depths of the internet and navigate their way to the top of the leaderboard by cracking exhilarating riddles spread across various themes. The last 9 years have seen hundreds try their best every season, only to get bested themselves.
 

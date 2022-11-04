@@ -27,6 +27,7 @@ export default function Project({
 							height={200}
 							width={200}
 							objectFit='cover'
+							placeholder='blur'
 						/>
 					</div>
 				)}
@@ -42,7 +43,7 @@ export default function Project({
 					<h3 className='font-medium text-gray-300'>
 						Associated skills
 					</h3>
-					<ul className='flex flex-wrap items-start gap-3'>
+					<ul className='flex flex-wrap items-start gap-2'>
 						{techStack.map((tech, index) => {
 							const skill = findSkill(tech);
 							if (skill)

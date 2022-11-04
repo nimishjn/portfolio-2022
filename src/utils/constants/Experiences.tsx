@@ -1,13 +1,17 @@
 import { ExperienceProps } from 'utils/developerStory';
+import csivitImg from '/public/images/experience/csi-logo.jpeg';
+import adgvitImg from '/public/images/experience/adg-logo.jpeg';
+import designAndCodeImg from '/public/images/experience/dc-logo.jpeg';
+import nishkaeraImg from '/public/images/experience/nishkaera-logo.jpeg';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	csivit: {
 		fromDate: 'Jan 2021',
-		toDate: 'current',
+		toDate: 'Present',
 		orgName: 'Computer Society of India',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',
 		url: 'https://csivit.com',
-		imageURL: '/images/experience/csi-logo.jpeg',
+		imageURL: csivitImg,
 		description: `
 - Organizing committee member of Devspace'21, an annual flagship hackathon with over 1400 registrations.
 - Worked in a team of 4 to create 'Spacey' discord bot for Devspace'21.
@@ -21,11 +25,11 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 	},
 	adgvit: {
 		fromDate: 'Jan 2021',
-		toDate: 'current',
+		toDate: 'Present',
 		orgName: 'Apple Developer Group',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',
 		url: 'https://adgvit.com',
-		imageURL: '/images/experience/adg-logo.jpeg',
+		imageURL: adgvitImg,
 		description: `
 - Worked in a team of 5 to build a static responsive tutorial website for ADG Connect App.
 - Worked in a team of 3 to build the official website of ADG, 2022.
@@ -37,7 +41,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		orgName: 'Design and Code Community',
 		orgLocation: 'Discord Server',
 		url: 'https://designandcode.us',
-		imageURL: '/images/experience/dc-logo.jpeg',
+		imageURL: designAndCodeImg,
 		description: `
 - Take administrative decisions for the community alongside the Founder.
 - Moderating the official discord server with over 4000 members.
@@ -51,7 +55,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		orgName: 'Nishkaera',
 		orgLocation: 'Mumbai, India',
 		url: 'https://nishkaera.com',
-		imageURL: '/images/experience/nishkaera-logo.jpeg',
+		imageURL: nishkaeraImg,
 		description: `
 - Responsible for developing company’s website, apps and other related work.
 - Developed the webinar section.

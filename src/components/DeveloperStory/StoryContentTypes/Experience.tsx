@@ -23,6 +23,7 @@ export default function Experience({
 							height={200}
 							width={200}
 							objectFit='cover'
+							placeholder='blur'
 						/>
 					</div>
 				)}

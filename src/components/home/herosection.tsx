@@ -11,6 +11,7 @@ import {
 } from 'react-icons/fa';
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
+import nimishNoBg from '/public/images/nimish-nobg.png';
 
 export default function HeroSection() {
 	return (
@@ -95,8 +96,10 @@ export default function HeroSection() {
 						className='rounded-full'
 						height={500}
 						width={500}
-						src='/images/nimish-nobg.png'
+						src={nimishNoBg}
 						alt='Nimish Jain'
+						loading='lazy'
+						placeholder='blur'
 					/>
 				</div>
 				<LinkScroll

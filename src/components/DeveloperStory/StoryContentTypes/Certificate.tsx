@@ -25,6 +25,7 @@ export default function Certificate({
 							height={200}
 							width={200}
 							objectFit='cover'
+							placeholder='blur'
 						/>
 					</div>
 				)}
@@ -35,7 +36,7 @@ export default function Certificate({
 					<h3 className='font-medium text-gray-300'>
 						Acquired skills
 					</h3>
-					<ul className='flex flex-wrap items-start gap-3'>
+					<ul className='flex flex-wrap items-start gap-2'>
 						{skills.map((tech, index) => {
 							const skill = findSkill(tech);
 							if (skill)

@@ -74,6 +74,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allProjects.adgWebsite2022,
 	},
 	{
+		id: 'project-riddler2022',
+		storyType: 'project',
+		data: allProjects.riddlerWebsite2022,
+	},
+	{
 		id: 'exp-designAndCode',
 		storyType: 'experience',
 		data: allExperiences.designAndCode,
@@ -84,14 +89,14 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allExperiences.nishkaera,
 	},
 	{
-		id: 'cert-fcc1',
-		storyType: 'certificate',
-		data: allCertificates.fcc1,
-	},
-	{
 		id: 'cert-fcc2',
 		storyType: 'certificate',
 		data: allCertificates.fcc2,
+	},
+	{
+		id: 'cert-fcc1',
+		storyType: 'certificate',
+		data: allCertificates.fcc1,
 	},
 	{
 		id: 'edu-vit',

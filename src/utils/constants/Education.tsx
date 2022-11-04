@@ -1,4 +1,7 @@
 import { EducationProps } from 'utils/developerStory';
+import smsslgImg from '/public/images/education/smsslg-logo.jpeg';
+import dpsrkpImg from '/public/images/education/dpsrkp-logo.jpeg';
+import vitImg from '/public/images/education/vit-logo.jpeg';
 
 export const allEducation: { [key: string]: EducationProps } = {
 	smsslg: {
@@ -6,7 +9,7 @@ export const allEducation: { [key: string]: EducationProps } = {
 		toDate: '2018',
 		orgName: "St. Michael's School",
 		orgLocation: 'Siliguri, India',
-		imageURL: '/images/education/smsslg-logo.jpeg',
+		imageURL: smsslgImg,
 		url: 'https://smsslg.com/',
 	},
 	dpsrkp: {
@@ -14,7 +17,7 @@ export const allEducation: { [key: string]: EducationProps } = {
 		toDate: '2020',
 		orgName: 'Delhi Public School',
 		orgLocation: 'R. K. Puram, India',
-		imageURL: '/images/education/dpsrkp-logo.jpeg',
+		imageURL: dpsrkpImg,
 		url: 'https://dpsrkp.net/',
 	},
 	vit: {
@@ -22,7 +25,7 @@ export const allEducation: { [key: string]: EducationProps } = {
 		toDate: '2024',
 		orgName: 'Vellore Institute of Technology',
 		orgLocation: 'Vellore, India',
-		imageURL: '/images/education/vit-logo.jpeg',
+		imageURL: vitImg,
 		url: 'https://vit.ac.in/',
 	},
 };

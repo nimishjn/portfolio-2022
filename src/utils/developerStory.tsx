@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { BsInfo } from 'react-icons/bs';
 import { TbBriefcase, TbCertificate, TbCode, TbSchool } from 'react-icons/tb';
 import AchievementIcon from '../assets/icons/achievement.svg';
@@ -38,7 +39,7 @@ export interface AchievementProps {
 	toDate: string;
 	title: string;
 	orgName?: string;
-	imageURL?: string;
+	imageURL?: StaticImageData;
 	description?: string;
 	url?: string;
 }
@@ -47,7 +48,7 @@ export interface CertificateProps {
 	fromDate: string;
 	toDate: string;
 	title: string;
-	imageURL?: string;
+	imageURL?: StaticImageData;
 	description?: string;
 	skills?: string[];
 	url: string;
@@ -58,7 +59,7 @@ export interface EducationProps {
 	toDate: string;
 	orgName: string;
 	orgLocation: string;
-	imageURL?: string;
+	imageURL?: StaticImageData;
 	description?: string;
 	url?: string;
 }
@@ -68,7 +69,7 @@ export interface ExperienceProps {
 	toDate: string;
 	orgName: string;
 	orgLocation: string;
-	imageURL?: string;
+	imageURL?: StaticImageData;
 	description: string;
 	url?: string;
 }
@@ -78,7 +79,7 @@ export interface OtherProps {
 	toDate: string;
 	title: string;
 	type?: string;
-	imageURL?: string;
+	imageURL?: StaticImageData;
 	description?: string;
 	url?: string;
 }
@@ -88,7 +89,7 @@ export interface ProjectProps {
 	toDate: string;
 	projectName: string;
 	orgName: string;
-	imageURL?: string;
+	imageURL?: StaticImageData;
 	description: string;
 	repoUrl?: string;
 	viewUrl?: string;
@@ -101,41 +102,41 @@ export type StoryContentTypeProps =
 			storyType: 'achievement';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
-			data: AchievementProps;
 			randomClassName?: string;
+			data: AchievementProps;
 	  }
 	| {
 			storyType: 'certificate';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
-			data: CertificateProps;
 			randomClassName?: string;
+			data: CertificateProps;
 	  }
 	| {
 			storyType: 'education';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
-			data: EducationProps;
 			randomClassName?: string;
+			data: EducationProps;
 	  }
 	| {
 			storyType: 'experience';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
-			data: ExperienceProps;
 			randomClassName?: string;
+			data: ExperienceProps;
 	  }
 	| {
 			storyType: 'other';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
-			data: OtherProps;
 			randomClassName?: string;
+			data: OtherProps;
 	  }
 	| {
 			storyType: 'project';
 			arrowRight?: boolean;
 			arrowLeft?: boolean;
-			data: ProjectProps;
 			randomClassName?: string;
+			data: ProjectProps;
 	  };
