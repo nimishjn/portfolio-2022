@@ -2,7 +2,6 @@ import React from 'react';
 import Lottie from 'lottie-react';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
 import { allSkills } from 'utils/constants/Skills';
-import Link from 'next/link';
 import SkillBadge from 'components/common/SkillBadge';
 
 export default function Skills() {
@@ -22,7 +21,11 @@ export default function Skills() {
 					</p>
 					<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3'>
 						{allSkills.map((skill, index) => (
-							<SkillBadge skill={skill} key={index} />
+							<SkillBadge
+								skill={skill}
+								index={index}
+								key={index}
+							/>
 						))}
 					</ul>
 				</div>

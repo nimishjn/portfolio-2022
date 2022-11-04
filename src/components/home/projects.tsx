@@ -28,7 +28,7 @@ export default function Projects() {
 					>
 						<a target='_blank'>StackOverFlow</a>
 					</Link>{' '}
-					anymore :(
+					{'anymore :('}
 				</p>
 				<DeveloperStory
 					developerStoryData={developerStoryData}

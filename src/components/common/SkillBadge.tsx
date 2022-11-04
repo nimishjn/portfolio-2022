@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
 
-interface SkillProps {
+interface SkillProps  {
 	skill: {
 		name: string;
 		icon: React.ReactNode;
@@ -9,12 +9,12 @@ interface SkillProps {
 		link: string;
 		color?: string;
 	};
-	key: number;
+	index: number;
 }
 
-export default function SkillBadge({ skill, key }: SkillProps) {
+export default function SkillBadge({ skill, index }: SkillProps) {
 	return (
-		<Link href={skill.link} key={key}>
+		<Link href={skill.link} key={index}>
 			<a
 				target='_blank'
 				style={{
