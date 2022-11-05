@@ -1,6 +1,8 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
+	const BASE_URL = process.env.BASE_URL || 'https://nimish-jain.com';
+
 	return (
 		<Html>
 			<Head>
@@ -25,7 +27,7 @@ export default function Document() {
 				<link rel='manifest' href='/favicon/site.webmanifest' />
 
 				{/* SEO - Facebook */}
-				<meta property='og:url' content='https://nimish-portfolio.vercel.app' />
+				<meta property='og:url' content={`${BASE_URL}`} />
 				<meta property='og:type' content='website' />
 				<meta
 					property='og:title'
@@ -35,17 +37,11 @@ export default function Document() {
 					property='og:description'
 					content='A Full-Stack Developer | A Data Analytics Researcher'
 				/>
-				<meta
-					property='og:image'
-					content='https://nimish-portfolio.vercel.app/banner.png'
-				/>
+				<meta property='og:image' content={`${BASE_URL}/banner.png`} />
 
 				{/* SEO - Twitter */}
 				<meta property='twitter:card' content='summary_large_image' />
-				<meta
-					property='twitter:url'
-					content='https://nimish-portfolio.vercel.app'
-				/>
+				<meta property='twitter:url' content={`${BASE_URL}`} />
 				<meta
 					property='twitter:title'
 					content='Nimish Jain | Portfolio Website'
@@ -56,7 +52,7 @@ export default function Document() {
 				/>
 				<meta
 					property='twitter:image'
-					content='https://nimish-portfolio.vercel.app/banner.png'
+					content={`${BASE_URL}/banner.png`}
 				/>
 
 				{/* SEO - Google */}

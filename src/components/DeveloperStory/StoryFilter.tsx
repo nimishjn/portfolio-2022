@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { storyTypes } from 'utils/developerStory';
-import {
-	developerStoryData,
-	DeveloperStoryDataProps,
-} from 'utils/developerStoryData';
+import { developerStoryData } from 'utils/developerStoryData';
+import { useRouter } from 'next/router';
 
 interface DeveloperStoryFilterProps {
 	setFilteredStoryData: Function;
@@ -13,6 +11,7 @@ interface DeveloperStoryFilterProps {
 export const DeveloperStoryFilter = ({
 	setFilteredStoryData,
 }: DeveloperStoryFilterProps) => {
+	const router = useRouter();
 	const [chosenType, setChosenType] = useState('all');
 
 	const filterData = () => {
@@ -29,15 +28,37 @@ export const DeveloperStoryFilter = ({
 		}
 	};
 
+	const handleChoiceChange = (choice: string) => {
+		setChosenType(choice);
+		router.push({
+			pathname: '/story',
+			query: { filter: choice },
+		});
+	};
+
 	useEffect(() => {
 		filterData();
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [chosenType]);
 
+	useEffect(() => {
+		if (!router.isReady) return;
+		
+		const {
+			query: { filter },
+		} = router;
+		if (Object.keys(storyTypes).includes(filter as string)) {
+			handleChoiceChange(filter as string);
+		} else {
+			handleChoiceChange('all');
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [router.isReady]);
+
 	return (
 		<RadioGroup
 			value={chosenType}
-			onChange={setChosenType}
+			onChange={handleChoiceChange}
 			className='flex flex-col md:flex-row gap-2 items-center mb-5'
 		>
 			<p>Filter: </p>

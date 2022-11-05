@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Footer from 'components/footer';
 import { developerStoryData } from 'utils/developerStoryData';
 import { DeveloperStoryFilter } from './DeveloperStory/StoryFilter';
-import { AiFillHome } from 'react-icons/ai';
+import { AiFillHome, AiOutlineLink } from 'react-icons/ai';
 
 export default function Story() {
 	const [position, setPosition] = useState('left');
@@ -14,6 +14,21 @@ export default function Story() {
 		setPosition(window.innerWidth < 500 ? 'left' : 'alternate');
 	}, []);
 
+	const copyUrl = async (e: React.MouseEvent<HTMLAnchorElement>) => {
+		if (navigator['share']) {
+			await navigator.share({
+				title: "Nimish's Developer Story",
+				text: 'Checkout my developer story',
+				url: window.location.href,
+			});
+		} else {
+			navigator.clipboard.writeText(window.location.href);
+			(
+				e.currentTarget.lastChild as unknown as HTMLParagraphElement
+			).textContent = 'Copied!';
+		}
+	};
+
 	return (
 		<>
 			<section
@@ -21,13 +36,24 @@ export default function Story() {
 				id='developerstory'
 			>
 				<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
-					<div className='sticky top-2 md:top-4 text-white border-2 borde-white px-2 md:px-3 py-2 rounded-full text-xl z-50 bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
+					<div className='sticky flex gap-2 top-2 md:top-4 text-white z-50'>
 						<Link href='/'>
-							<a className='flex items-center gap-1'>
-								<AiFillHome />
-								<p className='text-base mt-0.5'>Home</p>
+							<a className='flex items-center gap-1 border-2 borde-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
+								<AiFillHome className='text-base md:text-xl' />
+								<p className='text-sm md:text-base mt-0.5'>
+									Home
+								</p>
 							</a>
 						</Link>
+						<a
+							onClick={copyUrl}
+							className='flex transition items-center gap-1 border-2 borde-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm cursor-pointer'
+						>
+							<AiOutlineLink className='text-base md:text-xl' />
+							<p className='text-sm md:text-base mt-0.5'>
+								Share URL
+							</p>
+						</a>
 					</div>
 					<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
 						Developer Story
