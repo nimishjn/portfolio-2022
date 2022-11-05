@@ -14,14 +14,15 @@ export default function Story() {
 		setPosition(window.innerWidth < 500 ? 'left' : 'alternate');
 	}, []);
 
+	// This feature is not available for Mobile Devices with http protocol
 	const copyUrl = async (e: React.MouseEvent<HTMLAnchorElement>) => {
 		if (navigator['share']) {
 			await navigator.share({
 				title: "Nimish's Developer Story",
-				text: 'Checkout my developer story',
+				text: "Checkout Nimish's Developer Story",
 				url: window.location.href,
 			});
-		} else {
+		} else if(navigator.clipboard) {
 			navigator.clipboard.writeText(window.location.href);
 			(
 				e.currentTarget.lastChild as unknown as HTMLParagraphElement

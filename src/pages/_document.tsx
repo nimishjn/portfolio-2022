@@ -65,6 +65,10 @@ export default function Document() {
 					content='Nimish Jain, Portfolio, Developer, Full-Stack Development'
 				/>
 				<meta name='author' content='Nimish Jain' />
+				<meta
+					name='google-site-verification'
+					content='uRZkXHIazXTX9eH4QWrLphASnJxdBabuvsaqaKXU-kg'
+				/>
 
 				{/* Loading Fonts - League Spartan and Montserrat */}
 				<link rel='preconnect' href='https://fonts.googleapis.com' />
