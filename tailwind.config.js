@@ -21,6 +21,7 @@ module.exports = {
 			minHeight: {
 				mscreen: 'calc(var(--vh, 1vh) * 100) 100vh',
 				6: '1.5rem',
+				inf: '10000px',
 			},
 			maxHeight: {
 				'12ch': '12ch',

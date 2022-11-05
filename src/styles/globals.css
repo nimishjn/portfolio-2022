@@ -6,6 +6,10 @@ html {
 	@apply bg-black text-white scroll-smooth font-montserrat;
 }
 
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
 /* Testing elements:- */
 /* *:active {
 	outline: .1px solid oldlace!important;
@@ -84,14 +88,15 @@ html {
 
 	/* React Markdown for Developer Story Description */
 	.story-description-react-markdown {
-		@apply text-sm font-light;
+		@apply text-xs md:text-sm font-light;
 	}
+
 	.story-description-react-markdown h1 {
-		@apply text-lg font-bold mb-2;
+		@apply text-base md:text-lg font-bold mb-2;
 	}
 
 	.story-description-react-markdown h2 {
-		@apply text-base font-bold mb-1;
+		@apply text-sm md:text-base font-bold mb-1;
 	}
 
 	.story-description-react-markdown h3 {
@@ -131,7 +136,7 @@ html {
 	}
 
 	.story-description-react-markdown li {
-		@apply ml-6;
+		@apply ml-4 md:ml-5;
 	}
 
 	.story-description-react-markdown img {

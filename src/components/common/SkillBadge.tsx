@@ -20,7 +20,7 @@ export default function SkillBadge({ skill, index }: SkillProps) {
 				style={{
 					border: `1.2px solid ${skill.bgcolor}`,
 				}}
-				className='flex items-center rounded-xs py-1 px-2 gap-1 min-w-fit cursor-pointer hover:scale-110 transition ease-linear text-gray-200 text-sm md:text-base bg-black'
+				className='flex items-center rounded-xs py-0.5 py-1 px-1.5 md:px-2 gap-1 min-w-fit cursor-pointer hover:scale-110 transition ease-linear text-gray-200 text-sm md:text-base bg-black'
 			>
 				{skill.icon}
 				<li className='list-none'>{skill.name}</li>

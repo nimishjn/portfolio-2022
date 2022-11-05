@@ -59,16 +59,16 @@ export const DeveloperStoryFilter = ({
 		<RadioGroup
 			value={chosenType}
 			onChange={handleChoiceChange}
-			className='flex flex-col md:flex-row gap-2 items-center mb-5'
+			className='flex gap-2 items-center mb-5'
 		>
-			<p>Filter: </p>
+			<p className='text-sm md:text-base'>Filter: </p>
 			<div className='flex items-center justify-center md:justify-start gap-1 flex-wrap'>
 				<RadioGroup.Option value='all'>
 					{({ checked }) => (
 						<span
 							className={
 								(checked ? 'bg-white text-black' : 'bg-black') +
-								' px-2 py-1 border-1 cursor-pointer box-border block'
+								' px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border block'
 							}
 						>
 							all
@@ -82,7 +82,7 @@ export const DeveloperStoryFilter = ({
 								<span
 									className={
 										(checked ? 'bg-white text-black' : '') +
-										' px-2 py-1 border-1 cursor-pointer box-border block'
+										' px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border block'
 									}
 								>
 									{

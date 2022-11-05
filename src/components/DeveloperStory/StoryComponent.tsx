@@ -11,7 +11,7 @@ function SquareLogo({ imageURL }: StorySquareLogoProps) {
 	return (
 		<>
 			{imageURL && (
-				<div className='w-24 overflow-hidden aspect-square'>
+				<div className='w-16 md:w-24 overflow-hidden aspect-squar shrink-0'>
 					<Image
 						src={imageURL}
 						alt='Logo'
@@ -76,9 +76,7 @@ interface HeaderWrapperProps {
 
 const HeaderWrapper = ({ children }: HeaderWrapperProps) => {
 	return (
-		<div className='flex items-center justify-start gap-2'>
-			{children}
-		</div>
+		<div className='flex items-center justify-start gap-1.5 md:gap-2'>{children}</div>
 	);
 };
 

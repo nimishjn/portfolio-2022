@@ -11,44 +11,50 @@ export default function StoryDescription({
 	...props
 }: StoryDescriptionProps) {
 	const [readMoreExpanded, setReadMoreExpanded] = useState(false);
+	const descElement = React.useRef<HTMLDivElement>(null);
+
+	const height = descElement.current?.scrollHeight;
 
 	return (
 		<div className='relative'>
 			<h3 className='font-medium text-gray-300'>Description</h3>
-			<ReactMarkdown
-				components={{
-					h4: 'h3',
-					h5: 'h3',
-					h6: 'h3',
-				}}
-				allowedElements={[
-					'h1',
-					'h2',
-					'h3',
-					'h4',
-					'h5',
-					'h6',
-					'p',
-					'ul',
-					'ol',
-					'li',
-					'blockquote',
-					'pre',
-					'code',
-					'a',
-					'img',
-				]}
-				linkTarget='_blank'
-				skipHtml
-				className={
-					(readMoreExpanded ? 'max-h-fit' : 'max-h-44') +
-					' story-description-react-markdown overflow-hidden'
-				}
+			<div
+				style={{ maxHeight: readMoreExpanded ? height : '11rem' }}
+				className='overflow-hidden transition-all duration-200'
 			>
-				{children}
-			</ReactMarkdown>
-			{(children.length > 400 ||
-				children.split(/\r\n|\r|\n/).length > 5) && (
+				<div ref={descElement}>
+					<ReactMarkdown
+						components={{
+							h4: 'h3',
+							h5: 'h3',
+							h6: 'h3',
+						}}
+						allowedElements={[
+							'h1',
+							'h2',
+							'h3',
+							'h4',
+							'h5',
+							'h6',
+							'p',
+							'ul',
+							'ol',
+							'li',
+							'blockquote',
+							'pre',
+							'code',
+							'a',
+							'img',
+						]}
+						linkTarget='_blank'
+						skipHtml
+						className='story-description-react-markdown'
+					>
+						{children}
+					</ReactMarkdown>
+				</div>
+			</div>
+			{(height || 0) > 176 && (
 				<>
 					{readMoreExpanded ? (
 						<span
@@ -59,7 +65,7 @@ export default function StoryDescription({
 						</span>
 					) : (
 						<span
-							className='absolute flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bottom-0 bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
+							className='absolute bottom-0 flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
 							onClick={() => setReadMoreExpanded(true)}
 						>
 							Read More <MdOutlineExpandMore />
