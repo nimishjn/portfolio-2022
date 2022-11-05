@@ -45,9 +45,9 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allEducation.vit,
 	},
 	{
-		id: 'project-portfolio',
+		id: 'project-portfolio2022',
 		storyType: 'project',
-		data: allProjects.portfolio,
+		data: allProjects.portfolio2022,
 	},
 	{
 		id: 'project-lasertag2022',
@@ -98,6 +98,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'exp-nishkaera',
 		storyType: 'experience',
 		data: allExperiences.nishkaera,
+	},
+	{
+		id: 'project-portfolio2021',
+		storyType: 'project',
+		data: allProjects.portfolio2021,
 	},
 	{
 		id: 'cert-fcc2',

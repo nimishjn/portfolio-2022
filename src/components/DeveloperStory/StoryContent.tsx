@@ -1,6 +1,5 @@
 import React from 'react';
 import { BsArrowRight, BsDot } from 'react-icons/bs';
-import { FaUserTie } from 'react-icons/fa';
 import {
 	AchievementProps,
 	CertificateProps,

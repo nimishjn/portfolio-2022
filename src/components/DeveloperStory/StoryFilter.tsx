@@ -30,10 +30,14 @@ export const DeveloperStoryFilter = ({
 
 	const handleChoiceChange = (choice: string) => {
 		setChosenType(choice);
-		router.push({
-			pathname: '/story',
-			query: { filter: choice },
-		});
+		router.push(
+			{
+				pathname: '/story',
+				query: { filter: choice },
+			},
+			undefined,
+			{ shallow: true }
+		);
 	};
 
 	useEffect(() => {
@@ -43,7 +47,7 @@ export const DeveloperStoryFilter = ({
 
 	useEffect(() => {
 		if (!router.isReady) return;
-		
+
 		const {
 			query: { filter },
 		} = router;

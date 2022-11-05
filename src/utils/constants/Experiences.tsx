@@ -14,14 +14,22 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://csivit.com',
 		imageURL: csivitImg,
 		description: `
-- Organizing committee member of Devspace'21, an annual flagship hackathon with over 1400 registrations.
-- Worked in a team of 4 to create 'Spacey' discord bot for Devspace'21.
+Working with the Computer Society of India has always been a great experience.
+I understood how different teams like developers, designers, and writers work together to make a project or event successful.
+I have also learned how to manage a team and the definition of **leadership**.
+
+Our motto stands strong in whatever we do - **"When we build, it matters"**.
+
+- Developed skills like Web Developement, Project Management, and Team Management.
+- Devspace'21 organising committee member, an annual flagship hackathon with over 1400 registrations.
+- Collaborated with four other people to develop the 'Spacey' Discord bot for Devspace'21.
 - Organizing committee member of Riddler'21, an annual cryptic hunt with over 1100 registrations.
-- Worked on a team of 4 to create the front-end of the Riddler'21 website with over 700 active players.
-- Organizing committee member of Bugédex, a workshop, report writing competition, and blog writing competition conducted by CloudSEK on Cyber Security with over 1000 registrations.
+- As part of a four-person team, we created the front-end of the Riddler'21 website, that had over 700 active players.
+- Organized Bugédex, a workshop, report writing, and blog writing competition on cyber security hosted by CloudSEK, with over 1000 registrations.
 - Organizing committee member of CaSScade, a CSS battle, with over 200 registrations.
-- Coordinator of Core Committee Selections, where we conducted one online quiz round and two interview rounds. We also conducted over 200 interviews in 2 days.
+- Coordinator of Core Committee Selections, where we did one online quiz round and two interview rounds. In addition, we conducted over 200 interviews in two days.
 - Organizing committee member of Devspace'22, an annual flagship hackathon with over 1200 registrations.
+- Mentored junior developers to build LaserTag Slot Booking Website.
         `,
 	},
 	adgvit: {
@@ -33,6 +41,10 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://adgvit.com',
 		imageURL: adgvitImg,
 		description: `
+The Apple Developer Group is a community of developers from a variety of fields, including iOS Dev, Web Dev, Machine Learning, and more.
+We have a common goal of learning and sharing knowledge with each other.
+
+Here is what I did at ADG:
 - Worked in a team of 5 to build a static responsive tutorial website for ADG Connect App.
 - Worked in a team of 3 to build the official website of ADG, 2022.
         `,
@@ -46,10 +58,14 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://designandcode.us',
 		imageURL: designAndCodeImg,
 		description: `
-- Take administrative decisions for the community alongside the Founder.
-- Moderating the official discord server with over 4000 members.
-- Maintainer of Linkify, an open-source ReactJs Project by Design and Code.
-- Maintainer of and contributor to DC-Bot, the official Discord Bot of Design and Code.
+Design and Code is a community of developers and designers who are passionate about learning and sharing knowledge with each other.
+
+- Managed open-source projects for Hacktoberfest'21, a month-long open-source event.
+- Took administrative decisions for the community alongside the Founder.
+- Maintained Linkify, an open-source ReactJs project, by Design and Code.
+- Maintained and contributed to DC-Bot, the official Discord Bot of Design and Code.
+- Moderated the official Discord server with over 4300 members.
+- Did over 20 Resume Reviews for the community.
         `,
 	},
 	nishkaera: {
@@ -61,9 +77,12 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://nishkaera.com',
 		imageURL: nishkaeraImg,
 		description: `
-- Responsible for developing company’s website, apps and other related work.
-- Developed the webinar section.
+My first internship was with Nishkaera, a fintech startup that attempts to bring back those special virtues of India's golden age by blending best-in-class technology with financial know-how.
+
+- Responsible for developing the company’s website, apps, and other related work.
+- Developed the webinar section, consisting of a list of webinars, webinar details, and webinar registration.
 - Developed the website for the company’s flagship product, the Detailed Financial Pulse.
+- The Detailed Financial Pulse is a comprehensive financial report that provides a detailed analysis of the financial health of an individual.
         `,
 	},
 };

@@ -88,7 +88,7 @@ html {
 
 	/* React Markdown for Developer Story Description */
 	.story-description-react-markdown {
-		@apply text-xs md:text-sm font-light;
+		@apply text-xs md:text-sm font-light bg-zinc-900 p-3 rounded-md;
 	}
 
 	.story-description-react-markdown h1 {
@@ -104,7 +104,11 @@ html {
 	}
 
 	.story-description-react-markdown p {
-		@apply mb-1;
+		@apply mb-2;
+	}
+
+	.story-description-react-markdown strong {
+		@apply font-medium;
 	}
 
 	.story-description-react-markdown a {
@@ -112,11 +116,11 @@ html {
 	}
 
 	.story-description-react-markdown code {
-		@apply bg-gray-600 bg-opacity-50 px-1 rounded-md pt-0.5 pb-1 box-content;
+		@apply bg-gray-600 bg-opacity-50 px-1 rounded-sm py-0.5 box-content;
 	}
 
 	.story-description-react-markdown pre {
-		@apply bg-gray-700 bg-opacity-50 p-1 whitespace-pre-wrap;
+		@apply bg-gray-700 bg-opacity-50 rounded-sm py-1 px-2 whitespace-pre-wrap;
 	}
 
 	.story-description-react-markdown pre code {

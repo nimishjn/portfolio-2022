@@ -21,9 +21,9 @@ export default function Certificate({
 			</StoryComponent.HeaderWrapper>
 			{skills.length > 0 && (
 				<div>
-					<h3 className='font-medium text-gray-300'>
+					<StoryComponent.Subheader>
 						Acquired skills
-					</h3>
+					</StoryComponent.Subheader>
 					<ul className='flex flex-wrap items-start gap-2'>
 						{skills.map((tech, index) => {
 							const skill = findSkill(tech);

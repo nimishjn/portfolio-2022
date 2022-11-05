@@ -18,13 +18,17 @@ import {
 } from 'react-icons/fa';
 import {
 	SiExpress,
+	SiHeroku,
 	SiIntellijidea,
 	SiJquery,
 	SiManjaro,
 	SiMaterialui,
 	SiMongodb,
 	SiMysql,
+	SiNetlify,
 	SiTailwindcss,
+	SiTypescript,
+	SiVercel,
 	SiVisualstudiocode,
 } from 'react-icons/si';
 import { TbBrandNextjs } from 'react-icons/tb';
@@ -83,6 +87,13 @@ export const allSkills = [
 		link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 		color: '#323330',
 		id: 'skill_javascript',
+	},
+	{
+		name: 'TypeScript',
+		icon: <SiTypescript />,
+		bgcolor: '#007acc',
+		link: 'https://www.typescriptlang.org/',
+		id: 'skill_typescript',
 	},
 	{
 		name: 'Next.js',
@@ -224,6 +235,27 @@ export const allSkills = [
 		bgcolor: '#a159ff',
 		link: 'https://www.figma.com/',
 		id: 'skill_figma',
+	},
+	{
+		name: 'Vercel',
+		icon: <SiVercel />,
+		bgcolor: '#ffffff',
+		link: 'https://vercel.com/',
+		id: 'skill_vercel',
+	},
+	{
+		name: 'Heroku',
+		icon: <SiHeroku />,
+		bgcolor: '#6762A6',
+		link: 'https://heroku.com/',
+		id: 'skill_heroku',
+	},
+	{
+		name: 'Netlify',
+		icon: <SiNetlify />,
+		bgcolor: '#00C7B7',
+		link: 'https://netlify.com/',
+		id: 'skill_netlify',
 	},
 	{
 		name: 'Ubuntu (Debian)',

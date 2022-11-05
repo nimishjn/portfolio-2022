@@ -27,9 +27,9 @@ export default function Other({
 			</StoryComponent.HeaderWrapper>
 			{techStack.length > 0 && (
 				<div>
-					<h3 className='font-medium text-gray-300'>
+					<StoryComponent.Subheader>
 						Associated skills
-					</h3>
+					</StoryComponent.Subheader>
 					<ul className='flex flex-wrap items-start gap-2'>
 						{techStack.map((tech, index) => {
 							const skill = findSkill(tech);

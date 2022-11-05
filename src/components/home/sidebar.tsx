@@ -8,12 +8,12 @@ import {
 	FaHackerrank,
 	FaLinkedinIn,
 	FaTimes,
-	FaTwitter,
 } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { Link as LinkScroll } from 'react-scroll';
 import { SocialUrls } from 'utils/constants/urls';
 import { navbarData } from './navbar';
+import nimishNoBg from '/public/images/nimish-nobg.png';
 
 export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 	const [display, setDisplay] = useState(false);
@@ -65,8 +65,10 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							className='rounded-full'
 							height={500}
 							width={500}
-							src='/images/nimish-nobg.png'
+							src={nimishNoBg}
 							alt='Nimish Jain'
+							loading='lazy'
+							placeholder='blur'
 						/>
 					</div>
 					<LinkScroll

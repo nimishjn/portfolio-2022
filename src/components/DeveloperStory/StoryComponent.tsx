@@ -76,7 +76,22 @@ interface HeaderWrapperProps {
 
 const HeaderWrapper = ({ children }: HeaderWrapperProps) => {
 	return (
-		<div className='flex items-center justify-start gap-1.5 md:gap-2'>{children}</div>
+		<div className='flex items-center justify-start gap-1.5 md:gap-2'>
+			{children}
+		</div>
+	);
+};
+
+// Story Subheader
+interface SubheaderProps {
+	children?: React.ReactNode;
+}
+
+const Subheader = ({ children }: SubheaderProps) => {
+	return (
+		<div className='text-base md:text-lg text-white font-semibold mb-1'>
+			{children}
+		</div>
 	);
 };
 
@@ -89,5 +104,6 @@ StoryComponent.Arrow = Arrow;
 StoryComponent.EmptySpace = EmptySpace;
 StoryComponent.Button = Button;
 StoryComponent.HeaderWrapper = HeaderWrapper;
+StoryComponent.Subheader = Subheader;
 
 export default StoryComponent;

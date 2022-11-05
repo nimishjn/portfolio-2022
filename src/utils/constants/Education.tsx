@@ -27,5 +27,25 @@ export const allEducation: { [key: string]: EducationProps } = {
 		orgLocation: 'Vellore, India',
 		imageURL: vitImg,
 		url: 'https://vit.ac.in/',
+		description: `
+I am a third-year B. Tech undergrad majoring in Information Technology.
+
+**CGPA:** 8.03/10.0
+
+### Academics courses
+- Data Structures and Algorithms
+- Object Oriented Programming
+- Database Management Systems
+- Operating Systems
+- Software Engineering
+- Computer Architecture and Organization
+- Data communication and Networks
+- Computer Networks and Security
+- Web Development (MEAN Stack)
+- Human Computer Interaction
+- Software Testing and Quality Assurance
+- Statistics and Probability
+- Discrete Mathematics
+		`,
 	},
 };

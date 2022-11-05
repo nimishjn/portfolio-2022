@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MdOutlineExpandLess, MdOutlineExpandMore } from 'react-icons/md';
 import ReactMarkdown from 'react-markdown';
+import StoryComponent from './StoryComponent';
 
 interface StoryDescriptionProps extends React.HTMLAttributes<HTMLDivElement> {
 	children: string;
@@ -17,7 +18,7 @@ export default function StoryDescription({
 
 	return (
 		<div className='relative'>
-			<h3 className='font-medium text-gray-300'>Description</h3>
+			<StoryComponent.Subheader>Description</StoryComponent.Subheader>
 			<div
 				style={{ maxHeight: readMoreExpanded ? height : '11rem' }}
 				className='overflow-hidden transition-all duration-200'
@@ -45,6 +46,9 @@ export default function StoryDescription({
 							'code',
 							'a',
 							'img',
+							'b',
+							'i',
+							'strong',
 						]}
 						linkTarget='_blank'
 						skipHtml
