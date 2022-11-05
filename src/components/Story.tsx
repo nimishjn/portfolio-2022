@@ -75,7 +75,6 @@ export default function Story() {
 					<DeveloperStory
 						developerStoryData={filteredStoryData}
 						position={position as any}
-						expandable
 					/>
 				</div>
 			</section>

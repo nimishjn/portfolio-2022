@@ -58,24 +58,20 @@ export default function StoryDescription({
 					</ReactMarkdown>
 				</div>
 			</div>
-			{(height || 0) > 176 && (
-				<>
-					{readMoreExpanded ? (
-						<span
-							className='flex-center gap-1 text-sm text-center w-full cursor-pointer text-gray-300'
-							onClick={() => setReadMoreExpanded(false)}
-						>
-							Read Less <MdOutlineExpandLess />
-						</span>
-					) : (
-						<span
-							className='absolute bottom-0 flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
-							onClick={() => setReadMoreExpanded(true)}
-						>
-							Read More <MdOutlineExpandMore />
-						</span>
-					)}
-				</>
+			{(height || 0) > 176 && readMoreExpanded ? (
+				<span
+					className='flex-center gap-1 text-sm text-center w-full cursor-pointer text-gray-300'
+					onClick={() => setReadMoreExpanded(false)}
+				>
+					Read Less <MdOutlineExpandLess />
+				</span>
+			) : (
+				<span
+					className='absolute bottom-0 flex-center gap-1 text-sm pt-3 text-center text-gray-300 w-full bg-gradient-to-t from-black via-[rgba(0,0,0,75%)] to-transparent] cursor-pointer'
+					onClick={() => setReadMoreExpanded(true)}
+				>
+					Read More <MdOutlineExpandMore />
+				</span>
 			)}
 		</div>
 	);
