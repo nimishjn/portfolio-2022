@@ -241,7 +241,7 @@ export const allSkills = [
 		id: 'skill_manjaro',
 	},
 	{
-		name: 'MacOS',
+		name: 'Mac OS',
 		icon: <FaApple />,
 		bgcolor: 'white',
 		link: 'https://apple.com',
@@ -249,7 +249,7 @@ export const allSkills = [
 		id: 'skill_macos',
 	},
 	{
-		name: 'WindowsOS',
+		name: 'Windows OS',
 		icon: <FaWindows />,
 		bgcolor: '#00a4ef',
 		link: 'https://www.microsoft.com/en-in/windows',
