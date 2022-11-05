@@ -40,6 +40,9 @@ module.exports = {
 			aspectRatio: {
 				a4: '1 / 1.414',
 			},
+			zIndex: {
+				100: 100,
+			},
 		},
 	},
 	plugins: [],
