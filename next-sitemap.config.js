@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-	siteUrl: "https://www.nimish-jain.com",
+	siteUrl: "https://nimish-jain.com",
 	changefreq: 'daily',
 	exclude: ['/api/*'],
 	generateRobotsTxt: true,
