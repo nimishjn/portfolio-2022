@@ -58,7 +58,7 @@ const Button = ({ url, children = 'View', ...props }: StoryButtonProps) => {
 				<Link passHref href={url}>
 					<a
 						target='_blank'
-						className='text-sm bg-white text-black px-2 py-0.5 rounded-sm flex-center'
+						className='text-sm bg-white uppercase hover:bg-blue-900 hover:text-white transition text-black px-2 py-0.5 rounded-sm flex-center'
 						{...props}
 					>
 						{children}

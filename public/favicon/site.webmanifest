@@ -2,6 +2,7 @@
     "name": "Nimish Jain",
     "short_name": "Nimish",
     "description": "Nimish Jain's Portfolio Website 2022",
+    "start_url": "/",
     "icons": [
         {
             "src": "/favicon/android-chrome-192x192.png",

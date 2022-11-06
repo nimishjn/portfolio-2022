@@ -12,6 +12,7 @@ import {
 import { BsChevronCompactDown } from 'react-icons/bs';
 import { SocialUrls } from 'utils/constants/urls';
 import nimishNoBg from '/public/images/nimish-nobg.png';
+import { AiOutlineDoubleLeft } from 'react-icons/ai';
 
 export default function HeroSection() {
 	return (
@@ -107,15 +108,14 @@ export default function HeroSection() {
 					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-[#00000020] to-black'></div>
 				</div>
 				<LinkScroll
-					className='absolute bottom-6 text-2xl opacity-40 animate-bounce'
+					className='absolute bottom-4 text-3xl md:text-4xl opacity-40 animate-bounce'
 					spy={true}
 					smooth={true}
 					offset={-32}
 					duration={200}
 					to='about'
 				>
-					<BsChevronCompactDown />
-					<BsChevronCompactDown className='-mt-5' />
+					<AiOutlineDoubleLeft className='-rotate-90' />
 				</LinkScroll>
 			</div>
 		</section>

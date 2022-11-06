@@ -18,7 +18,7 @@ export default function Navbar() {
 			className='z-20 w-full fixed top-0 transition-all duration-300'
 			style={{ marginTop: display ? 0 : '-64px' }}
 		>
-			<div className='max-w-6xl backdrop-blur-md rounded-xs mx-1 md:mx-auto flex justify-between items-center bg-gray-900 bg-opacity-70 px-3 sm:px-6 md:px-10 lg:px-20 py-1 h-12 my-1 md:my-2'>
+			<div className='max-w-6xl backdrop-blur-md rounded-xs md:mx-auto flex justify-between items-center bg-gray-900 bg-opacity-70 px-3 sm:px-6 md:px-10 lg:px-20 py-1 h-12 md:my-2'>
 				<LinkScroll
 					spy={true}
 					smooth={true}

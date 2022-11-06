@@ -12,7 +12,7 @@ module.exports = {
 			},
 			{
 				userAgent: '*',
-				disallow: ['/api', '/images'],
+				disallow: ['/api'],
 			},
 		],
 	},

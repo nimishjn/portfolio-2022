@@ -37,7 +37,7 @@ export default function Footer() {
 			className='contact bg-dark-gray min-w-full pb-5 pt-16 md:pt-32 px-3 sm:px-6 md:px-10 lg:px-20'
 			id='contact'
 		>
-			<div className='max-section-width flex flex-col md:flex-row items-center justify-center gap-2'>
+			<div className='max-section-width flex flex-col md:flex-row items-center justify-center gap-2 mb-12'>
 				<div className='mr-10 hidden md:block'>
 					<Lottie
 						animationData={ConnectionAnimation}
@@ -100,7 +100,7 @@ export default function Footer() {
 								type='text'
 								placeholder='Enter your name'
 								id='contact-name'
-								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
+								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
 								maxLength={100}
 								disabled={anonymous}
 								required
@@ -118,7 +118,7 @@ export default function Footer() {
 								type='email'
 								placeholder='Enter your email'
 								id='contact-email'
-								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
+								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent transition-all border ease-linear disabled:opacity-30'
 								maxLength={100}
 								disabled={anonymous}
 								required
@@ -135,19 +135,19 @@ export default function Footer() {
 							<textarea
 								placeholder='Feel free to write anything. Feedbacks and advices are highly appreciated!'
 								id='contact-message'
-								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-xs text-sm border-transparent border'
+								className='bg-gray-700 bg-opacity-30 rounded-sm px-2 py-1 outline-none placeholder:text-gray-400 placeholder:text-sm border-transparent border'
 								maxLength={1000}
 								rows={5}
 								required
 							/>
 						</div>
-						<button className='bg-white text-black rounded-sm py-1 px-2 flex items-center justify-center gap-1 disabled:opacity-30'>
+						<button className='bg-gray-200 hover:bg-white text-black rounded-sm py-1 px-2 flex items-center justify-center gap-1 disabled:opacity-30'>
 							Send <RiSendPlaneFill />
 						</button>
 					</form>
 				</div>
 			</div>
-			<div className='flex justify-center items-center gap-2 pt-4 mt-10 border-t border-gray-700'>
+			<div className='max-section-width flex justify-center items-center gap-2 pt-4 mt-10 border-t border-gray-700'>
 				© 2022 All rights reserved. Nimish Jain.
 			</div>
 		</footer>

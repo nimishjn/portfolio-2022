@@ -112,7 +112,7 @@ html {
 	}
 
 	.story-description-react-markdown a {
-		@apply text-blue-400;
+		@apply text-blue-400 hover:underline;
 	}
 
 	.story-description-react-markdown code {
@@ -145,5 +145,18 @@ html {
 
 	.story-description-react-markdown img {
 		width: fit-content;
+	}
+
+	/* About React Markdown */
+	.about-react-markdown {
+		@apply font-light leading-loose tracking-wide mb-2 text-sm lg:text-base;
+	}
+
+	.about-react-markdown strong {
+		@apply font-bold;
+	}
+
+	.about-react-markdown a {
+		@apply text-blue-400 hover:underline;
 	}
 }

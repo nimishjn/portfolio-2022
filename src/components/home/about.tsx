@@ -21,7 +21,7 @@ export default function About() {
 					<ReactMarkdown
 						allowedElements={['p', 'a', 'b', 'i', 'strong', 'em']}
 						skipHtml
-						className='flex flex-col items-start gap-2 font-extralight leading-loose tracking-wide mb-2 text-sm lg:text-base '
+						className='about-react-markdown flex flex-col items-start gap-2'
 					>
 						{about}
 					</ReactMarkdown>

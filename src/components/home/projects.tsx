@@ -43,7 +43,7 @@ export default function Projects() {
 						' bg-transparent border-dashed border-l-1 border-t-0 border-white h-8 -mt-2 -mb-2 mx-3'
 					}
 				/>
-				<button className='text-lg mt-5 self-center border-1 border-blue-900 px-3 py-1 bg-blue-900 text-white hover:bg-transparent transition-colors duration-200'>
+				<button className='text-lg md:border-dashed self-center border-1 border-white px-3 py-1 bg-blue-900 text-white hover:bg-transparent transition-colors duration-200'>
 					<Link href='/story'>View all</Link>
 				</button>
 			</div>
