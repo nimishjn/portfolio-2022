@@ -6,8 +6,9 @@ import { developerStoryData } from 'utils/developerStoryData';
 
 export default function Projects() {
 	const [position, setPosition] = useState('left');
+
 	useEffect(() => {
-		setPosition(window.innerWidth < 500 ? 'left' : 'alternate');
+		setPosition(window.innerWidth < 700 ? 'left' : 'alternate');
 	}, []);
 
 	return (
@@ -34,7 +35,15 @@ export default function Projects() {
 					position={position as any}
 					limitTo={3}
 				/>
-				<button className='mt-5 self-center border-1 border-blue-900 px-3 py-1 bg-blue-900 text-white hover:bg-transparent transition-colors duration-200'>
+				<hr
+					className={
+						(position === 'alternate'
+							? 'self-center'
+							: 'self-start') +
+						' bg-transparent border-dashed border-l-1 border-t-0 border-white h-8 -mt-2 -mb-2 mx-3'
+					}
+				/>
+				<button className='text-lg mt-5 self-center border-1 border-blue-900 px-3 py-1 bg-blue-900 text-white hover:bg-transparent transition-colors duration-200'>
 					<Link href='/story'>View all</Link>
 				</button>
 			</div>

@@ -18,7 +18,7 @@ html {
 @layer components {
 	/* Every section container of Home Route */
 	.home-section {
-		@apply min-h-screen min-w-full py-16 md:py-32 px-3 sm:px-6 md:px-10 lg:px-20;
+		@apply min-h-screen min-w-full py-16 md:py-28 px-3 sm:px-6 md:px-10 lg:px-20;
 	}
 
 	.max-section-width {

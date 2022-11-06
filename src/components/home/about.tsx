@@ -8,20 +8,20 @@ export default function About() {
 	return (
 		<section className='home-section relative flex-center' id='about'>
 			<div className='max-section-width h-full flex gap-4 items-center justify-center'>
-				<div className='mr-10 hidden md:block'>
+				<div className='mr-10 hidden lg:block'>
 					<Lottie
 						animationData={AboutMeAnimation}
 						className='max-w-sm'
 					/>
 				</div>
-				<div className='md:w-1/2 text-center md:text-left'>
+				<div className='lg:w-1/2 text-center lg:text-left'>
 					<h1 className='h1 animate-text-bg before:bg-white hover:text-black'>
 						About Me
 					</h1>
 					<ReactMarkdown
 						allowedElements={['p', 'a', 'b', 'i', 'strong', 'em']}
 						skipHtml
-						className='flex flex-col items-start gap-2 font-extralight leading-loose tracking-wide mb-2 text-sm md:text-base '
+						className='flex flex-col items-start gap-2 font-extralight leading-loose tracking-wide mb-2 text-sm lg:text-base '
 					>
 						{about}
 					</ReactMarkdown>

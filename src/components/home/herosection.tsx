@@ -15,12 +15,15 @@ import nimishNoBg from '/public/images/nimish-nobg.png';
 
 export default function HeroSection() {
 	return (
-		<section className='home-section relative flex-center' id='herosection'>
+		<section
+			className='home-section relative flex-center max-h-screen'
+			id='herosection'
+		>
 			<div className='max-section-width flex flex-col-reverse sm:flex-row gap-5 sm:gap-1 items-center justify-center'>
 				{/* Left */}
 				<div>
-					<div>
-						<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block'>
+					<div className='text-center sm:text-left'>
+						<h1 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block whitespace-nowrap'>
 							Hi, I am{' '}
 							<span className='animate-text-bg before:bg-white hover:text-black'>
 								Nimish
@@ -33,12 +36,12 @@ export default function HeroSection() {
 							A Data Analytics Researcher
 						</h2>
 					</div>
-					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl'>
+					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
 						<Link passHref href={SocialUrls.github}>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
+								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
 							>
 								<FaGithub />
 							</a>
@@ -47,7 +50,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
+								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
 							>
 								<FaLinkedinIn />
 							</a>
@@ -56,7 +59,7 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
+								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
 							>
 								<FaEnvelope />
 							</a>
@@ -65,19 +68,19 @@ export default function HeroSection() {
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
-								className='p-2 hover:bg-slate-100 hover:bg-opacity-25 rounded-full'
+								className='p-2 hover:bg-blue-300 hover:scale-125 hover:bg-opacity-25 rounded-full transition-all duration-150'
 							>
 								<FaHackerrank />
 							</a>
 						</Link>
 					</div>
-					<div className='flex gap-2 item-center justify-center w-fit text-sm sm:text-base'>
-						<Button variant='primary'>
+					<div className='flex gap-2 item-center justify-center sm:justify-start text-sm sm:text-base'>
+						<Button variant='primary' className='whitespace-nowrap'>
 							<Link href='https://resume.nimish-jain.com'>
 								View Resume
 							</Link>
 						</Button>
-						<Button variant='primary'>
+						<Button variant='primary' className='whitespace-nowrap'>
 							<LinkScroll
 								spy={true}
 								smooth={true}
@@ -91,16 +94,17 @@ export default function HeroSection() {
 					</div>
 				</div>
 				{/* Right */}
-				<div className='w-3/4 sm:w-fit'>
+				<div className='relative w-3/4 max-w-lg aspect-square sm:w-fit'>
 					<Image
 						className='rounded-full'
-						height={500}
-						width={500}
+						height={1000}
+						width={1000}
 						src={nimishNoBg}
 						alt='Nimish Jain'
 						loading='lazy'
 						placeholder='blur'
 					/>
+					<div className='absolute rounded-full h-full w-full left-0 top-0 bg-gradient-to-b from-transparent via-[#00000020] to-black'></div>
 				</div>
 				<LinkScroll
 					className='absolute bottom-6 text-2xl opacity-40 animate-bounce'
