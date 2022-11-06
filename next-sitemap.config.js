@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-	siteUrl: "https://nimish-portfolio.vercel.app",
+	siteUrl: "https://www.nimish-jain.com",
 	changefreq: 'daily',
 	exclude: ['/api/*'],
 	generateRobotsTxt: true,
