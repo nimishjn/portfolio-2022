@@ -1,4 +1,5 @@
 import React from 'react';
+import { AiFillStar } from 'react-icons/ai';
 import { BsArrowRight, BsDot } from 'react-icons/bs';
 import {
 	AchievementProps,
@@ -34,6 +35,12 @@ export default function StoryContent({
 			)}
 			{arrowLeft && (
 				<StoryComponent.Arrow className='h-4 text-white absolute top-7 -left-2.5 border-2 border-transparent box-border rotate-180' />
+			)}
+			{data.featured && (
+				<div className='absolute top-2 right-2 text-gray-300 gap-0.5 text-sm flex-center'>
+					<AiFillStar />
+					<p className='text-xs'>Featured</p>
+				</div>
 			)}
 			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-1 px-2 -top-[1px] -left-[1px] rounded-br-sm rounded-tl-sm border border-white'>
 				<p className='font-medium'>

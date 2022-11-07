@@ -61,6 +61,7 @@ export const DEFAULT_POSITION_TYPES = 'alternate';
 export interface AchievementProps {
 	fromDate: string;
 	toDate: string;
+	featured?: boolean;
 	title: string;
 	orgName?: string;
 	imageURL?: StaticImageData;
@@ -71,6 +72,7 @@ export interface AchievementProps {
 export interface CertificateProps {
 	fromDate: string;
 	toDate: string;
+	featured?: boolean;
 	title: string;
 	imageURL?: StaticImageData;
 	description?: string;
@@ -81,6 +83,7 @@ export interface CertificateProps {
 export interface EducationProps {
 	fromDate: string;
 	toDate: string;
+	featured?: boolean;
 	orgName: string;
 	orgLocation: string;
 	imageURL?: StaticImageData;
@@ -91,6 +94,7 @@ export interface EducationProps {
 export interface ExperienceProps {
 	fromDate: string;
 	toDate: string;
+	featured?: boolean;
 	positionHeld: string;
 	orgName: string;
 	orgLocation: string;
@@ -102,6 +106,7 @@ export interface ExperienceProps {
 export interface OtherProps {
 	fromDate: string;
 	toDate: string;
+	featured?: boolean;
 	title: string;
 	type?: string;
 	imageURL?: StaticImageData;
@@ -113,6 +118,7 @@ export interface OtherProps {
 export interface ProjectProps {
 	fromDate: string;
 	toDate: string;
+	featured?: boolean;
 	projectName: string;
 	orgName: string;
 	imageURL?: StaticImageData;

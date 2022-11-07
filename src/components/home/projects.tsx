@@ -31,7 +31,9 @@ export default function Projects() {
 					anymore :(
 				</p>
 				<DeveloperStory
-					developerStoryData={developerStoryData}
+					developerStoryData={developerStoryData.filter(
+						(e) => e.data.featured
+					)}
 					position={position as any}
 					limitTo={3}
 				/>

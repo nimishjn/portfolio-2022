@@ -14,6 +14,7 @@ export const allProjects: { [key: string]: ProjectProps } = {
 		projectName: 'Portfolio Website',
 		orgName: 'Personal Project',
 		imageURL: portfolioImg,
+		featured: true,
 		description: `
 A portfolio website to showcase my projects, skills, and research works.
 
@@ -46,6 +47,7 @@ A portfolio website to showcase my projects, skills, and research works.
 		projectName: 'LaserTag Frontend',
 		orgName: 'Computer Society of India',
 		imageURL: laserTag2022Img,
+		featured: true,
 		description: `
 A great disturbance in the force can be felt again. Is it the rise of a skywalker or the rise of a phantom menace?
 Come join CSI-VIT in a battle of LaserTag lightsabers to help restore balance to the force.
@@ -218,6 +220,7 @@ Features of backend includes:
 		projectName: 'Official ADG-VIT Website',
 		orgName: 'Apple Developer Group',
 		imageURL: adgLogo,
+		featured: true,
 		description: `
 The official website of ADG-VIT, a student community at VIT that brings together like-minded individuals who are interested in pursuing their dreams.
 This project was built by a team of 3.
@@ -263,6 +266,7 @@ The website consists of the following features:
 		projectName: 'Riddler Frontend',
 		orgName: 'Computer Society of India',
 		imageURL: riddlerImg,
+		featured: true,
 		description: `
 Riddler is a one-of-a-kind online cryptic hunt where players dive into the depths of the internet and 
 navigate their way to the top of the leaderboard by cracking exhilarating riddles spread across various 
