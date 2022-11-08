@@ -1,34 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![GitHub](https://img.shields.io/github/license/nimishjn/portfolio-2022?style=for-the-badge)
+![Website](https://img.shields.io/website?down_color=red&down_message=Down&style=for-the-badge&up_color=green&up_message=Online&url=https%3A%2F%2Fnimish-jain.com)
+![GitHub issues](https://img.shields.io/github/issues-raw/nimishjn/portfolio-2022?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/nimishjn/portfolio-2022?style=for-the-badge)
 
-## Getting Started
+# Portfolio Website 2022
+A portfolio website to showcase my projects, skills, and research works.
 
-First, run the development server:
+![Banner](public/banner.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## 👨‍💻 Tech Stack
+- [NextJs](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [React Markdown](https://www.npmjs.com/package/react-markdown)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Features
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#### Home Page
+- Designed and developed hero, about, skills, projects, research and contact sections.
+- Implemented a working contact form using [Mailjet API](https://www.mailjet.com/).
+- Made use of [lottie animations](https://lottiefiles.com/) for efficient loading of SVGs.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+#### Developer Story [[View](https://nimish-jain.com/story)]
+- This feature was originally offered by [StackOverFlow](https://stackoverflow.com/users/story/join).
+- This allows you to showcase your achievements, certificates, education, experience, projects, and research works. We will keep adding more categories.
+- All the descriptions are rendered using [react-markdown](https://www.npmjs.com/package/react-markdown).
+- Option to add featured tag to stories.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
+#### Other Features
+- **Dynamic SEO** for Twitter, Facebook, and Open Graph using **next-sitemap**.
+- Custom 404 - Page Not Found page.
+- Lazy image loading for better **User Experience**.
+- The website is hosted on [Vercel](https://vercel.com/).
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 💻 Contributors
+<a href="https://github.com/nimishjn/portfolio-2022/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=nimishjn/portfolio-2022" />
+</a>
