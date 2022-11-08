@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import React, { useState } from 'react';
+import { GoRepo } from 'react-icons/go';
 import { Link as LinkScroll } from 'react-scroll';
 import NavbarDropdown from './sidebar';
 
@@ -53,6 +55,19 @@ export default function Navbar() {
 						<NavbarDropdown />
 					</div>
 				</div>
+				<Link
+					href='https://github.com/nimishjn/portfolio-2022'
+					passHref
+				>
+					<a
+						target='_blank'
+						rel='noopener noreferrer'
+						className='hidden md:block'
+						title='Repository URL'
+					>
+						<GoRepo />
+					</a>
+				</Link>
 			</div>
 		</nav>
 	);
