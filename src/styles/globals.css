@@ -157,6 +157,6 @@ html {
 	}
 
 	.about-react-markdown a {
-		@apply text-blue-400 hover:underline;
+		@apply text-blue-400 hover:underline italic;
 	}
 }

@@ -1,8 +1,9 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import AboutMeAnimation from '../../assets/lottie/about-me.json';
+import AboutMeAnimation from 'assets/lottie/about-me.json';
 import Wave from 'react-wavify';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
+import { aboutContent } from 'utils/constants/About';
 
 export default function About() {
 	return (
@@ -23,7 +24,7 @@ export default function About() {
 						skipHtml
 						className='about-react-markdown flex flex-col items-start gap-2'
 					>
-						{about}
+						{aboutContent}
 					</ReactMarkdown>
 					<p className='leading-loose text-sm italic'>
 						<span className='font-bold'>You know the drill</span> -
@@ -45,14 +46,3 @@ export default function About() {
 		</section>
 	);
 }
-
-const about = `
-I am a full stack developer with over one year of experience in **ReactJs**, **NextJs** and **NodeJs**.
-I have a passion for building software that is elegant, simple, and functional.
-I am not a one-trick programmer. I can build anything from the ground up and have a keen eye for design.
-If you have an idea, I have a web solution for you.
-I've also had conference papers and book chapters published in IEEE Xplore, Elsevier, and Springer as a **researcher**.
-I enjoy music, binge-watching Netflix, and playing basketball.
-
-I am currently open to new opportunities. If you have a project that you want to get started, think you need my help with something or just fancy saying hello, then ***[get in touch](#contact)***.
-`;

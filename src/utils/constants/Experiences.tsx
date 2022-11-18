@@ -3,8 +3,34 @@ import csivitImg from '/public/images/experience/csi-logo.jpeg';
 import adgvitImg from '/public/images/experience/adg-logo.jpeg';
 import designAndCodeImg from '/public/images/experience/dc-logo.jpeg';
 import nishkaeraImg from '/public/images/experience/nishkaera-logo.jpeg';
+import disectoImg from '/public/images/experience/disecto-logo.jpeg';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	disecto: {
+		fromDate: 'Nov 2022',
+		toDate: 'Present',
+		positionHeld: 'Frontend Engineer Intern',
+		orgName: 'Disecto',
+		orgLocation: 'Ahmedabad, India',
+		url: 'https://www.disecto.com',
+		imageURL: disectoImg,
+		description: `
+I am working on the frontend of various Disecto products.
+This is a remote, part-time internship.
+
+**About the Company:**
+Disecto designs tools that enable Digital Security without compromising privacy and confidentiality. 
+Our breakthrough technological innovations facilitate data sharing and unlock insights into sensitive data.
+
+**Ekaant Project:**
+Our state-of-the-art Decentralised Privacy preserving framework, Ekaant maximizes data 
+utility and minimises the security risks. Ekaant is modular, scalable, and packs an array 
+of Privacy Enhancing Technologies (PET). Our framework is quantum safe and future proof.
+
+[Source](https://www.disecto.com/solution)
+		`,
+		featured: true,
+	},
 	csivit: {
 		fromDate: 'Jan 2021',
 		toDate: 'Present',

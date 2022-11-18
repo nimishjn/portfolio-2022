@@ -30,6 +30,11 @@ export interface DeveloperStoryDataProps
 
 export const developerStoryData: DeveloperStoryDataProps = [
 	{
+		id: 'exp-disecto',
+		storyType: 'experience',
+		data: allExperiences.disecto,
+	},
+	{
 		id: 'exp-csivit',
 		storyType: 'experience',
 		data: allExperiences.csivit,
