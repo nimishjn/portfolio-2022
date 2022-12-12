@@ -15,7 +15,7 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://www.disecto.com',
 		imageURL: disectoImg,
 		description: `
-I am working on the frontend of various Disecto products.
+I am working on the frontend of various Disecto products like it's official website and INCOG Project.
 This is a remote, part-time internship.
 
 **About the Company:**
@@ -27,7 +27,13 @@ Our state-of-the-art Decentralised Privacy preserving framework, Ekaant maximize
 utility and minimises the security risks. Ekaant is modular, scalable, and packs an array 
 of Privacy Enhancing Technologies (PET). Our framework is quantum safe and future proof.
 
-[Source](https://www.disecto.com/solution)
+**INCOG Project:**
+Incog is a state-of-the-art data privacy management suite that meets all the requirements 
+of your organisation for protecting your users’ data privacy. It is your one stop solution 
+for complete adherence to data privacy regulations across the globe such as GDPR, HIPPA, 
+Data Gov. Act, SCC, DSA, DMA, AI Act to name a few.
+
+[Source](https://www.disecto.com)
 		`,
 		featured: true,
 	},
