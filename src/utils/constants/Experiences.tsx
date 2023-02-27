@@ -39,7 +39,7 @@ Data Gov. Act, SCC, DSA, DMA, AI Act to name a few.
 	},
 	csivit: {
 		fromDate: 'Jan 2021',
-		toDate: 'Present',
+		toDate: 'Dec 2022',
 		positionHeld: 'Senior Core Member',
 		orgName: 'Computer Society of India',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',

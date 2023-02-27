@@ -35,11 +35,6 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allExperiences.disecto,
 	},
 	{
-		id: 'exp-csivit',
-		storyType: 'experience',
-		data: allExperiences.csivit,
-	},
-	{
 		id: 'exp-adgvit',
 		storyType: 'experience',
 		data: allExperiences.adgvit,
@@ -103,6 +98,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'exp-nishkaera',
 		storyType: 'experience',
 		data: allExperiences.nishkaera,
+	},
+	{
+		id: 'exp-csivit',
+		storyType: 'experience',
+		data: allExperiences.csivit,
 	},
 	{
 		id: 'project-portfolio2021',

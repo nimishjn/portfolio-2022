@@ -9,7 +9,15 @@ export default function story() {
 				<title>Nimish Jain | Developer Story</title>
 				<meta
 					name='description'
-					content='A Full-Stack Developer | A Data Analytics Researcher'
+					content='From "Hello World" to deploying production code, the developer journey is a never-ending quest for knowledge, efficiency, and innovation.'
+				/>
+				<meta
+					name='keywords'
+					content='developer story, developer journey, developer story nimish jain, nimish jain developer story, nimish jain dev'
+				/>
+				<meta
+					name='author'
+					content='Nimish Jain | https://nimish-jain.com'
 				/>
 			</Head>
 			<Story />

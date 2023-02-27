@@ -1,0 +1,13 @@
+# *
+User-agent: *
+Allow: /
+
+# *
+User-agent: *
+Disallow: /api
+
+# Host
+Host: https://nimish-jain.com
+
+# Sitemaps
+Sitemap: https://nimish-jain.com/sitemap.xml
