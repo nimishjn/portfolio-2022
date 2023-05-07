@@ -50,6 +50,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allProjects.portfolio2022,
 	},
 	{
+		id: 'project-hashgenerator2022',
+		storyType: 'project',
+		data: allProjects.hashgenerator2022,
+	},
+	{
 		id: 'project-lasertag2022',
 		storyType: 'project',
 		data: allProjects.laserTag2022,

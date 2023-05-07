@@ -18,6 +18,7 @@ import {
 	FaWindows,
 } from 'react-icons/fa';
 import {
+	SiChakraui,
 	SiExpress,
 	SiHeroku,
 	SiIntellijidea,
@@ -36,6 +37,8 @@ import { TbBrandNextjs } from 'react-icons/tb';
 import CIcon from '../../assets/icons/c-original.svg';
 import CppIcon from '../../assets/icons/cplusplus-original.svg';
 import Matlab from '../../assets/icons/matlab.svg';
+import PrimeReactLogo from '../../assets/icons/primereact-logo.svg';
+import { BsBootstrap, BsPieChart } from 'react-icons/bs';
 
 export type Categories =
 	| 'language'
@@ -220,6 +223,38 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#007FFF',
 		link: 'https://mui.com/',
 		id: 'skill_materialui',
+		category: ['framework', 'library'],
+	},
+	{
+		name: 'Chakra UI',
+		icon: <SiChakraui />,
+		bgcolor: '#4FD1C5',
+		link: 'https://chakra-ui.com/',
+		id: 'skill_chakraui',
+		category: ['framework', 'library'],
+	},
+	{
+		name: 'Prime React',
+		icon: <PrimeReactLogo />,
+		bgcolor: '#06c4e8',
+		link: 'https://primereact.org/',
+		id: 'skill_primereact',
+		category: ['framework', 'library'],
+	},
+	{
+		name: 'Nivo.rocks',
+		icon: <BsPieChart />,
+		bgcolor: '#e1cf2c',
+		link: 'https://nivo.rocks/',
+		id: 'skill_nivorocks',
+		category: ['framework', 'library'],
+	},
+	{
+		name: 'Bookstrap',
+		icon: <BsBootstrap />,
+		bgcolor: '#8012f4',
+		link: 'https://getbootstrap.com/',
+		id: 'skill_bootstrap',
 		category: ['framework', 'library'],
 	},
 	{

@@ -6,8 +6,31 @@ import cmsImg from '/public/images/project/cms-logo.png';
 import otobusImg from '/public/images/project/otobus-logo.jpeg';
 import adgLogo from '/public/images/project/adg-logo.jpeg';
 import riddlerImg from '/public/images/project/riddler-logo.png';
+import hashGeneratorLogo from '/public/images/project/hashgenerator-logo.png'
 
 export const allProjects: { [key: string]: ProjectProps } = {
+	hashgenerator2022: {
+		fromDate: 'Apr 2023',
+		toDate: 'Apr 2023',
+		projectName: 'New Password and Image Pattern User Authentication Schema',
+		orgName: 'Personal Project',
+		imageURL: hashGeneratorLogo,
+		featured: false,
+		description: `
+A new authentication system that makes use of Password as well as Pattern drawn on an image.
+
+![](/images/project/hashgenerator-ss.png)
+
+The proposed authentication system combines traditional password-based authentication with an 
+image pattern-based authentication to enhance security. Users must set a password and create a 
+unique image pattern as their login credentials, divided into 16 grids. The image is not stored 
+on the backend server and is deleted immediately after the authentication process is complete.
+        `,
+		repoUrl: 'https://github.com/nimishjn/hash-generator',
+		viewUrl: 'https://hash-generator-nimishjn.vercel.app',
+		techStack: ['skill_nextjs', 'skill_tailwindcss', 'skill_typescript'],
+	},
+
 	portfolio2022: {
 		fromDate: 'Oct 2022',
 		toDate: 'Present',
