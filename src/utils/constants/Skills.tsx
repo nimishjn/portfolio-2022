@@ -38,22 +38,30 @@ import CIcon from '../../assets/icons/c-original.svg';
 import CppIcon from '../../assets/icons/cplusplus-original.svg';
 import Matlab from '../../assets/icons/matlab.svg';
 import PrimeReactLogo from '../../assets/icons/primereact-logo.svg';
+import NivoLogo from '../../assets/icons/nivo-logo.svg';
 import { BsBootstrap, BsPieChart } from 'react-icons/bs';
 
-export type Categories =
-	| 'language'
-	| 'framework'
-	| 'database'
-	| 'software'
-	| 'tool'
-	| 'os'
-	| 'design'
-	| 'hosting'
-	| 'editor'
-	| 'ide'
-	| 'scripting'
-	| 'library'
-	| 'misc';
+export const Categories = [
+	{ id: 'language', name: 'Programming Language' },
+	{ id: 'frontend', name: 'Frontend Development' },
+	{ id: 'backend', name: 'Backend Development' },
+	{ id: 'framework', name: 'Framework' },
+	{ id: 'database', name: 'Database System' },
+	{ id: 'software', name: 'Software' },
+	{ id: 'tool', name: 'Development Tool' },
+	{ id: 'os', name: 'Operating System' },
+	{ id: 'design', name: 'Design Tool' },
+	{ id: 'hosting', name: 'Hosting Platform' },
+	{ id: 'editor', name: 'Code Editor' },
+	{ id: 'ide', name: 'IDE' },
+	{ id: 'scripting', name: 'Scripting Language' },
+	{ id: 'library', name: 'Software Library' },
+	{ id: 'misc', name: 'Miscellaneous' },
+];
+
+const CategoriesId = Categories.map((e) => e.id);
+
+export type CategoriesType = (typeof CategoriesId)[number];
 
 export interface skillInterface {
 	name: string;
@@ -62,7 +70,7 @@ export interface skillInterface {
 	id: string;
 	link: string;
 	color?: string;
-	category?: Categories[];
+	category?: CategoriesType[];
 }
 
 export const allSkills: skillInterface[] = [
@@ -105,7 +113,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#E34F26',
 		link: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
 		id: 'skill_html',
-		category: ['language'],
+		category: ['language', 'frontend'],
 	},
 	{
 		name: 'CSS',
@@ -113,7 +121,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#264de4',
 		link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
 		id: 'skill_css',
-		category: ['language'],
+		category: ['language', 'frontend'],
 	},
 	{
 		name: 'JavaScript',
@@ -122,7 +130,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 		color: '#323330',
 		id: 'skill_javascript',
-		category: ['language'],
+		category: ['language', 'frontend'],
 	},
 	{
 		name: 'TypeScript',
@@ -130,7 +138,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#007acc',
 		link: 'https://www.typescriptlang.org/',
 		id: 'skill_typescript',
-		category: ['language'],
+		category: ['language', 'frontend'],
 	},
 	{
 		name: 'Next.js',
@@ -139,7 +147,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://nextjs.org/',
 		color: 'black',
 		id: 'skill_nextjs',
-		category: ['framework'],
+		category: ['framework', 'frontend'],
 	},
 	{
 		name: 'React.js',
@@ -148,7 +156,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://reactjs.org/docs/getting-started.html',
 		color: 'black',
 		id: 'skill_reactjs',
-		category: ['framework'],
+		category: ['framework', 'frontend'],
 	},
 	{
 		name: 'Angular.js',
@@ -156,7 +164,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#a6120d',
 		link: 'https://angularjs.org/',
 		id: 'skill_angularjs',
-		category: ['framework'],
+		category: ['framework', 'frontend'],
 	},
 	{
 		name: 'Node.js',
@@ -164,7 +172,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#3c873a',
 		link: 'https://nodejs.org/en/',
 		id: 'skill_nodejs',
-		category: ['framework'],
+		category: ['framework', 'backend'],
 	},
 	{
 		name: 'Express.js',
@@ -173,7 +181,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://expressjs.com/',
 		color: 'black',
 		id: 'skill_expressjs',
-		category: ['framework'],
+		category: ['framework', 'backend'],
 	},
 	{
 		name: 'MongoDB',
@@ -182,7 +190,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://www.mongodb.com/docs/',
 		color: '#3F3E42',
 		id: 'skill_mongodb',
-		category: ['database'],
+		category: ['database', 'backend'],
 	},
 	{
 		name: 'Discord.js',
@@ -206,7 +214,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#CD6799',
 		link: 'https://sass-lang.com/',
 		id: 'skill_sass',
-		category: ['language', 'scripting'],
+		category: ['language', 'scripting', 'frontend'],
 	},
 	{
 		name: 'Tailwind CSS',
@@ -215,7 +223,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://tailwindcss.com/',
 		color: 'black',
 		id: 'skill_tailwindcss',
-		category: ['framework'],
+		category: ['framework', 'frontend'],
 	},
 	{
 		name: 'Material UI',
@@ -223,7 +231,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#007FFF',
 		link: 'https://mui.com/',
 		id: 'skill_materialui',
-		category: ['framework', 'library'],
+		category: ['framework', 'library', 'frontend'],
 	},
 	{
 		name: 'Chakra UI',
@@ -231,7 +239,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#4FD1C5',
 		link: 'https://chakra-ui.com/',
 		id: 'skill_chakraui',
-		category: ['framework', 'library'],
+		category: ['framework', 'library', 'frontend'],
 	},
 	{
 		name: 'Prime React',
@@ -239,15 +247,15 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#06c4e8',
 		link: 'https://primereact.org/',
 		id: 'skill_primereact',
-		category: ['framework', 'library'],
+		category: ['framework', 'library', 'frontend'],
 	},
 	{
 		name: 'Nivo.rocks',
-		icon: <BsPieChart />,
+		icon: <NivoLogo />,
 		bgcolor: '#e1cf2c',
 		link: 'https://nivo.rocks/',
 		id: 'skill_nivorocks',
-		category: ['framework', 'library'],
+		category: ['framework', 'library', 'frontend'],
 	},
 	{
 		name: 'Bookstrap',
@@ -255,7 +263,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#8012f4',
 		link: 'https://getbootstrap.com/',
 		id: 'skill_bootstrap',
-		category: ['framework', 'library'],
+		category: ['framework', 'library', 'frontend'],
 	},
 	{
 		name: 'JQuery',
@@ -263,7 +271,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#0769AD',
 		link: 'https://jquery.com/',
 		id: 'skill_jquery',
-		category: ['framework'],
+		category: ['framework', 'frontend'],
 	},
 	{
 		name: 'JavaFx',
@@ -272,7 +280,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://openjfx.io/',
 		color: 'black',
 		id: 'skill_javafx',
-		category: ['framework'],
+		category: ['framework', 'backend'],
 	},
 	{
 		name: 'MySQL',
@@ -281,7 +289,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://www.mysql.com/',
 		color: '#2c2c2c',
 		id: 'skill_mysql',
-		category: ['database'],
+		category: ['database', 'backend'],
 	},
 	{
 		name: 'Git',

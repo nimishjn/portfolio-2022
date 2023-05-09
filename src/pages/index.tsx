@@ -4,7 +4,7 @@ import Head from 'next/head';
 import HeroSection from 'components/home/herosection';
 import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
-import Skills from 'components/home/skills';
+import Skills from 'components/Skills';
 import Projects from 'components/home/projects';
 import Research from 'components/home/research';
 import Footer from 'components/footer';
