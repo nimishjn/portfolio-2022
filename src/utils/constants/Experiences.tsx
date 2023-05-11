@@ -15,23 +15,14 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://www.disecto.com',
 		imageURL: disectoImg,
 		description: `
-I am working on the frontend of various Disecto products like it's official website and INCOG Project.
-This is a remote, part-time internship.
+Working tirelessly to build the frontend of a state-of-the-art data privacy management suite - **INCOG 
+Data Classification**. INCOG Data Classification allows users to scan structured and unstructured data 
+sources and provide insights on Personally Identifiable Information (PII). It also helps remediate 
+these PIIs using different methods like Anonymisation, Redaction, Encryption and Cryptographic Shredding.
 
 **About the Company:**
 Disecto designs tools that enable Digital Security without compromising privacy and confidentiality. 
 Our breakthrough technological innovations facilitate data sharing and unlock insights into sensitive data.
-
-**Ekaant Project:**
-Our state-of-the-art Decentralised Privacy preserving framework, Ekaant maximizes data 
-utility and minimises the security risks. Ekaant is modular, scalable, and packs an array 
-of Privacy Enhancing Technologies (PET). Our framework is quantum safe and future proof.
-
-**INCOG Project:**
-Incog is a state-of-the-art data privacy management suite that meets all the requirements 
-of your organisation for protecting your users’ data privacy. It is your one stop solution 
-for complete adherence to data privacy regulations across the globe such as GDPR, HIPPA, 
-Data Gov. Act, SCC, DSA, DMA, AI Act to name a few.
 
 [Source](https://www.disecto.com)
 		`,
