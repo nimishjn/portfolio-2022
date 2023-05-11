@@ -50,6 +50,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allProjects.portfolio2022,
 	},
 	{
+		id: 'blog-hashgenerator',
+		storyType: 'other',
+		data: allOthers.blog2,
+	},
+	{
 		id: 'project-hashgenerator2022',
 		storyType: 'project',
 		data: allProjects.hashgenerator2022,
@@ -103,6 +108,21 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		id: 'exp-nishkaera',
 		storyType: 'experience',
 		data: allExperiences.nishkaera,
+	},
+	{
+		id: 'res-3',
+		storyType: 'other',
+		data: allOthers.res3,
+	},
+	{
+		id: 'res-2',
+		storyType: 'other',
+		data: allOthers.res2,
+	},
+	{
+		id: 'res-1',
+		storyType: 'other',
+		data: allOthers.res1,
 	},
 	{
 		id: 'exp-csivit',
