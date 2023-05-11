@@ -123,21 +123,36 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 						</Link>
 					</div>
 					{/* Navbar Links */}
-					{navbarData.map((e, i) => (
-						<LinkScroll
-							activeClass='text-yellow-300'
-							className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
-							spy={true}
-							smooth={true}
-							offset={-32}
-							duration={200}
-							to={e.section}
-							onSetActive={onClose}
-							key={i}
-						>
-							{e.title}
-						</LinkScroll>
-					))}
+					{navbarData.map((e, i) => {
+						if (e.route || e.external) {
+							return (
+								<Link href={e.to} passHref>
+									<a
+										target={e.external ? '_blank' : '_self'}
+										rel='noopener noreferrer'
+										className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
+										title='Repository URL'
+									>
+										{e.title}
+									</a>
+								</Link>
+							);
+						}
+						return (
+							<LinkScroll
+								activeClass='text-yellow-300'
+								className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
+								spy={true}
+								smooth={true}
+								offset={-32}
+								duration={200}
+								to={e.to}
+								key={i}
+							>
+								<span>{e.title}</span>
+							</LinkScroll>
+						);
+					})}
 				</div>
 			</Transition>
 		</>

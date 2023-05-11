@@ -28,29 +28,45 @@ export default function Navbar() {
 					duration={200}
 					to='herosection'
 					onSetActive={removeNavbar}
+					onSetInactive={displayNavbar}
 				>
 					<span className='animate-text-bg before:bg-white hover:text-black font-league font-semibold tracking-wide text-xl leading-none pt-1 cursor-pointer'>
 						NIMISH
 					</span>
 				</LinkScroll>
 				<div className='hidden md:flex gap-2 items-center justify-center'>
-					{navbarData.map((e, i) => (
-						<LinkScroll
-							activeClass='text-yellow-300'
-							className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
-							spy={true}
-							smooth={true}
-							offset={-32}
-							duration={200}
-							to={e.section}
-							onSetActive={displayNavbar}
-							key={i}
-						>
-							<span>{e.title}</span>
-						</LinkScroll>
-					))}
+					{navbarData.map((e, i) => {
+						if (e.route || e.external) {
+							return (
+								<Link href={e.to} passHref>
+									<a
+										target={e.external ? '_blank' : '_self'}
+										rel='noopener noreferrer'
+										className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
+										title='Repository URL'
+									>
+										{e.title}
+									</a>
+								</Link>
+							);
+						}
+						return (
+							<LinkScroll
+								activeClass='text-yellow-300'
+								className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
+								spy={true}
+								smooth={true}
+								offset={-32}
+								duration={200}
+								to={e.to}
+								key={i}
+							>
+								<span>{e.title}</span>
+							</LinkScroll>
+						);
+					})}
 				</div>
-				<div className='flex gap-3 items-center'>
+				<div className='flex gap-3 items-center md:hidden'>
 					<div className='md:hidden'>
 						<NavbarDropdown />
 					</div>
@@ -75,23 +91,17 @@ export default function Navbar() {
 
 export const navbarData = [
 	{
-		title: 'About',
-		section: 'about',
-	},
-	{
-		title: 'Tools & Skills',
-		section: 'skills',
-	},
-	{
 		title: 'Developer Story',
-		section: 'developerstory',
+		to: 'story',
+		route: true,
 	},
 	{
-		title: 'Research',
-		section: 'research',
+		title: 'Resume',
+		to: 'https://resume.nimish-jain.com',
+		external: true,
 	},
 	{
 		title: 'Hire me',
-		section: 'contact',
+		to: 'contact',
 	},
 ];
