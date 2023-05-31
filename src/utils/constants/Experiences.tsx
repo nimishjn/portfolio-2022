@@ -15,14 +15,15 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://www.disecto.com',
 		imageURL: disectoImg,
 		description: `
-Working tirelessly to build the frontend of a state-of-the-art data privacy management suite - **INCOG 
-Data Classification**. INCOG Data Classification allows users to scan structured and unstructured data 
-sources and provide insights on Personally Identifiable Information (PII). It also helps remediate 
-these PIIs using different methods like Anonymisation, Redaction, Encryption and Cryptographic Shredding.
-
-**About the Company:**
 Disecto designs tools that enable Digital Security without compromising privacy and confidentiality. 
 Our breakthrough technological innovations facilitate data sharing and unlock insights into sensitive data.
+
+- Led the frontend team of INCOG Data Classification project and implemented an efficient SDLC that led to successful component implementation.
+- Contributed over 20,000 lines of code to INCOG Project that helped to shape the product's functionality and user experience.
+- Created a dynamic dashboard with real-time data visualization, enhancing decision-making processes for users.
+- Developed a robust user and role management system, enabling seamless access control and user permissions.
+- Implemented an SQL schema viewer using React Flow, allowing users to easily navigate and understand complex database structures.
+- Developed a robust reports section utilizing Nivo Rocks and the D3 library resulting in visually appealing and engaging reports.
 
 [Source](https://www.disecto.com)
 		`,
@@ -102,10 +103,9 @@ Design and Code is a community of developers and designers who are passionate ab
 		description: `
 My first internship was with Nishkaera, a fintech startup that attempts to bring back those special virtues of India's golden age by blending best-in-class technology with financial know-how.
 
-- Responsible for developing the company’s website, apps, and other related work.
-- Developed the webinar section, consisting of a list of webinars, webinar details, and webinar registration.
-- Developed the website for the company’s flagship product, the Detailed Financial Pulse.
-- The Detailed Financial Pulse is a comprehensive financial report that provides a detailed analysis of the financial health of an individual.
+- Developed and implemented a responsive customer portal and an efficient admin panel for the webinar section, resulting in a 10x increase in the speed of handling the webinar process.
+- Designed and incorporated a participant list feature along with email reminders, allowing easy management of webinar attendees.
+- Led the successful reconstruction of the Detailed Financial Pulse, a critical tool utilized by thousands of users on a daily basis.
         `,
 	},
 };

@@ -8,6 +8,7 @@ import Skills from 'components/Skills';
 import Projects from 'components/home/projects';
 import Research from 'components/home/research';
 import Footer from 'components/footer';
+import Testimonials from 'components/home/testimonials';
 
 const Home: NextPage = () => {
 	if (typeof window !== 'undefined') {
@@ -32,6 +33,7 @@ const Home: NextPage = () => {
 				<Skills />
 				<Projects />
 				<Research />
+				<Testimonials />
 			</main>
 			<Footer />
 		</>

@@ -7,15 +7,18 @@ export default function PageLoader() {
 	const [isLoading, setIsLoading] = useState(false);
 
 	useEffect(() => {
-		Router.events.on('routeChangeStart', (url) => {
+		Router.events.on('routeChangeStart', (url, state) => {
+			if (state?.shallow) return;
 			setIsLoading(true);
 		});
 
-		Router.events.on('routeChangeComplete', (url) => {
+		Router.events.on('routeChangeComplete', (url, state) => {
+			if (state?.shallow) return;
 			setIsLoading(false);
 		});
 
-		Router.events.on('routeChangeError', (url) => {
+		Router.events.on('routeChangeError', (url, state) => {
+			if (state?.shallow) return;
 			setIsLoading(false);
 		});
 		// eslint-disable-next-line react-hooks/exhaustive-deps

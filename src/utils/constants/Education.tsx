@@ -22,15 +22,17 @@ export const allEducation: { [key: string]: EducationProps } = {
 	},
 	vit: {
 		fromDate: '2020',
-		toDate: 'Present (2024)',
+		toDate: 'Present',
 		orgName: 'Vellore Institute of Technology',
 		orgLocation: 'Vellore, India',
 		imageURL: vitImg,
 		url: 'https://vit.ac.in/',
 		description: `
-I am a third-year B. Tech undergrad majoring in Information Technology.
+I am a final-year B. Tech undergrad majoring in Information Technology.
 
-**CGPA:** 8.03/10.0
+**Year of Graduation**: 2024
+
+**CGPA:** 8.45/10.0
 
 ### Academics courses
 - Data Structures and Algorithms
@@ -39,13 +41,17 @@ I am a third-year B. Tech undergrad majoring in Information Technology.
 - Operating Systems
 - Software Engineering
 - Computer Architecture and Organization
-- Data communication and Networks
-- Computer Networks and Security
+- Data Communication and Computer Networks
 - Web Development (MEAN Stack)
 - Human Computer Interaction
 - Software Testing and Quality Assurance
 - Statistics and Probability
 - Discrete Mathematics
-		`,
+- Network and Information Security
+- Soft Computing
+- Object-oriennted Analysis and Design
+- Information Security Management
+- Theory of Computation
+`,
 	},
 };

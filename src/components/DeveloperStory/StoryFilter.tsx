@@ -30,14 +30,14 @@ export const DeveloperStoryFilter = ({
 
 	const handleChoiceChange = (choice: string) => {
 		setChosenType(choice);
-		// router.push(
-		// 	{
-		// 		pathname: '/story',
-		// 		query: { filter: choice },
-		// 	},
-		// 	undefined,
-		// 	{ shallow: true }
-		// );
+		router.push(
+			{
+				pathname: '/story',
+				query: { filter: choice },
+			},
+			undefined,
+			{ shallow: true }
+		);
 	};
 
 	useEffect(() => {
@@ -45,19 +45,19 @@ export const DeveloperStoryFilter = ({
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [chosenType]);
 
-	// useEffect(() => {
-	// 	if (!router.isReady) return;
+	useEffect(() => {
+		if (!router.isReady) return;
 
-	// 	const {
-	// 		query: { filter },
-	// 	} = router;
-	// 	if (Object.keys(storyTypes).includes(filter as string)) {
-	// 		handleChoiceChange(filter as string);
-	// 	} else {
-	// 		handleChoiceChange('all');
-	// 	}
-	// 	// eslint-disable-next-line react-hooks/exhaustive-deps
-	// }, [router.isReady]);
+		const {
+			query: { filter },
+		} = router;
+		if (Object.keys(storyTypes).includes(filter as string)) {
+			handleChoiceChange(filter as string);
+		} else {
+			handleChoiceChange('all');
+		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [router.isReady]);
 
 	return (
 		<RadioGroup
