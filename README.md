@@ -13,23 +13,23 @@ A portfolio website to showcase my projects, skills, and research works.
 - [TypeScript](https://www.typescriptlang.org/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [React Markdown](https://www.npmjs.com/package/react-markdown)
+- [Headless UI](https://headlessui.com/)
 
 ## 💡 Features
 
 #### Home Page
-- Designed and developed hero, about, skills, projects, research and contact sections.
+- Consists hero, about, skills, projects, research, recommendations and contact sections.
 - Implemented a working contact form using [Mailjet API](https://www.mailjet.com/).
 - Made use of [lottie animations](https://lottiefiles.com/) for efficient loading of SVGs.
 
 #### Developer Story [[View](https://nimish-jain.com/story)]
 - This feature was originally offered by [StackOverFlow](https://stackoverflow.com/users/story/join).
-- This allows you to showcase your achievements, certificates, education, experience, projects, and research works. We will keep adding more categories.
+- This allows you to showcase your achievements, certificates, education, experience, projects, and research works. Feel free to add more categories.
 - All the descriptions are rendered using [react-markdown](https://www.npmjs.com/package/react-markdown).
 - Option to add featured tag to stories.
 
-
 #### Other Features
-- **Dynamic SEO** for Twitter, Facebook, and Open Graph using **next-sitemap**.
+- **Dynamic SEO** for Twitter, Facebook, and Open Graph using [next-sitemap](https://www.npmjs.com/package/next-sitemap).
 - Custom 404 - Page Not Found page.
 - Lazy image loading for better **User Experience**.
 - The website is hosted on [Vercel](https://vercel.com/).
