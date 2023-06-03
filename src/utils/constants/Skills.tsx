@@ -4,6 +4,7 @@ import {
 	FaApple,
 	FaCss3,
 	FaDiscord,
+	FaDocker,
 	FaFigma,
 	FaGitAlt,
 	FaGithub,
@@ -307,6 +308,14 @@ export const allSkills: skillInterface[] = [
 		color: '#171515',
 		id: 'skill_github',
 		category: ['software'],
+	},
+	{
+		name: 'Docker',
+		icon: <FaDocker />,
+		bgcolor: '#0db7ed',
+		link: 'https://www.docker.com/',
+		color: '#0db7ed',
+		id: 'skill_docker',
 	},
 	{
 		name: 'VS Code',

@@ -154,4 +154,19 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		storyType: 'education',
 		data: allEducation.smsslg,
 	},
+	{
+		id: 'cert-ll1',
+		storyType: 'certificate',
+		data: allCertificates.ll1,
+	},
+	{
+		id: 'cert-ll2',
+		storyType: 'certificate',
+		data: allCertificates.ll2,
+	},
+	{
+		id: 'cert-ll3',
+		storyType: 'certificate',
+		data: allCertificates.ll3,
+	},
 ];

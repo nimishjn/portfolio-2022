@@ -11,13 +11,17 @@ export default function Certificate({
 	description,
 	skills = [],
 	url,
+	orgName,
 	...props
 }: CertificateProps) {
 	return (
 		<>
 			<StoryComponent.HeaderWrapper>
 				<StoryComponent.SquareLogo imageURL={imageURL} />
-				<h3 className='w-full font-semibold text-xl'>{title}</h3>
+				<div className='flex flex-col'>
+					<h3 className='w-full font-semibold text-xl'>{title}</h3>
+					<h4 className='w-full font-normal text-sm'>{orgName}</h4>
+				</div>
 			</StoryComponent.HeaderWrapper>
 			{skills.length > 0 && (
 				<div>

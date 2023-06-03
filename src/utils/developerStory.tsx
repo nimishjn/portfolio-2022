@@ -78,6 +78,7 @@ export interface CertificateProps {
 	description?: string;
 	skills?: string[];
 	url: string;
+	orgName?: string;
 }
 
 export interface EducationProps {
