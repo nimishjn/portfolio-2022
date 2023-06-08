@@ -34,7 +34,7 @@ I am a final-year B. Tech undergrad majoring in Information Technology.
 2024
 
 ### CGPA
-8.50 / 10.0
+8.54 / 10.0
 
 ### Academics courses
 - Data Structures and Algorithms
