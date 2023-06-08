@@ -30,9 +30,11 @@ export const allEducation: { [key: string]: EducationProps } = {
 		description: `
 I am a final-year B. Tech undergrad majoring in Information Technology.
 
-**Year of Graduation**: 2024
+### Year of Graduation
+2024
 
-**CGPA:** 8.45/10.0
+### CGPA
+8.50 / 10.0
 
 ### Academics courses
 - Data Structures and Algorithms

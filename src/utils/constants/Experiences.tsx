@@ -8,7 +8,7 @@ import disectoImg from '/public/images/experience/disecto-logo.jpeg';
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	disecto: {
 		fromDate: 'Nov 2022',
-		toDate: 'Present',
+		toDate: 'Jun 2023',
 		positionHeld: 'Frontend Engineer Intern',
 		orgName: 'Disecto',
 		orgLocation: 'Ahmedabad, India',
@@ -58,7 +58,7 @@ Our motto stands strong in whatever we do - **"When we build, it matters"**.
 	},
 	adgvit: {
 		fromDate: 'Jan 2021',
-		toDate: 'Present',
+		toDate: 'Jun 2023',
 		positionHeld: 'Senior Core Member',
 		orgName: 'Apple Developer Group',
 		orgLocation: 'Developer Student Clubs, VIT Vellore',

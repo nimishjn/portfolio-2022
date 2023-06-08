@@ -33,7 +33,7 @@ on the backend server and is deleted immediately after the authentication proces
 
 	portfolio2022: {
 		fromDate: 'Oct 2022',
-		toDate: 'Present',
+		toDate: 'Oct 2022',
 		projectName: 'Portfolio Website',
 		orgName: 'Personal Project',
 		imageURL: portfolioImg,

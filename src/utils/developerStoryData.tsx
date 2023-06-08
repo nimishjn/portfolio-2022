@@ -169,4 +169,14 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		storyType: 'certificate',
 		data: allCertificates.ll3,
 	},
+	{
+		id: 'cert-ll4',
+		storyType: 'certificate',
+		data: allCertificates.ll4,
+	},
+	{
+		id: 'cert-ll5',
+		storyType: 'certificate',
+		data: allCertificates.ll5,
+	},
 ];

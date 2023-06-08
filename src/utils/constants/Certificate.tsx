@@ -47,6 +47,15 @@ Along the way, I also learnt two important programming styles or paradigms: Obje
 		imageURL: llImg,
 		description: `
 ![](https://github.com/nimishjn/portfolio-2022/assets/63140632/b0b2db69-7429-4d97-835a-6f0c708a9450)
+
+## Objectives
+- The optimal resume length
+- Resume content
+- Choosing the right words
+- Creating a resume in a word processor vs. a dedicated tool
+- Design dos and don’ts: from font to format
+- Including extra information
+- Creating a profile on LinkedIn or GitHub
 `,
 		skills: [],
 		orgName: 'LinkedIn Learning',
@@ -59,6 +68,15 @@ Along the way, I also learnt two important programming styles or paradigms: Obje
 		imageURL: llImg,
 		description: `
 ![](https://github.com/nimishjn/portfolio-2022/assets/63140632/946535e5-e1dd-47b0-be74-b2e89a5cd404)
+
+## Objectives
+- Why do enterprises need architecture?
+- How do enterprise architects add value in an organization?
+- Application, solution, and enterprise architecture
+- Pursuing EA as a career
+- Working with EA frameworks and practices
+- Integrating EA with process systems
+- Creating a new EA organization
 `,
 		skills: [],
 		orgName: 'LinkedIn Learning',
@@ -73,6 +91,48 @@ Along the way, I also learnt two important programming styles or paradigms: Obje
 ![](https://github.com/nimishjn/portfolio-2022/assets/63140632/3debd869-968e-4719-a8cf-05cb75706f5c)
 `,
 		skills: ['skill_docker'],
+		orgName: 'LinkedIn Learning',
+	},
+	ll4: {
+		fromDate: 'Jun 2023',
+		toDate: 'Jun 2023',
+		title: 'React: Testing and Debugging',
+		url: 'https://www.linkedin.com/learning/certificates/6d457ca86e8ae2588032cd3338ed0696c48593df732134d4a0dac473dd89c119',
+		imageURL: llImg,
+		description: `
+![](https://github.com/nimishjn/portfolio-2022/assets/63140632/93b38a55-39b5-4266-a67a-126f136f16d5)
+
+## Objectives
+- Setting up for React testing and debugging
+- Testing with Jest
+- Snapshot testing
+- Debugging with Chrome and Chrome extensions
+- Optimizing React code with ESLINT
+- Type checking
+`,
+		skills: ['skill_reactjs'],
+		orgName: 'LinkedIn Learning',
+	},
+	ll5: {
+		fromDate: 'Jun 2023',
+		toDate: 'Jun 2023',
+		title: 'Agile Software Development',
+		url: 'https://www.linkedin.com/learning/certificates/ca2fcc4608e01594976101837e82f0a5e324c2cfb370116df4f160cfae8f60f3',
+		imageURL: llImg,
+		description: `
+![](https://github.com/nimishjn/portfolio-2022/assets/63140632/cedc10d8-dc1d-4130-b546-69a5a4c5807d)
+
+## Objectives
+- Agile principles
+- Scrum roles, artifacts, and rules
+- Common myths and misconceptions about agile approaches
+- Agile software engineering techniques
+- Extreme programming (XP) and test-driven development (TDD)
+- Kanban for developers
+- Limiting work in progress (WIP)
+- Scaling the output of agile teams
+`,
+		skills: [],
 		orgName: 'LinkedIn Learning',
 	},
 };

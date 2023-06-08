@@ -10,6 +10,8 @@ export default function Story() {
 	const [position, setPosition] = useState('left');
 	const [filteredStoryData, setFilteredStoryData] =
 		useState(developerStoryData);
+
+	// Orientation of the developer story
 	useEffect(() => {
 		setPosition(window.innerWidth < 500 ? 'left' : 'alternate');
 	}, []);
@@ -71,6 +73,7 @@ export default function Story() {
 					</p>
 					<DeveloperStoryFilter
 						setFilteredStoryData={setFilteredStoryData}
+						developerStoryData={developerStoryData}
 					/>
 					<DeveloperStory
 						developerStoryData={filteredStoryData.sort((a, b) => {

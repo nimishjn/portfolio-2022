@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { storyTypes } from 'utils/developerStory';
-import { developerStoryData } from 'utils/developerStoryData';
+import {
+	DeveloperStoryDataProps,
+	developerStoryData,
+} from 'utils/developerStoryData';
 import { useRouter } from 'next/router';
 
 interface DeveloperStoryFilterProps {
 	setFilteredStoryData: Function;
+	developerStoryData: DeveloperStoryDataProps;
 }
 
 export const DeveloperStoryFilter = ({
 	setFilteredStoryData,
+	developerStoryData,
 }: DeveloperStoryFilterProps) => {
 	const router = useRouter();
 	const [chosenType, setChosenType] = useState('all');
@@ -71,11 +76,16 @@ export const DeveloperStoryFilter = ({
 					{({ checked }) => (
 						<span
 							className={
-								(checked ? 'bg-white text-black' : 'bg-black') +
-								' px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border block'
+								(checked
+									? 'bg-blue-800'
+									: 'bg-black') +
+								' flex items-center justify-center gap-2 px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border'
 							}
 						>
 							all
+							<span className='bg-white text-black text-sm px-2 rounded-lg'>
+								{developerStoryData.length}
+							</span>
 						</span>
 					)}
 				</RadioGroup.Option>
@@ -85,8 +95,10 @@ export const DeveloperStoryFilter = ({
 							{({ checked }) => (
 								<span
 									className={
-										(checked ? 'bg-white text-black' : '') +
-										' px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border block'
+										(checked
+											? 'bg-blue-800 '
+											: '') +
+										' flex items-center justify-center gap-2 px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border'
 									}
 								>
 									{
@@ -94,6 +106,13 @@ export const DeveloperStoryFilter = ({
 											key as unknown as keyof typeof storyTypes
 										].title
 									}
+									<span className='bg-white text-black text-sm px-2 rounded-lg'>
+										{
+											developerStoryData.filter(
+												(sd) => sd.storyType === key
+											).length
+										}
+									</span>
 								</span>
 							)}
 						</RadioGroup.Option>
