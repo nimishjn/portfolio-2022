@@ -346,7 +346,7 @@ A portfolio website to showcase my projects, skills, and research works.
 - Skills and Project Section are rendered dynamically using JavaScript.
         `,
 		repoUrl: 'https://github.com/nimishjn/portfolio',
-		viewUrl: 'hhttps://nimish-portfolio-2021.vercel.app/',
+		viewUrl: 'https://nimish-portfolio-2021.vercel.app/',
 		techStack: ['skill_html', 'skill_css', 'skill_javascript'],
 	},
 };
