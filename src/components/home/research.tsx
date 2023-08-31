@@ -20,7 +20,7 @@ export default function Research() {
 					</ul>
 					<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3'>
 						{allResearchPapers.map((paper, index) => (
-							<Link href={paper.link} key={index} passHref>
+							<Link href={paper.link} key={index} passHref legacyBehavior>
 								<a
 									target={'_blank'}
 									key={index}

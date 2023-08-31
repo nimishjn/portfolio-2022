@@ -4,8 +4,52 @@ import adgvitImg from '/public/images/experience/adg-logo.jpeg';
 import designAndCodeImg from '/public/images/experience/dc-logo.jpeg';
 import nishkaeraImg from '/public/images/experience/nishkaera-logo.jpeg';
 import disectoImg from '/public/images/experience/disecto-logo.jpeg';
+import kwikpicImg from '/public/images/experience/kwikpic-logo.jpeg';
+import luganodesImg from '/public/images/experience/luganodes-logo.jpeg';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	luganodes: {
+		fromDate: 'Sep 2023',
+		toDate: 'Present',
+		positionHeld: 'SDE Intern',
+		orgName: 'Luganodes',
+		orgLocation: 'Lugano, CH',
+		url: 'https://www.luganodes.com/',
+		imageURL: luganodesImg,
+		description: `
+Our mission is to provide leading blockchain infrastructure for Proof of Stake (PoS) 
+networks and to build a thriving web3 ecosystem.
+
+Proof-of-Stake consensus based blockchains have validators instead of miners. 
+
+Validators are servers (nodes) running blockchain software responsible for proposing, 
+verifying transactions, and adding new blocks to the blockchain. It is technically challenging 
+to run, manage and maintain validator nodes. That's where we come in to provide hassle-free staking services. 
+		`,
+		featured: true,
+	},
+	kwikpic: {
+		fromDate: 'Jun 2023',
+		toDate: 'Aug 2023',
+		positionHeld: 'MERN Stack Developer Intern',
+		orgName: 'Kwikpic',
+		orgLocation: 'Mumbai, India',
+		url: 'https://www.kwikpic.in/',
+		imageURL: kwikpicImg,
+		description: `
+All-in-1 AI based photo sharing platform, enabling users to get their photos 
+from public events and locations in just 1 tap and intelligently share pictures 
+with friends and family in High Quality without messing up their gallery.
+
+- Developed Customer Relationship Management (CRM) using NextJs and MongoDB.
+- Built dynamic mongo aggregate queries to develop efficient pipelines reducing response time by 60%.
+- Developed Data Table using AntD consisting of server-side pagination, filtering, sorting, single and bulk operations.
+- Built a dynamic customer conversation and issue components with filtering, sorting and CRUD functionality.
+- Added a bulk import page where users can upload,. view and edit CSV files.
+- Developed an admin panel to edit team members.
+		`,
+		featured: true,
+	},
 	disecto: {
 		fromDate: 'Nov 2022',
 		toDate: 'Jun 2023',

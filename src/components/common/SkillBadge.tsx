@@ -14,7 +14,7 @@ interface SkillProps {
 
 export default function SkillBadge({ skill, index }: SkillProps) {
 	return (
-		<Link href={skill.link} key={index}>
+		<Link href={skill.link} key={index} legacyBehavior>
 			<a
 				target='_blank'
 				style={{

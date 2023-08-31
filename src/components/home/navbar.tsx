@@ -38,7 +38,7 @@ export default function Navbar() {
 					{navbarData.map((e, i) => {
 						if (e.route || e.external) {
 							return (
-								<Link href={e.to} passHref>
+								<Link href={e.to} passHref legacyBehavior key={i}>
 									<a
 										target={e.external ? '_blank' : '_self'}
 										rel='noopener noreferrer'
@@ -74,6 +74,7 @@ export default function Navbar() {
 				<Link
 					href='https://github.com/nimishjn/portfolio-2022'
 					passHref
+					legacyBehavior
 				>
 					<a
 						target='_blank'

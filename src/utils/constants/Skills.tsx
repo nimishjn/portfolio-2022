@@ -19,6 +19,7 @@ import {
 	FaWindows,
 } from 'react-icons/fa';
 import {
+	SiAntdesign,
 	SiChakraui,
 	SiExpress,
 	SiHeroku,
@@ -29,6 +30,7 @@ import {
 	SiMongodb,
 	SiMysql,
 	SiNetlify,
+	SiRedux,
 	SiTailwindcss,
 	SiTypescript,
 	SiVercel,
@@ -185,6 +187,14 @@ export const allSkills: skillInterface[] = [
 		category: ['framework', 'backend'],
 	},
 	{
+		name: 'Redux',
+		icon: <SiRedux />,
+		bgcolor: '#BA8FFF',
+		link: 'https://redux-toolkit.js.org/',
+		id: 'skill_redux',
+		category: ['framework', 'library', 'frontend'],
+	},
+	{
 		name: 'MongoDB',
 		icon: <SiMongodb />,
 		bgcolor: '#4DB33D',
@@ -227,6 +237,14 @@ export const allSkills: skillInterface[] = [
 		category: ['framework', 'frontend'],
 	},
 	{
+		name: 'Ant designs',
+		icon: <SiAntdesign />,
+		bgcolor: '#1677FF',
+		link: 'https://ant.design/',
+		id: 'skill_antd',
+		category: ['framework', 'library', 'frontend'],
+	},
+	{
 		name: 'Material UI',
 		icon: <SiMaterialui />,
 		bgcolor: '#007FFF',
@@ -259,7 +277,7 @@ export const allSkills: skillInterface[] = [
 		category: ['framework', 'library', 'frontend'],
 	},
 	{
-		name: 'Bookstrap',
+		name: 'Bootstrap',
 		icon: <BsBootstrap />,
 		bgcolor: '#8012f4',
 		link: 'https://getbootstrap.com/',
@@ -316,6 +334,7 @@ export const allSkills: skillInterface[] = [
 		link: 'https://www.docker.com/',
 		color: '#0db7ed',
 		id: 'skill_docker',
+		category: ['software'],
 	},
 	{
 		name: 'VS Code',
@@ -331,7 +350,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#ff318c',
 		link: 'https://www.jetbrains.com/idea/',
 		id: 'skill_intellij',
-		category: ['software', 'ide'],
+		category: ['software', 'ide', 'editor'],
 	},
 	{
 		name: 'Figma',

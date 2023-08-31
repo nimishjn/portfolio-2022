@@ -88,6 +88,7 @@ function Testimonials() {
 														href={
 															recommendation.companyURL
 														}
+														legacyBehavior
 													>
 														<a>
 															{' - '}

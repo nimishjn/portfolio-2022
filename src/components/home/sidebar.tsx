@@ -85,7 +85,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 					</LinkScroll>
 					{/* Social Links */}
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl'>
-						<Link passHref href={SocialUrls.github}>
+						<Link passHref legacyBehavior href={SocialUrls.github}>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -94,7 +94,11 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<FaGithub />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.linkedin}>
+						<Link
+							passHref
+							legacyBehavior
+							href={SocialUrls.linkedin}
+						>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -103,7 +107,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<FaLinkedinIn />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.email}>
+						<Link passHref legacyBehavior href={SocialUrls.email}>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -112,7 +116,11 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								<FaEnvelope />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.hackerrank}>
+						<Link
+							passHref
+							legacyBehavior
+							href={SocialUrls.hackerrank}
+						>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -126,7 +134,12 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 					{navbarData.map((e, i) => {
 						if (e.route || e.external) {
 							return (
-								<Link href={e.to} passHref>
+								<Link
+									key={i}
+									href={e.to}
+									passHref
+									legacyBehavior
+								>
 									<a
 										target={e.external ? '_blank' : '_self'}
 										rel='noopener noreferrer'

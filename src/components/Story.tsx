@@ -40,7 +40,7 @@ export default function Story() {
 			>
 				<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
 					<div className='sticky flex gap-2 top-2 md:top-4 text-white z-50'>
-						<Link href='/'>
+						<Link href='/' legacyBehavior>
 							<a className='flex items-center gap-1 border-2 borde-white px-2 md:px-3 py-2 rounded-full bg-dark-gray bg-opacity-50 backdrop-filter backdrop-blur-sm'>
 								<AiFillHome className='text-base md:text-xl' />
 								<p className='text-sm md:text-base mt-0.5'>
@@ -66,6 +66,7 @@ export default function Story() {
 						<Link
 							passHref
 							href='https://stackoverflow.com/users/story/join'
+							legacyBehavior
 						>
 							<a target='_blank'>StackOverFlow</a>
 						</Link>{' '}

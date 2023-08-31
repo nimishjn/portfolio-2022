@@ -102,6 +102,7 @@ export interface ExperienceProps {
 	imageURL?: StaticImageData;
 	description: string;
 	url?: string;
+	skills?: string[];
 }
 
 export interface OtherProps {

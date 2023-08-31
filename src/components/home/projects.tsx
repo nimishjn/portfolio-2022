@@ -25,6 +25,7 @@ export default function Projects() {
 					<Link
 						passHref
 						href='https://stackoverflow.com/users/story/join'
+						legacyBehavior
 					>
 						<a target='_blank'>StackOverFlow</a>
 					</Link>{' '}

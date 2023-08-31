@@ -55,7 +55,7 @@ const Button = ({ url, children = 'View', ...props }: StoryButtonProps) => {
 	return (
 		<>
 			{url && (
-				<Link passHref href={url}>
+				<Link legacyBehavior passHref href={url}>
 					<a
 						target='_blank'
 						className='text-sm bg-white uppercase hover:bg-blue-900 hover:text-white border-1 transition text-black px-2 py-0.5 rounded-sm flex-center'

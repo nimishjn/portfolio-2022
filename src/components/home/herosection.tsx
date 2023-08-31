@@ -38,7 +38,7 @@ export default function HeroSection() {
 						</h2>
 					</div>
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
-						<Link passHref href={SocialUrls.github}>
+						<Link passHref href={SocialUrls.github} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -47,7 +47,7 @@ export default function HeroSection() {
 								<FaGithub />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.linkedin}>
+						<Link passHref href={SocialUrls.linkedin} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -56,7 +56,7 @@ export default function HeroSection() {
 								<FaLinkedinIn />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.email}>
+						<Link passHref href={SocialUrls.email} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -65,7 +65,7 @@ export default function HeroSection() {
 								<FaEnvelope />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.hackerrank}>
+						<Link passHref href={SocialUrls.hackerrank} legacyBehavior>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
