@@ -6,7 +6,8 @@ import { MdFormatQuote } from 'react-icons/md';
 import { recommendations } from 'utils/constants/Recommendations';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
-import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import { AiFillLinkedin, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+import Wave from 'react-wavify';
 
 function Testimonials() {
 	const [showIndex, setShowIndex] = useState(0);
@@ -28,7 +29,7 @@ function Testimonials() {
 	};
 
 	return (
-		<section className='home-section relative' id='developerstory'>
+		<section className='home-section relative' id='testimonials'>
 			<div className='max-section-width h-full flex gap-4 items-center justify-center'>
 				<div className='mr-10 hidden md:block px-6'>
 					<Lottie
@@ -48,12 +49,13 @@ function Testimonials() {
 					{recommendations.map((recommendation, index) => (
 						<Transition
 							show={showIndex === index}
-							enter='transition-opacity duration-200 delay-[190ms] block'
+							enter='block'
 							enterFrom='opacity-0'
 							enterTo='opacity-100'
-							leave='transition-opacity duration-200 delay-[190ms] hidden'
+							leave='hidden'
 							leaveFrom='opacity-100'
 							leaveTo='opacity-0'
+							className='transition-opacity duration-200 delay-[190ms]'
 							key={index}
 						>
 							<div className='relative'>
@@ -77,9 +79,23 @@ function Testimonials() {
 							<div className='flex items-center justify-between mt-5 pl-7'>
 								<div className='flex items-center gap-2'>
 									<div className='flex flex-col'>
-										<p className='text-sm font-semibold'>
-											{recommendation.name}
-										</p>
+										<div className='flex gap-1 items-center'>
+											<p className='text-sm font-semibold'>
+												{recommendation.name}
+											</p>
+											{recommendation.linkedin && (
+												<Link
+													href={
+														recommendation.linkedin
+													}
+													legacyBehavior
+												>
+													<a>
+														<AiFillLinkedin />
+													</a>
+												</Link>
+											)}
+										</div>
 										<p className='text-xs text-gray-400'>
 											{recommendation.designation}
 											{recommendation.company &&
@@ -136,6 +152,17 @@ function Testimonials() {
 						</button>
 					</div>
 				</div>
+				<Wave
+					fill='#101010'
+					paused={false}
+					options={{
+						height: 20,
+						amplitude: 20,
+						speed: 0.2,
+						points: 3,
+					}}
+					className='absolute bottom-0 -mb-6 h-12 left-0 right-0 w-screen bg-black'
+				/>
 			</div>
 		</section>
 	);
