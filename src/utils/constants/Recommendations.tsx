@@ -24,6 +24,18 @@ export const recommendations: RecommendationsType[] = [
 			'Nimish is very hard working and reliable. He built the entire frontend of our sales CRM using Next.Js. Designs were not provided to him however he was very proactive to find the best frameworks and design libraries for our use case and built the CRM with a very good UX, that will also be scalable in the future!',
 	},
 	{
+		name: 'Manav Mahajan',
+		designation: 'Founder',
+		linkedin: 'https://www.linkedin.com/in/manav2994',
+		company: 'Disecto',
+		companyURL: 'https://www.disecto.com/',
+		relation: 'Managed Nimish directly',
+		testimonialURL: 'https://in.linkedin.com/in/nimishjn/#recommendations',
+		date: 'Oct 2023',
+		message:
+			"I had the pleasure of working with Nimish, who served as a front-end developer intern on our team. He played a pivotal role in enhancing our enterprise-level secured Data Governance application, INCOG, utilizing Next.js. Nimish's dedication was evident as he diligently tackled challenges and proactively pursued new skills. His dynamic approach and proactive initiatives not only met but exceeded our expectations. Nimish consistently delivered high-quality work, completing tasks on time. I highly recommend him for his exceptional contributions and positive attitude.",
+	},
+	{
 		name: 'Shreyan Ghosh',
 		designation: 'Software Developer',
 		linkedin: 'https://www.linkedin.com/in/shreyan-ghosh-0329bb196',
