@@ -6,7 +6,8 @@
 # Portfolio Website 2022
 A portfolio website to showcase my projects, skills, and research works.
 
-![Banner](public/banner.png)
+![Banner](https://github.com/nimishjn/portfolio-2022/assets/63140632/caed1a75-5789-473b-bab0-59fc9251eb12)
+
 
 ## 👨‍💻 Tech Stack
 - [NextJs](https://nextjs.org/)
