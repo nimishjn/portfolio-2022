@@ -2,9 +2,13 @@ import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Wave from 'react-wavify';
-import { developerStoryData } from 'utils/developerStoryData';
+import { DeveloperStoryDataProps } from 'utils/developerStoryData';
 
-export default function Projects() {
+export default function Projects({
+	developerStoryData,
+}: {
+	developerStoryData: DeveloperStoryDataProps;
+}) {
 	const [position, setPosition] = useState('left');
 
 	useEffect(() => {

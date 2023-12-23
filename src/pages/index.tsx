@@ -9,8 +9,14 @@ import Projects from 'components/home/projects';
 import Research from 'components/home/research';
 import Footer from 'components/footer';
 import Testimonials from 'components/home/testimonials';
+import { fetchDeveloperStoryData } from 'utils/fetchDeveloperStoryData';
+import { DeveloperStoryDataProps } from 'utils/developerStoryData';
 
-const Home: NextPage = () => {
+const Home = ({
+	developerStoryData,
+}: {
+	developerStoryData: DeveloperStoryDataProps;
+}) => {
 	if (typeof window !== 'undefined') {
 		window.addEventListener('resize', () => {
 			let vh = window.innerHeight * 0.01;
@@ -31,7 +37,7 @@ const Home: NextPage = () => {
 				<Navbar />
 				<About />
 				<Skills />
-				<Projects />
+				<Projects developerStoryData={developerStoryData} />
 				<Research />
 				<Testimonials />
 			</main>
@@ -39,5 +45,14 @@ const Home: NextPage = () => {
 		</>
 	);
 };
+
+export async function getStaticProps() {
+	const data = await fetchDeveloperStoryData();
+	return {
+		props: {
+			developerStoryData: data,
+		},
+	};
+}
 
 export default Home;

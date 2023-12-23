@@ -31,7 +31,6 @@ export default function story({
 	);
 }
 
-// static site render
 export async function getStaticProps() {
 	const data = await fetchDeveloperStoryData();
 	return {
