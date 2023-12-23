@@ -1,0 +1,9 @@
+{
+  "fromDate": "Oct 18, 2021",
+  "toDate": "Oct 18, 2021",
+  "title": "Toggle Theme in ReactJs",
+  "type": "Medium Blog",
+  "imageURL": "/images/other/blog1-logo.jpeg",
+  "description": "![medium](https://miro.medium.com/max/720/1*pHyoYMDC4OURM7KmZy3qAQ.png)\n\nThis blog is a comprehensive guide to toggle between dark theme and light theme in ReactJs.\nDevelopers use several methods to toggle between dark mode and light mode.\nHowever, most of them make use of excess lines of code or have unnecessary complications.\nHaving struggled with the same issue in my initial projects, I decided to write this article.\n",
+  "url": "https://nimishjn.medium.com/4095dd35c69d"
+}

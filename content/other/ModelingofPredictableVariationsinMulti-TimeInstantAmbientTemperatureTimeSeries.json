@@ -1,0 +1,9 @@
+{
+  "fromDate": "Apr 21, 2021",
+  "toDate": "Apr 21, 2021",
+  "title": "Modeling of Predictable Variations in Multi-Time Instant Ambient Temperature Time Series",
+  "type": "Conference Publication",
+  "imageURL": "/images/other/ieee-xplore-logo.jpeg",
+  "description": "**Abstract**\n\nThis paper effectively devised a novel approach to characterize the predictable\nvariations in a multi-time instant ambient temperature time series. A multiple\nlinear regression model is used to capture the annual predictable variations\naccurately. The clues for predictable variations upon detailed analysis of\nmulti-time instant daily time resolution ambient temperature data led to the\ninvention of a set of theoretical relevant deterministic regressors forming a\nreducing order model. A detailed result analysis has established that the proposed\nmodel is a suitable candidate for multi-time instant daily time step data and can\nbe extended for the risk assessment of system analysis that accounts for the\ntemperature effect. Further, probabilistic forecasting using regression-based\nmethods can easily combat the above-limited number of theoretical relevant\nregressors for decent interval forecasts. The proposed model's effectiveness\nis analyzed using historical ambient temperature records collected from three\ndistinct places in India.\n",
+  "url": "https://ieeexplore.ieee.org/document/9404497"
+}

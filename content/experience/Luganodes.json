@@ -1,0 +1,11 @@
+{
+  "fromDate": "Sep 2023",
+  "toDate": "Present",
+  "positionHeld": "SDE Intern",
+  "orgName": "Luganodes",
+  "orgLocation": "Lugano, CH",
+  "imageURL": "/images/experience/luganodes-logo.jpeg",
+  "description": "Our mission is to provide leading blockchain infrastructure for Proof of Stake (PoS)\nnetworks and to build a thriving web3 ecosystem.\n\nProof-of-Stake consensus based blockchains have validators instead of miners.\n\nValidators are servers (nodes) running blockchain software responsible for proposing,\nverifying transactions, and adding new blocks to the blockchain. It is technically challenging\nto run, manage and maintain validator nodes. That's where we come in to provide hassle-free staking services.\n",
+  "url": "https://www.luganodes.com/",
+  "featured": true
+}

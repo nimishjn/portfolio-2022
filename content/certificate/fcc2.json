@@ -1,0 +1,12 @@
+{
+  "fromDate": "2021-05-31T18:30:00.000Z",
+  "toDate": "2021-05-31T18:30:00.000Z",
+  "title": "JavaScript Algorithms and Data Structures",
+  "orgName": "FreeCodeCamp",
+  "imageURL": "/images/certificates/fcc.png",
+  "description": "![](https://user-images.githubusercontent.com/63140632/200138670-030898f2-3cfd-4015-b7c0-6592beb0f299.png)\n\nWhile HTML and CSS control the content and styling of a page, JavaScript is used to make it interactive. In the JavaScript Algorithm and Data Structures Certification, I learnt the fundamentals of JavaScript including variables, arrays, objects, loops, and functions.\n\nOnce I had the fundamentals down, I applied that knowledge by creating algorithms to manipulate strings, factorialize numbers, and even calculate the orbit of the International Space Station.\n\nAlong the way, I also learnt two important programming styles or paradigms: Object Oriented Programming (OOP) and Functional Programming (FP).\n",
+  "skills": [
+    "skill_javascript"
+  ],
+  "url": "https://freecodecamp.org/certification/nimishjn/javascript-algorithms-and-data-structures"
+}

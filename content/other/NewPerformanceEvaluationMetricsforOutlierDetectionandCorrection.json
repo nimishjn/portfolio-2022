@@ -1,0 +1,9 @@
+{
+  "fromDate": "Mar 25, 2022",
+  "toDate": "Mar 25, 2022",
+  "title": "New Performance Evaluation Metrics for Outlier Detection and Correction",
+  "type": "Conference Publication",
+  "imageURL": "/images/other/springer-logo.png",
+  "description": "**Abstract**\n\nThis paper proposes novel metrics for the numeric evaluation of outlier detection\nand correction. The downsides of the existing comparison approaches are detailed,\nand substitute metrics, complemented normalized sum of absolute deviations (CNSAD)\nand overall preprocessing performance (OPP) are proposed. Also, the suitability of\ntwo derived metrics in revealing methods’ capability in handling extreme outliers\nis detailed. The merits of CNSAD and OPP are critically analyzed by applying to a\nset of polluted data with the synthetically embedded trend and volatility effects.\n",
+  "url": "https://link.springer.com/chapter/10.1007/978-981-16-9033-4_63"
+}

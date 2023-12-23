@@ -41,8 +41,9 @@ export const researchCollection: Collection = {
 		{
 			label: 'Date',
 			name: 'date',
-			type: 'datetime',
+			type: 'string',
 			required: true,
+			description: 'Options: 01 Jan 2020, Jan 2020, 2020, Present',
 		},
 	],
 };

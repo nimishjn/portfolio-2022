@@ -1,0 +1,9 @@
+{
+  "fromDate": "Nov 2, 2021",
+  "toDate": "Nov 2, 2021",
+  "title": "Performance Comparison of Two Statistical Parametric Methods for Outlier Detection and Correction",
+  "type": "Book Chapter",
+  "imageURL": "/images/other/elsevier-logo.png",
+  "description": "**Abstract**\n\nOutlier detection and correction referred to as data preprocessing,\nis crucial in time series analysis and modeling. It has been a challenge\nto preprocess a volatile time series data possessing intricate trend\ncharacteristics. Two well-established statistical parametric methods, such\nas improved sliding window prediction and portrait dataset-based, perform\nadequate data preprocessing. While the former is equipped with an optimal\nwindow width selection approach, the latter, on the other hand, is based\non a data visualization approach named portrait. This paper compares both\nmethods’ preprocessing performance when applied to seasonal time series\ndata with varying time resolutions and complex trend patterns for different\ncontent of outliers through detailed result analyses. Further, a new metric\nto measure outlier correction capability is suggested.\n",
+  "url": "https://www.sciencedirect.com/science/article/pii/S2405896321014919"
+}

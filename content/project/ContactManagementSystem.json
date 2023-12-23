@@ -1,0 +1,10 @@
+{
+  "fromDate": "Dec 2021",
+  "toDate": "Dec 2021",
+  "projectName": "Contact Management System",
+  "orgName": "Academic Project",
+  "imageURL": "/images/project/cms-logo.png",
+  "description": "This Java project titled Contact Management System aims to manage the contact information for a particular user.\n\n![](https://user-images.githubusercontent.com/63140632/181920605-8017c89a-5eaf-423a-a641-281cb955ac67.png)\n\n### Features\n\n* Sign up\n* Login\n* Delete user\n* Change Password\n* Add contacts\n* Display contacts\n* Search contacts\n* Edit contacts\n* Delete contacts\n* Delete all contacts\n",
+  "repoUrl": "https://github.com/nimishjn/contact-management-system-mysql-javafx",
+  "techStack": []
+}

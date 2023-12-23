@@ -1,0 +1,11 @@
+{
+  "fromDate": "Oct 2022",
+  "toDate": "Oct 2022",
+  "projectName": "LaserTag Frontend",
+  "orgName": "Computer Society of India",
+  "imageURL": "/images/project/lasertag-logo.jpeg",
+  "description": "A great disturbance in the force can be felt again. Is it the rise of a skywalker or the rise of a phantom menace?\nCome join CSI-VIT in a battle of LaserTag lightsabers to help restore balance to the force.\n\n![LaserTag 2022](https://user-images.githubusercontent.com/63140632/196228176-3b8deccf-b0a6-4fd8-93d0-a485799c5bb1.gif)\n\n### Homepage\n\n* A landing page with event details, FAQs, and contact information.\n* Used **Lottie animations** for efficient loading of SVG animations.\n\n### Slot booking page\n\n* Protected route accessible only by registered users.\n* Users can choose from any of the slots spread across 3 days.\n\n### Profile section\n\n* Protected route accessible only by registered users.\n* Users can view their details, payment status, booked slots, and also have the option to cancel them.\n\n### Admin panel\n\n* Protected route accessible only by admins.\n* Admins can view all the registered users, their details, payment status, booked slots, and also have the option to modify them.\n\n### Other features\n\n* Integration with **[accounts.csivit.com](accounts.csivit.com)** for authentication\n* Global error handling.\n",
+  "repoUrl": "https://github.com/csivitu/LaserTag-Frontend",
+  "techStack": [],
+  "featured": true
+}

@@ -10,20 +10,24 @@ export const experienceCollection: Collection = {
 		{
 			label: 'From date',
 			name: 'fromDate',
-			type: 'datetime',
+			type: 'string',
 			required: true,
+			description: 'Options: 01 Jan 2020, Jan 2020, 2020, Present',
 		},
 		{
 			label: 'To date',
 			name: 'toDate',
-			type: 'datetime',
+			type: 'string',
 			required: true,
+			description: 'Options: 01 Jan 2020, Jan 2020, 2020, Present',
 		},
 		{
 			label: 'Position held',
 			name: 'positionHeld',
 			type: 'string',
 			required: true,
+			isTitle: true,
+			searchable: true,
 		},
 		{
 			label: 'Organization name',

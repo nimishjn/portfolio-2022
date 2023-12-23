@@ -50,15 +50,19 @@ export const testimonialCollection: Collection = {
 		{
 			label: 'Message',
 			name: 'message',
-			type: 'rich-text',
+			type: 'string',
 			required: true,
 			searchable: true,
+			ui: {
+				component: 'textarea',
+			},
 		},
 		{
 			label: 'date',
 			name: 'date',
-			type: 'datetime',
+			type: 'string',
 			required: true,
+			description: 'Options: 01 Jan 2020, Jan 2020, 2020, Present',
 		},
 	],
 	// ui: {

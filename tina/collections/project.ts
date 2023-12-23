@@ -9,25 +9,30 @@ export const projectCollection: Collection = {
 		{
 			label: 'From date',
 			name: 'fromDate',
-			type: 'datetime',
+			type: 'string',
 			required: true,
+			description: 'Options: 01 Jan 2020, Jan 2020, 2020, Present',
 		},
 		{
 			label: 'To date',
 			name: 'toDate',
-			type: 'datetime',
-			required: true,
-		},
-		{
-			label: 'Title',
-			name: 'title',
 			type: 'string',
 			required: true,
+			description: 'Options: 01 Jan 2020, Jan 2020, 2020, Present',
 		},
 		{
-			label: 'Type',
-			name: 'type',
+			label: 'Project name',
+			name: 'projectName',
 			type: 'string',
+			required: true,
+			isTitle: true,
+			searchable: true,
+		},
+		{
+			label: 'Organization name',
+			name: 'orgName',
+			type: 'string',
+			required: true,
 		},
 		{
 			label: 'Image',
@@ -38,18 +43,39 @@ export const projectCollection: Collection = {
 			label: 'Description',
 			name: 'description',
 			type: 'rich-text',
+			required: true,
 		},
 		{
-			label: 'URL',
-			name: 'url',
+			label: 'Repository URL',
+			name: 'repoUrl',
 			type: 'string',
-			required: true,
+		},
+		{
+			label: 'Deployment URL',
+			name: 'viewUrl',
+			type: 'string',
 		},
 		{
 			label: 'Tech stack',
 			name: 'techStack',
-			type: 'string',
+			type: 'object',
+			description: 'Match corresponding IDs from the Skills collection',
 			list: true,
+			ui: {
+				itemProps: (item) => {
+					return {
+						label: item?.skill,
+					};
+				},
+			},
+			fields: [
+				{
+					label: 'Skill',
+					name: 'skill',
+					type: 'reference',
+					collections: ['skill'],
+				},
+			],
 		},
 		{
 			label: 'Featured',

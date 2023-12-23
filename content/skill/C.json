@@ -1,0 +1,9 @@
+{
+  "name": "C",
+  "icon": "/images/project/adg-logo.jpeg",
+  "bgcolor": "#FF0000",
+  "link": "https://devdocs.io/c/",
+  "category": [
+    "language"
+  ]
+}

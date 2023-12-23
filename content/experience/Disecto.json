@@ -1,0 +1,11 @@
+{
+  "fromDate": "Nov 2022",
+  "toDate": "Jun 2023",
+  "positionHeld": "Frontend Engineer Intern",
+  "orgName": "Disecto",
+  "orgLocation": "Ahmedabad, India",
+  "imageURL": "/images/experience/disecto-logo.jpeg",
+  "description": "Disecto designs tools that enable Digital Security without compromising privacy and confidentiality.\nOur breakthrough technological innovations facilitate data sharing and unlock insights into sensitive data.\n\n* Led the frontend team of INCOG Data Classification project and implemented an efficient SDLC that led to successful component implementation.\n* Contributed over 20,000 lines of code to INCOG Project that helped to shape the product's functionality and user experience.\n* Created a dynamic dashboard with real-time data visualization, enhancing decision-making processes for users.\n* Developed a robust user and role management system, enabling seamless access control and user permissions.\n* Implemented an SQL schema viewer using React Flow, allowing users to easily navigate and understand complex database structures.\n* Developed a robust reports section utilizing Nivo Rocks and the D3 library resulting in visually appealing and engaging reports.\n\n[Source](https://www.disecto.com)\n",
+  "url": "https://www.disecto.com",
+  "featured": true
+}
