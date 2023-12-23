@@ -1,8 +1,14 @@
 import Story from 'components/Story';
 import Head from 'next/head';
 import React from 'react';
+import { DeveloperStoryDataProps } from 'utils/developerStoryData';
+import { fetchDeveloperStoryData } from 'utils/fetchDeveloperStoryData';
 
-export default function story() {
+export default function story({
+	developerStoryData,
+}: {
+	developerStoryData: DeveloperStoryDataProps;
+}) {
 	return (
 		<>
 			<Head>
@@ -20,7 +26,17 @@ export default function story() {
 					content='Nimish Jain | https://nimish-jain.com'
 				/>
 			</Head>
-			<Story />
+			<Story developerStoryData={developerStoryData} />
 		</>
 	);
+}
+
+// static site render
+export async function getStaticProps() {
+	const data = await fetchDeveloperStoryData();
+	return {
+		props: {
+			developerStoryData: data,
+		},
+	};
 }

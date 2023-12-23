@@ -68,7 +68,6 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 							src={nimishNoBg}
 							alt='Nimish Jain'
 							loading='lazy'
-							placeholder='blur'
 						/>
 					</div>
 					<LinkScroll
@@ -146,7 +145,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 										className='text-sm px-3 py-2 flex items-center justify-center cursor-pointer uppercase hover:text-yellow-200'
 										title='Repository URL'
 									>
-										{e.title}
+										{e?.title}
 									</a>
 								</Link>
 							);
@@ -162,7 +161,7 @@ export default function NavbarDropdown(props: JSX.IntrinsicAttributes) {
 								to={e.to}
 								key={i}
 							>
-								<span>{e.title}</span>
+								<span>{e?.title}</span>
 							</LinkScroll>
 						);
 					})}

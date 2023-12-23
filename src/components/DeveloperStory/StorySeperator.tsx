@@ -26,13 +26,13 @@ export const StorySeperator = ({
 			<div
 				style={
 					{
-						backgroundColor: storyTypes[storyType].color,
-						// borderColor: storyTypes[storyType].color,
+						backgroundColor: storyTypes[storyType]?.color,
+						// borderColor: storyTypes[storyType]?.color,
 					}
 				}
 				className='w-6 h-6 aspect-square border-1 border-white box-border rounded-full flex-center'
 			>
-				{storyTypes[storyType as keyof typeof storyTypes].icon}
+				{storyTypes[storyType as keyof typeof storyTypes]?.icon}
 			</div>
 			{lastIndex ? (
 				<span className='w-1px bg-transparent grow' />

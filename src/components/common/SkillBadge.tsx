@@ -22,7 +22,7 @@ export default function SkillBadge({ skill, index }: SkillProps) {
 				}}
 				className='flex items-center rounded-xs py-0.5 md:py-1 px-1.5 md:px-2 gap-1 min-w-fit cursor-pointer hover:scale-110 transition ease-linear text-gray-200 text-sm md:text-base bg-black'
 			>
-				{skill.icon}
+				{skill?.icon}
 				<li className='list-none'>{skill.name}</li>
 			</a>
 		</Link>
@@ -31,5 +31,5 @@ export default function SkillBadge({ skill, index }: SkillProps) {
 
 /** Note:
  *  'skill.bgcolor' is used for the border color of the badge.
- *  'skill.color' is used for the text color of the badge.
+ *  'skill?.color' is used for the text color of the badge.
  */

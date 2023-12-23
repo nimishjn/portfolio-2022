@@ -23,7 +23,7 @@ export default function Certificate({
 					<h4 className='w-full font-normal text-sm'>{orgName}</h4>
 				</div>
 			</StoryComponent.HeaderWrapper>
-			{skills.length > 0 && (
+			{skills?.length > 0 && (
 				<div>
 					<StoryComponent.Subheader>
 						Acquired skills

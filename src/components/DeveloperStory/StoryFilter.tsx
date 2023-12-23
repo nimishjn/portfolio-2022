@@ -84,7 +84,7 @@ export const DeveloperStoryFilter = ({
 						>
 							all
 							<span className='bg-white text-black text-sm px-2 rounded-lg'>
-								{developerStoryData.length}
+								{developerStoryData?.length}
 							</span>
 						</span>
 					)}
@@ -104,13 +104,13 @@ export const DeveloperStoryFilter = ({
 									{
 										storyTypes[
 											key as unknown as keyof typeof storyTypes
-										].title
+										]?.title
 									}
 									<span className='bg-white text-black text-sm px-2 rounded-lg'>
 										{
 											developerStoryData.filter(
 												(sd) => sd.storyType === key
-											).length
+											)?.length
 										}
 									</span>
 								</span>

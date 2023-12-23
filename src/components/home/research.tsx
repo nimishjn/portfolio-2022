@@ -24,7 +24,7 @@ export default function Research() {
 								<a
 									target={'_blank'}
 									key={index}
-									aria-label={paper.title}
+									aria-label={paper?.title}
 									style={{
 										backgroundImage: `url(${paper.img})`,
 									}}
@@ -34,7 +34,7 @@ export default function Research() {
 										{index + 1}
 									</div>
 									<div className='hidden md:flex-col-center justify-between text-transparent hover:text-black font-semibold p-1 text-xs text-center transition-colors absolute h-full left-0 right-0 botton-0 hover:bg-slate-300 hover:bg-opacity-25 hover:backdrop-blur-sm'>
-										<p>{paper.title}</p>
+										<p>{paper?.title}</p>
 										<div className='text-2xs font-normal'>
 											<p>{paper.publisher}</p>
 											<p>{paper.date}</p>

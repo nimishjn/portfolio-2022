@@ -18,7 +18,7 @@ function Testimonials() {
 
 	const handleNextRecommendation = () => {
 		setShowIndex(
-			showIndex + 1 <= recommendations.length - 1
+			showIndex + 1 <= recommendations?.length - 1
 				? showIndex + 1
 				: showIndex
 		);

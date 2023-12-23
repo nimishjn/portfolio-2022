@@ -42,8 +42,11 @@ export const projectCollection: Collection = {
 		{
 			label: 'Description',
 			name: 'description',
-			type: 'rich-text',
+			type: 'string',
 			required: true,
+			ui: {
+				component: 'textarea',
+			},
 		},
 		{
 			label: 'Repository URL',

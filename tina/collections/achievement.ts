@@ -41,7 +41,10 @@ export const achievementCollection: Collection = {
 		{
 			label: 'Description',
 			name: 'description',
-			type: 'rich-text',
+			type: 'string',
+			ui: {
+				component: 'textarea',
+			},
 		},
 		{
 			label: 'URL',

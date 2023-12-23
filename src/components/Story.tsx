@@ -2,11 +2,15 @@ import React, { useEffect, useState } from 'react';
 import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import Footer from 'components/footer';
-import { developerStoryData } from 'utils/developerStoryData';
 import { DeveloperStoryFilter } from './DeveloperStory/StoryFilter';
 import { AiFillHome, AiOutlineLink } from 'react-icons/ai';
+import { DeveloperStoryDataProps } from 'utils/developerStoryData';
 
-export default function Story() {
+export default function Story({
+	developerStoryData,
+}: {
+	developerStoryData: DeveloperStoryDataProps;
+}) {
 	const [position, setPosition] = useState('left');
 	const [filteredStoryData, setFilteredStoryData] =
 		useState(developerStoryData);
@@ -36,7 +40,7 @@ export default function Story() {
 		<>
 			<section
 				className='home-section min-h-fit bg-dark-gray relative'
-				id='developerstory'
+				id='developer-story'
 			>
 				<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
 					<div className='sticky flex gap-2 top-2 md:top-4 text-white z-50'>
@@ -70,42 +74,14 @@ export default function Story() {
 						>
 							<a target='_blank'>StackOverFlow</a>
 						</Link>{' '}
-						anymore :(
+						anymore :&#40;
 					</p>
 					<DeveloperStoryFilter
 						setFilteredStoryData={setFilteredStoryData}
 						developerStoryData={developerStoryData}
 					/>
 					<DeveloperStory
-						developerStoryData={filteredStoryData.sort((a, b) => {
-							const fromDateA = a.data.fromDate;
-							const fromDateTimeA =
-								fromDateA.toLowerCase() === 'present'
-									? new Date()
-									: new Date(fromDateA);
-							const toDateA = a.data.toDate;
-							const toDateTimeA =
-								toDateA.toLowerCase() === 'present'
-									? new Date()
-									: new Date(toDateA);
-							const fromDateB = b.data.fromDate;
-							const fromDateTimeB =
-								fromDateB.toLowerCase() === 'present'
-									? new Date()
-									: new Date(fromDateB);
-							const toDateB = b.data.toDate;
-							const toDateTimeB =
-								toDateB.toLowerCase() === 'present'
-									? new Date()
-									: new Date(toDateB);
-
-							if (toDateTimeA > toDateTimeB) return -1;
-							else if (toDateTimeA < toDateTimeB) return 1;
-							else if (fromDateTimeA > fromDateTimeB) return -1;
-							else if (fromDateTimeA < fromDateTimeB) return 1;
-
-							return 0;
-						})}
+						developerStoryData={filteredStoryData}
 						position={position as any}
 					/>
 				</div>

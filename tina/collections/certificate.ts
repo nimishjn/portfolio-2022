@@ -41,7 +41,10 @@ export const certificateCollection: Collection = {
 		{
 			label: 'Description',
 			name: 'description',
-			type: 'rich-text',
+			type: 'string',
+			ui: {
+				component: 'textarea',
+			},
 		},
 		{
 			label: 'Skills',

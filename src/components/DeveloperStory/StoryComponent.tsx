@@ -18,7 +18,6 @@ function SquareLogo({ imageURL }: StorySquareLogoProps) {
 						height={200}
 						width={200}
 						objectFit='cover'
-						placeholder='blur'
 					/>
 				</div>
 			)}

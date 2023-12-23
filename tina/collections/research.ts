@@ -23,8 +23,11 @@ export const researchCollection: Collection = {
 		{
 			label: 'Abstract',
 			name: 'abstract',
-			type: 'rich-text',
+			type: 'string',
 			required: true,
+			ui: {
+				component: 'textarea',
+			},
 		},
 		{
 			label: 'Link',

@@ -46,12 +46,12 @@ export default function DeveloperStory({
 							storyType={storyItem.storyType as STORY_TYPES}
 							index={index}
 							firstIndex={index === 0}
-							lastIndex={index === developerStoryData.length - 1}
+							lastIndex={index === developerStoryData?.length - 1}
 							key={index}
 						/>
 					))}
 			</div>
-			{developerStoryData.length === 0 && (
+			{developerStoryData?.length === 0 && (
 				<div className='w-full flex-col-center'>
 					<Lottie
 						animationData={NoResultAnimation}

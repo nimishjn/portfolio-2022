@@ -44,7 +44,7 @@ export default function StoryContent({
 			)}
 			<div className='flex self-start text-xs gap-1 items-center absolute bg-white text-black py-1 px-2 -top-[1px] -left-[1px] rounded-br-sm rounded-tl-sm border border-white'>
 				<p className='font-medium'>
-					{storyTypes[storyType as keyof typeof storyTypes].title}
+					{storyTypes[storyType as keyof typeof storyTypes]?.title}
 				</p>
 				{renderDates && (
 					<>

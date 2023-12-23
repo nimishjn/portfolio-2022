@@ -26,7 +26,7 @@ export default function Project({
 					<h4 className='w-full font-normal text-sm'>{orgName}</h4>
 				</div>
 			</StoryComponent.HeaderWrapper>
-			{techStack.length > 0 && (
+			{techStack?.length > 0 && (
 				<div>
 					<StoryComponent.Subheader>
 						Tech Stack

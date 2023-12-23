@@ -14,7 +14,7 @@ export default function Projects() {
 	return (
 		<section
 			className='home-section bg-dark-gray relative'
-			id='developerstory'
+			id='developer-story'
 		>
 			<div className='max-section-width flex flex-col items-center md:items-start gap-2'>
 				<h1 className='h1 leading-normal animate-text-bg before:bg-white hover:text-dark-gray'>
@@ -29,7 +29,7 @@ export default function Projects() {
 					>
 						<a target='_blank'>StackOverFlow</a>
 					</Link>{' '}
-					anymore :(
+					anymore :&#40;
 				</p>
 				<DeveloperStory
 					developerStoryData={developerStoryData.filter(

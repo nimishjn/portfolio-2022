@@ -25,7 +25,7 @@ export default function Other({
 					)}
 				</div>
 			</StoryComponent.HeaderWrapper>
-			{techStack.length > 0 && (
+			{techStack?.length > 0 && (
 				<div>
 					<StoryComponent.Subheader>
 						Associated skills

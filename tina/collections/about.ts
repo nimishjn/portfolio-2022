@@ -9,9 +9,12 @@ export const aboutCollection: Collection = {
 		{
 			name: 'content',
 			label: 'Content',
-			type: 'rich-text',
+			type: 'string',
 			required: true,
 			searchable: true,
+			ui: {
+				component: 'textarea',
+			},
 		},
 	],
 };
