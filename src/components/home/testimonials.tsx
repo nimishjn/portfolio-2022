@@ -3,13 +3,26 @@ import Lottie from 'lottie-react';
 import ResearchAnimation from '../../assets/lottie/recommendation.json';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
 import { MdFormatQuote } from 'react-icons/md';
-import { recommendations } from 'utils/constants/Recommendations';
 import Link from 'next/link';
 import { Transition } from '@headlessui/react';
 import { AiFillLinkedin, AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 import Wave from 'react-wavify';
 
-function Testimonials() {
+function Testimonials({
+	recommendations,
+}: {
+	recommendations: {
+		name: string;
+		designation: string;
+		linkedin?: string;
+		company?: string;
+		companyURL?: string;
+		relation: string;
+		testimonialURL?: string;
+		message: string;
+		date: string;
+	}[];
+}) {
 	const [showIndex, setShowIndex] = useState(0);
 
 	const handlePreviousRecommendation = () => {

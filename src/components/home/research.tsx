@@ -2,10 +2,22 @@ import React from 'react';
 import Lottie from 'lottie-react';
 import ResearchAnimation from '../../assets/lottie/data-analysis.json';
 import SkillBadge from 'components/common/SkillBadge';
-import { allResearchPapers, allResearchUrls } from 'utils/constants/Research';
+import { allResearchUrls } from 'utils/constants/Research';
 import Link from 'next/link';
 
-export default function Research() {
+export default function Research({
+	allResearchPapers,
+}: {
+	allResearchPapers: {
+		id: string;
+		img: string;
+		title: string;
+		abstract: string;
+		link: string;
+		publisher: string;
+		date: string;
+	}[];
+}) {
 	return (
 		<section className='home-section flex-center' id='research'>
 			<div className='max-section-width flex gap-4 items-center justify-center relative text-center md:text-right'>
@@ -20,7 +32,12 @@ export default function Research() {
 					</ul>
 					<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3'>
 						{allResearchPapers.map((paper, index) => (
-							<Link href={paper.link} key={index} passHref legacyBehavior>
+							<Link
+								href={paper.link}
+								key={index}
+								passHref
+								legacyBehavior
+							>
 								<a
 									target={'_blank'}
 									key={index}
@@ -45,7 +62,7 @@ export default function Research() {
 						))}
 					</ul>
 				</div>
-                {/* <div className='mr-10 absolute md:relative md:block -z-10 opacity-20 md:opacity-100 md:z-0 px-6'> */}
+				{/* <div className='mr-10 absolute md:relative md:block -z-10 opacity-20 md:opacity-100 md:z-0 px-6'> */}
 				<div className='mr-10 hidden md:block px-6'>
 					<Lottie
 						animationData={ResearchAnimation}

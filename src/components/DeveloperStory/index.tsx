@@ -4,7 +4,7 @@ import {
 	POSITION_TYPES,
 	STORY_TYPES,
 } from 'utils/developerStory';
-import { DeveloperStoryDataProps } from 'utils/developerStoryData';
+import { DeveloperStoryDataProps } from 'utils/fetchDeveloperStoryData';
 import { StoryItem } from './StoryItem';
 import Lottie from 'lottie-react';
 import NoResultAnimation from '../../assets/lottie/no-results.json';

@@ -1,4 +1,5 @@
-import { Collection } from 'tinacms';
+import { Collection, wrapFieldsWithMeta } from 'tinacms';
+import { IconSelector } from '../components/IconSelector';
 
 const categoryOptions = [
 	{ id: 'language', name: 'Programming Language' },
@@ -35,8 +36,13 @@ export const skillCollection: Collection = {
 		{
 			label: 'Icon',
 			name: 'icon',
-			type: 'image',
+			type: 'string',
 			required: true,
+			ui: {
+				// @ts-ignore
+				component: IconSelector,
+				description: 'Enter SVG of icon',
+			},
 		},
 		{
 			label: 'Background color',

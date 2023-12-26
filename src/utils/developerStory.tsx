@@ -2,6 +2,7 @@ import { StaticImageData } from 'next/image';
 import { BsInfo } from 'react-icons/bs';
 import { TbBriefcase, TbCertificate, TbCode, TbSchool } from 'react-icons/tb';
 import AchievementIcon from '../assets/icons/achievement.svg';
+import { Categories } from './constants/Skills';
 
 export const storyTypes = {
 	education: {
@@ -57,6 +58,20 @@ export type POSITION_TYPES =
 	| 'alternate';
 export const DEFAULT_POSITION_TYPES = 'alternate';
 
+const CategoriesId = Categories.map((e) => e.id);
+
+export type CategoriesType = (typeof CategoriesId)[number];
+
+export interface skillInterface {
+	name: string;
+	icon: string;
+	bgcolor: string;
+	id: string;
+	link: string;
+	color?: string;
+	category?: CategoriesType[];
+}
+
 // Interface for each storyType i.e. EducationStoryProps, ExperienceStoryProps, etc.
 export interface AchievementProps {
 	fromDate: string;
@@ -76,7 +91,7 @@ export interface CertificateProps {
 	title: string;
 	imageURL?: StaticImageData;
 	description?: string;
-	skills?: string[];
+	skills?: skillInterface[];
 	url: string;
 	orgName?: string;
 }
@@ -102,7 +117,7 @@ export interface ExperienceProps {
 	imageURL?: StaticImageData;
 	description: string;
 	url?: string;
-	skills?: string[];
+	skills?: skillInterface[];
 }
 
 export interface OtherProps {
@@ -114,7 +129,7 @@ export interface OtherProps {
 	imageURL?: StaticImageData;
 	description?: string;
 	url?: string;
-	techStack?: string[];
+	techStack?: skillInterface[];
 }
 
 export interface ProjectProps {
@@ -127,7 +142,7 @@ export interface ProjectProps {
 	description: string;
 	repoUrl?: string;
 	viewUrl?: string;
-	techStack?: string[];
+	techStack?: skillInterface[];
 }
 
 // Interface for StoryContentTypes

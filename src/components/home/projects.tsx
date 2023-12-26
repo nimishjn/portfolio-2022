@@ -2,7 +2,7 @@ import DeveloperStory from 'components/DeveloperStory';
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 import Wave from 'react-wavify';
-import { DeveloperStoryDataProps } from 'utils/developerStoryData';
+import { DeveloperStoryDataProps } from 'utils/fetchDeveloperStoryData';
 
 export default function Projects({
 	developerStoryData,

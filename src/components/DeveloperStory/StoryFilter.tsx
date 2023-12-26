@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { RadioGroup } from '@headlessui/react';
 import { storyTypes } from 'utils/developerStory';
-import {
-	DeveloperStoryDataProps,
-	developerStoryData,
-} from 'utils/developerStoryData';
 import { useRouter } from 'next/router';
+import { DeveloperStoryDataProps } from 'utils/fetchDeveloperStoryData';
 
 interface DeveloperStoryFilterProps {
 	setFilteredStoryData: Function;
@@ -76,9 +73,7 @@ export const DeveloperStoryFilter = ({
 					{({ checked }) => (
 						<span
 							className={
-								(checked
-									? 'bg-blue-800'
-									: 'bg-black') +
+								(checked ? 'bg-blue-800' : 'bg-black') +
 								' flex items-center justify-center gap-2 px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border'
 							}
 						>
@@ -95,9 +90,7 @@ export const DeveloperStoryFilter = ({
 							{({ checked }) => (
 								<span
 									className={
-										(checked
-											? 'bg-blue-800 '
-											: '') +
+										(checked ? 'bg-blue-800 ' : '') +
 										' flex items-center justify-center gap-2 px-1.5 md:px-2 py-0.5 text-sm md:text-base md:py-1 border-1 cursor-pointer box-border'
 									}
 								>

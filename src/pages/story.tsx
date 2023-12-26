@@ -1,7 +1,7 @@
 import Story from 'components/Story';
 import Head from 'next/head';
 import React from 'react';
-import { DeveloperStoryDataProps } from 'utils/developerStoryData';
+import { DeveloperStoryDataProps } from 'utils/fetchDeveloperStoryData';
 import { fetchDeveloperStoryData } from 'utils/fetchDeveloperStoryData';
 
 export default function story({

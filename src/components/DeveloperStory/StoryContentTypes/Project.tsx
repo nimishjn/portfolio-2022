@@ -1,7 +1,6 @@
 import SkillBadge from 'components/common/SkillBadge';
 import React from 'react';
 import { ProjectProps } from 'utils/developerStory';
-import { findSkill } from 'utils/findSkill';
 import StoryComponent from '../StoryComponent';
 import StoryDescription from '../StoryDescription';
 
@@ -32,8 +31,7 @@ export default function Project({
 						Tech Stack
 					</StoryComponent.Subheader>
 					<ul className='flex flex-wrap items-start gap-2'>
-						{techStack.map((tech, index) => {
-							const skill = findSkill(tech);
+						{techStack.map((skill, index) => {
 							if (skill)
 								return <SkillBadge skill={skill} key={index} />;
 							else return null;

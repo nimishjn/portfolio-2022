@@ -1,13 +1,3 @@
-import axios from 'axios';
-import {
-	AchievementProps,
-	CertificateProps,
-	EducationProps,
-	ExperienceProps,
-	OtherProps,
-	ProjectProps,
-	STORY_TYPES,
-} from './developerStory';
 import { fetchAchievementData } from './graphQL/achievement';
 import { fetchCertificateData } from './graphQL/certificate';
 import { fetchEducationData } from './graphQL/education';
@@ -17,6 +7,16 @@ import { fetchProjectData } from './graphQL/project';
 import { fetchResearchData } from './graphQL/research';
 import { fetchSkillData } from './graphQL/skill';
 import { fetchTestimonialData } from './graphQL/testimonial';
+
+import {
+	AchievementProps,
+	CertificateProps,
+	EducationProps,
+	ExperienceProps,
+	OtherProps,
+	ProjectProps,
+	STORY_TYPES,
+} from './developerStory';
 
 export interface singleDeveloperStoryDataProps {
 	id: string;

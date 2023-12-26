@@ -3,9 +3,8 @@ import Lottie from 'lottie-react';
 import AboutMeAnimation from 'assets/lottie/about-me.json';
 import Wave from 'react-wavify';
 import { ReactMarkdown } from 'react-markdown/lib/react-markdown';
-import { aboutContent } from 'utils/constants/About';
 
-export default function About() {
+export default function About({ aboutContent }: { aboutContent: string }) {
 	return (
 		<section className='home-section relative flex-center' id='about'>
 			<div className='max-section-width h-full flex gap-4 items-center justify-center'>

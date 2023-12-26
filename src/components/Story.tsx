@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Footer from 'components/footer';
 import { DeveloperStoryFilter } from './DeveloperStory/StoryFilter';
 import { AiFillHome, AiOutlineLink } from 'react-icons/ai';
-import { DeveloperStoryDataProps } from 'utils/developerStoryData';
+import { DeveloperStoryDataProps } from 'utils/fetchDeveloperStoryData';
 
 export default function Story({
 	developerStoryData,

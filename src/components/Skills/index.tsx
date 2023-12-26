@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import Lottie from 'lottie-react';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
-import { Categories, allSkills } from 'utils/constants/Skills';
+import { Categories } from 'utils/constants/Skills';
 import SkillBadge from 'components/common/SkillBadge';
 import SkillsFilter from './SkillsFilter';
+import { skillInterface } from 'utils/developerStory';
 
 const AllCategories = [
 	{
@@ -13,7 +14,7 @@ const AllCategories = [
 	...Categories,
 ];
 
-export default function Skills() {
+export default function Skills({ allSkills }: { allSkills: skillInterface[] }) {
 	const [allSkillsFiltered, setAllSkillsFiltered] = useState(allSkills);
 	const [selectedCategory, setSelectedCategory] = useState(AllCategories[0]);
 
@@ -25,11 +26,12 @@ export default function Skills() {
 				allSkills.filter(
 					(skill) =>
 						skill.category?.findIndex(
-							(e) => e === selectedCategory.id
+							(e: string) => e === selectedCategory.id
 						) !== -1
 				)
 			);
 		}
+	// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [selectedCategory]);
 
 	return (
