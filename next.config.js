@@ -12,6 +12,14 @@ const nextConfig = {
 
 		return config;
 	},
+	rewrites() {
+		return [
+			{
+				source: '/api/tina/:path*',
+				destination: '/api/tina/backend',
+			},
+		];
+	},
 };
 
 module.exports = nextConfig;

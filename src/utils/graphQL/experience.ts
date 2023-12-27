@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { tinaAxiosInstance } from 'utils/axiosInstance';
 
 export const fetchExperienceData = async () => {
-	const response = await axios.post('http://localhost:4001/graphql', {
+	const response = await tinaAxiosInstance.post('/api/tina/gql', {
 		query: `#graphql
     {
       experienceConnection {

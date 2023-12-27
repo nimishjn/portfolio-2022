@@ -1,7 +1,8 @@
 import axios from 'axios';
+import { tinaAxiosInstance } from 'utils/axiosInstance';
 
 export const fetchResearchData = async () => {
-	const response = await axios.post('http://localhost:4001/graphql', {
+	const response = await tinaAxiosInstance.post('/api/tina/gql', {
 		query: `#graphql
     {
       researchConnection {
@@ -22,5 +23,5 @@ export const fetchResearchData = async () => {
 	const data = response?.data?.data?.researchConnection?.edges?.map(
 		(edge: any) => ({ ...edge.node, id: crypto.randomUUID().slice(0, 8) })
 	);
-  return data;
+	return data;
 };
