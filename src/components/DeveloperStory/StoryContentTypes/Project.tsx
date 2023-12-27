@@ -33,7 +33,7 @@ export default function Project({
 					<ul className='flex flex-wrap items-start gap-2'>
 						{techStack.map((skill, index) => {
 							if (skill)
-								return <SkillBadge skill={skill} key={index} />;
+								return <SkillBadge skill={skill.skill} key={index} />;
 							else return null;
 						})}
 					</ul>

@@ -26,7 +26,6 @@ export const experienceCollection: Collection = {
 			name: 'positionHeld',
 			type: 'string',
 			required: true,
-			isTitle: true,
 			searchable: true,
 		},
 		{
@@ -34,6 +33,7 @@ export const experienceCollection: Collection = {
 			name: 'orgName',
 			type: 'string',
 			required: true,
+			isTitle: true,
 		},
 		{
 			label: 'Organization location',

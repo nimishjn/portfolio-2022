@@ -6,5 +6,18 @@
   "imageURL": "/images/project/otobus-logo.jpeg",
   "description": "The frontend of otôbus, a bus management system, is a web-based application built by a team of three.\n\nFeatures of backend includes:\n\n* Home Page\n* About Page\n* Navbar and Footer\n* A 404 error page\n* Signup\n* Login\n* Stores JWT for future sessions\n* List of buses\n* Display the details of individual buses\n* Book a Bus\n* View Bookings\n* Delete a Booking\n* Theme toggle (Dark and Light Theme)\n* Data validation\n* Fully Responsive view to support all screen sizes\n* Response handling i.e. Success and error code handling\n",
   "repoUrl": "https://github.com/nimishjn/otobus-frontend",
-  "techStack": []
+  "techStack": [
+    {
+      "skill": "content/skill/html.json"
+    },
+    {
+      "skill": "content/skill/css.json"
+    },
+    {
+      "skill": "content/skill/javascript.json"
+    },
+    {
+      "skill": "content/skill/angular_js.json"
+    }
+  ]
 }

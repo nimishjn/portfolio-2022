@@ -6,5 +6,15 @@
   "imageURL": "/images/project/ccs-logo.png",
   "description": "The recruitment portal for CSI Core Committee Selections, 2022.\nA candidate can take a 30-minute subjective quiz in four different domains: i.e. Tech, Management, Design and Video.\nAfter clearing round 1, the candidate can view different problem statements and submit links to their projects.\nThis would be followed by two rounds of interviews, lasting 45 to 60 minutes each.\n\n![CCS](https://camo.githubusercontent.com/bd65f1466e2886efc63fd2dcab2170ea2bd661bb3c7f0479138d00db0248549a/68747470733a2f2f692e696d6775722e636f6d2f7a72616b3741582e706e67)\n\n### Homepage\n\n* A landing page with information about the chapter, domain descriptions, FAQs, and contact information.\n* User details are fetched on the server side using **Next.js**.\n\n### Quiz page\n\n* A page where the candidate can take the quiz.\n* The quiz is divided into 4 domains, and each domain has 10 questions.\n* Implemented a custom color palette for each domain.\n* The answers are auto-submitted every minute.\n\n### Tasks page\n\n* Users can view design and technical tasks and submit links to their projects.\n* Tasks are only visible if they cleared round 1 and they have applied for the respective domain.\n\n### Admin panel\n\n* Protected route accessible only by admins.\n* Admins can view all the registered users, their details, quiz scores, task submissions, and also have the option to modify them.\n* Admins can also view the quiz answers and give scores to the candidates.\n\n### Other features\n\n* Global toast notifications for a better user experience.\n* Global error handling and form validation.\n",
   "repoUrl": "https://github.com/csivitu/LaserTag-Frontend",
-  "techStack": []
+  "techStack": [
+    {
+      "skill": "content/skill/material_ui.json"
+    },
+    {
+      "skill": "content/skill/tailwind_css.json"
+    },
+    {
+      "skill": "content/skill/next_js.json"
+    }
+  ]
 }

@@ -6,5 +6,6 @@
   "orgLocation": "Mumbai, India",
   "imageURL": "/images/experience/nishkaera-logo.jpeg",
   "description": "My first internship was with Nishkaera, a fintech startup that attempts to bring back those special virtues of India's golden age by blending best-in-class technology with financial know-how.\n\n* Developed and implemented a responsive customer portal and an efficient admin panel for the webinar section, resulting in a 10x increase in the speed of handling the webinar process.\n* Designed and incorporated a participant list feature along with email reminders, allowing easy management of webinar attendees.\n* Led the successful reconstruction of the Detailed Financial Pulse, a critical tool utilized by thousands of users on a daily basis.\n",
-  "url": "https://nishkaera.com"
+  "url": "https://nishkaera.com",
+  "skills": []
 }

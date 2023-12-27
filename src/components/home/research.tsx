@@ -26,6 +26,7 @@ export default function Research({
 						Research
 					</h1>
 					<ul className='flex flex-wrap items-start justify-center md:justify-end gap-3 mb-5'>
+						{/* TODO */}
 						{allResearchUrls.map((url, index) => (
 							<SkillBadge skill={url} key={index} />
 						))}

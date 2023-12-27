@@ -13,7 +13,17 @@ export const fetchCertificateData = async () => {
             orgName
             imageURL
             description
-            skills
+            skills {
+              skill {
+                ...on Skill {
+                  name
+                  icon
+                  bgcolor
+                  link
+                  category
+                }
+              }
+            }
             url
             featured
           }

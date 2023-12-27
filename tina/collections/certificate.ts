@@ -49,8 +49,24 @@ export const certificateCollection: Collection = {
 		{
 			label: 'Skills',
 			name: 'skills',
-			type: 'string',
+			type: 'object',
+			description: 'Match corresponding IDs from the Skills collection',
 			list: true,
+			ui: {
+				itemProps: (item) => {
+					return {
+						label: item?.skill,
+					};
+				},
+			},
+			fields: [
+				{
+					label: 'Skill',
+					name: 'skill',
+					type: 'reference',
+					collections: ['skill'],
+				},
+			],
 		},
 		{
 			label: 'URL',

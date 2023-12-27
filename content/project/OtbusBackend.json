@@ -6,5 +6,15 @@
   "imageURL": "/images/project/otobus-logo.jpeg",
   "description": "The backend of otôbus, a bus management system, is a web-based application built by a team of three.\n\nFeatures of the backend system include:\n\n* Signup Route\n* Login Route\n* Sends JWT upon login and signup\n* List of buses and route\n* Bus Details Route\n* Booking a Bus Route\n* View Bookings Route\n* Delete Booking Route\n* User Details Route\n* Backend data validation\n* Responds with error or success codes for consistency\n",
   "repoUrl": "https://github.com/nimishjn/otobus-backend",
-  "techStack": []
+  "techStack": [
+    {
+      "skill": "content/skill/express_js.json"
+    },
+    {
+      "skill": "content/skill/mongodb.json"
+    },
+    {
+      "skill": "content/skill/node_js.json"
+    }
+  ]
 }

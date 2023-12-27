@@ -41,9 +41,6 @@ export const fetchDeveloperStoryData = async () => {
 		experienceData,
 		otherData,
 		projectData,
-		_researchData,
-		_skillData,
-		testimonialData,
 	] = await Promise.all([
 		fetchAchievementData(),
 		fetchCertificateData(),
@@ -51,9 +48,6 @@ export const fetchDeveloperStoryData = async () => {
 		fetchExperienceData(),
 		fetchOtherData(),
 		fetchProjectData(),
-		fetchResearchData(),
-		fetchSkillData(),
-		fetchTestimonialData(),
 	]).then((res) => res);
 
 	return [
@@ -85,11 +79,6 @@ export const fetchDeveloperStoryData = async () => {
 		projectData.map((e: any) => ({
 			id: e.id,
 			storyType: 'project',
-			data: e,
-		})),
-		testimonialData.map((e: any) => ({
-			id: e.id,
-			storyType: 'testimonial',
 			data: e,
 		})),
 	]

@@ -7,6 +7,13 @@
   "description": "Riddler is a one-of-a-kind online cryptic hunt where players dive into the depths of the internet and\nnavigate their way to the top of the leaderboard by cracking exhilarating riddles spread across various\nthemes. The last 9 years have seen hundreds try their best every season, only to get bested themselves.\n\n![Logo](https://user-images.githubusercontent.com/63140632/130457523-848b20e3-6ee9-4aeb-8058-919f95cc5681.gif)\n\nThis website consisted of two sections, namely the registration website and the game website.\n\n### Registration website\n\n* This has the landing page, rules, and registration form.\n* Integrated with accounts.csivit.com for authentication.\n\n### Game website\n\n* This has the [guides](https://riddler-sample.vercel.app/guide), [leaderboard](https://riddler-sample.vercel.app/leaderboard), and the [game](https://riddler-sample.vercel.app/play) itself.\n* This route is protected and can only be accessed by registered users.\n\n### Game features\n\n* The game starts with a tutorial for what the page contains.\n* Then a map with 40 interconnected nodes can be seen.\n* The user has to choose a starting node and unlock the next node by solving a riddle.\n* The user can also use hints to solve the riddle; however, each hint costs a certain amount of points.\n* The user has to freeze a node before solving.\n* The user can unfreeze a node twice per day.\n* Live leaderboard is also available.\n\n### Other features\n\n* Global toast notifications for a better user experience.\n* Global error handling and form validation.\n* Used redux for authentication and state management.\n\n***Ps: The deployment link is a sample deployment of the game website.***\n",
   "repoUrl": "https://github.com/csivitu/riddler-frontend-2021",
   "viewUrl": "https://riddler-sample.vercel.app/",
-  "techStack": [],
+  "techStack": [
+    {
+      "skill": "content/skill/material_ui.json"
+    },
+    {
+      "skill": "content/skill/react_js.json"
+    }
+  ],
   "featured": true
 }

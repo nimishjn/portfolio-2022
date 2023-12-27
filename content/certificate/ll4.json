@@ -1,12 +1,14 @@
- {
+{
   "fromDate": "Jun 2023",
   "toDate": "Jun 2023",
   "title": "React: Testing and Debugging",
-  "url": "https://www.linkedin.com/learning/certificates/6d457ca86e8ae2588032cd3338ed0696c48593df732134d4a0dac473dd89c119",
+  "orgName": "LinkedIn Learning",
   "imageURL": "/images/certificates/linkedin-learning.png",
   "description": "\n![](https://github.com/nimishjn/portfolio-2022/assets/63140632/93b38a55-39b5-4266-a67a-126f136f16d5)\n\n## Objectives\n- Setting up for React testing and debugging\n- Testing with Jest\n- Snapshot testing\n- Debugging with Chrome and Chrome extensions\n- Optimizing React code with ESLINT\n- Type checking\n",
   "skills": [
-    "skill_reactjs"
+    {
+      "skill": "content/skill/react_js.json"
+    }
   ],
-  "orgName": "LinkedIn Learning"
+  "url": "https://www.linkedin.com/learning/certificates/6d457ca86e8ae2588032cd3338ed0696c48593df732134d4a0dac473dd89c119"
 }

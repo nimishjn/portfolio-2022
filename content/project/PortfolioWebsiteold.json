@@ -7,5 +7,15 @@
   "description": "A portfolio website to showcase my projects, skills, and research works.\n\n![](https://user-images.githubusercontent.com/63140632/200137632-32794466-5f5a-4698-9c65-27e24473b003.png)\n\n### Features\n\n* Single page static landing page.\n* Responsive design.\n* Theme toggle (Dark and Light Themes).\n* Skills and Project Section are rendered dynamically using JavaScript.\n",
   "repoUrl": "https://github.com/nimishjn/portfolio",
   "viewUrl": "https://nimish-portfolio-2021.vercel.app/",
-  "techStack": []
+  "techStack": [
+    {
+      "skill": "content/skill/html.json"
+    },
+    {
+      "skill": "content/skill/css.json"
+    },
+    {
+      "skill": "content/skill/javascript.json"
+    }
+  ]
 }

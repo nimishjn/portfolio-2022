@@ -7,5 +7,6 @@
   "imageURL": "/images/experience/kwikpic-logo.jpeg",
   "description": "All-in-1 AI based photo sharing platform, enabling users to get their photos\nfrom public events and locations in just 1 tap and intelligently share pictures\nwith friends and family in High Quality without messing up their gallery.\n\n* Developed Customer Relationship Management (CRM) using NextJs and MongoDB.\n* Built dynamic mongo aggregate queries to develop efficient pipelines reducing response time by 60%.\n* Developed Data Table using AntD consisting of server-side pagination, filtering, sorting, single and bulk operations.\n* Built a dynamic customer conversation and issue components with filtering, sorting and CRUD functionality.\n* Added a bulk import page where users can upload,. view and edit CSV files.\n* Developed an admin panel to edit team members.\n",
   "url": "https://www.kwikpic.in/",
-  "featured": true
+  "featured": true,
+  "skills": []
 }

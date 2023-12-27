@@ -7,6 +7,19 @@
   "description": "A portfolio website to showcase my projects, skills, and research works.\n\n![](/banner.png)\n\n### Home Page\n\n* Designed and built hero, about, skills, projects, research and contact sections.\n* Implemented a working contact form using **Mailjet API**.\n* Made use of **lottie animations** for efficient loading of SVGs.\n\n### Developer Story\n\n* Originally offered by [StackOverFlow](https://stackoverflow.com/users/story/join)\n* This allows you to showcase your achievements, certificates, education, experience, projects, and research works.\n\n### Other Features\n\n* **Dynamic SEO** for Twitter, Facebook, and Open Graph using **next-sitemap**.\n* Implemented 404 - Page Not Found page.\n* Implemented page loading transitions.\n* Lazy image loading for better **user experience**.\n* The website is hosted on **Vercel** and the source code is available on GitHub.\n",
   "repoUrl": "https://github.com/nimishjn/portfolio-2022",
   "viewUrl": "https://nimish-jain.com",
-  "techStack": [],
+  "techStack": [
+    {
+      "skill": "content/skill/Tinaio.json"
+    },
+    {
+      "skill": "content/skill/typescript.json"
+    },
+    {
+      "skill": "content/skill/tailwind_css.json"
+    },
+    {
+      "skill": "content/skill/next_js.json"
+    }
+  ],
   "featured": true
 }

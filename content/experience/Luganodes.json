@@ -5,7 +5,8 @@
   "orgName": "Luganodes",
   "orgLocation": "Lugano, CH",
   "imageURL": "/images/experience/luganodes-logo.jpeg",
-  "description": "Our mission is to provide leading blockchain infrastructure for Proof of Stake (PoS)\nnetworks and to build a thriving web3 ecosystem.\n\nProof-of-Stake consensus based blockchains have validators instead of miners.\n\nValidators are servers (nodes) running blockchain software responsible for proposing,\nverifying transactions, and adding new blocks to the blockchain. It is technically challenging\nto run, manage and maintain validator nodes. That's where we come in to provide hassle-free staking services.\n",
+  "description": "- Working closely with the Product and Marketing team to integrate new features and improve SEO of the current website - luganodes.com\n- Building Luganodes’ flagship product - Staking terminal for our B2B client.\n- Refactored the newsletter-api to seamlessly connect with Brevo API.",
+  "skills": [],
   "url": "https://www.luganodes.com/",
   "featured": true
 }

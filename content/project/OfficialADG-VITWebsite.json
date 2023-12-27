@@ -7,6 +7,13 @@
   "description": "The official website of ADG-VIT, a student community at VIT that brings together like-minded individuals who are interested in pursuing their dreams.\nThis project was built by a team of 3.\n\n![adgvit](https://user-images.githubusercontent.com/63140632/200138524-1e337754-a103-4bc6-9b4a-7d3947f59a62.png)\n\nThe website consists of the following features:\n\n* A landing page consisting of a hero section and a summary of important routes.\n\n### Events page\n\n* A user can view the details and register for events conducted by ADG-VIT.\n* The events are listed in timeline format.\n* The user can register if they are logged in.\n\n### Project page\n\n* Consist of details of projects built by ADG-VIT over the past years.\n* Projects are displayed in alternate card fashion.\n\n### Partners page\n\n* Consist of a list of companies that collaborated with ADG-VIT.\n* The list is displayed in a grid format.\n\n### Domains page\n\n* Consists of student domains present at ADG-VIT.\n\n### Team page\n\n* Consist of details of board members of ADG-VIT for the years 2021–22.\n* User can also find contact details of the board members on hover.\n\n### Other features\n\n* Signup and login functionality.\n* Global toast notifications for a better user experience.\n* Global error handling and form validation.\n",
   "repoUrl": "https://github.com/ADG-VIT/ADG-VIT-Website",
   "viewUrl": "https://adgvit.com/",
-  "techStack": [],
+  "techStack": [
+    {
+      "skill": "content/skill/material_ui.json"
+    },
+    {
+      "skill": "content/skill/react_js.json"
+    }
+  ],
   "featured": true
 }

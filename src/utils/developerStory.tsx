@@ -91,7 +91,9 @@ export interface CertificateProps {
 	title: string;
 	imageURL?: StaticImageData;
 	description?: string;
-	skills?: skillInterface[];
+	skills?: {
+		skill: skillInterface;
+	}[];
 	url: string;
 	orgName?: string;
 }
@@ -117,7 +119,9 @@ export interface ExperienceProps {
 	imageURL?: StaticImageData;
 	description: string;
 	url?: string;
-	skills?: skillInterface[];
+	skills?: {
+		skill: skillInterface;
+	}[];
 }
 
 export interface OtherProps {
@@ -129,7 +133,9 @@ export interface OtherProps {
 	imageURL?: StaticImageData;
 	description?: string;
 	url?: string;
-	techStack?: skillInterface[];
+	techStack?: {
+		skill: skillInterface;
+	}[];
 }
 
 export interface ProjectProps {
@@ -142,7 +148,9 @@ export interface ProjectProps {
 	description: string;
 	repoUrl?: string;
 	viewUrl?: string;
-	techStack?: skillInterface[];
+	techStack?: {
+		skill: skillInterface;
+	}[];
 }
 
 // Interface for StoryContentTypes
