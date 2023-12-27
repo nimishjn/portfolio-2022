@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Lottie from 'lottie-react';
 import DevSkillsAnimation from '../../assets/lottie/developer-yoga.json';
-import { Categories } from 'utils/constants/Skills';
+import { Categories } from 'utils/constants/SkillCategories';
 import SkillBadge from 'components/common/SkillBadge';
 import SkillsFilter from './SkillsFilter';
 import { skillInterface } from 'utils/developerStory';

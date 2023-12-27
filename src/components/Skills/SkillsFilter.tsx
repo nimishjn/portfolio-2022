@@ -2,7 +2,7 @@ import { Listbox, Transition } from '@headlessui/react';
 import { Fragment } from 'react';
 import { HiFilter } from 'react-icons/hi';
 import { FcFilledFilter } from 'react-icons/fc';
-import { Categories } from 'utils/constants/Skills';
+import { Categories } from 'utils/constants/SkillCategories';
 
 function SkillsFilter({
 	selectedCategory,

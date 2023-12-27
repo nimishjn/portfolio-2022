@@ -2,7 +2,7 @@ import { StaticImageData } from 'next/image';
 import { BsInfo } from 'react-icons/bs';
 import { TbBriefcase, TbCertificate, TbCode, TbSchool } from 'react-icons/tb';
 import AchievementIcon from '../assets/icons/achievement.svg';
-import { Categories } from './constants/Skills';
+import { Categories } from './constants/SkillCategories';
 
 export const storyTypes = {
 	education: {
