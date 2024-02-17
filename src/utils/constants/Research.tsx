@@ -34,6 +34,16 @@ export const allResearchPapers = [
 		publisher: 'Springer',
 		date: 'Mar 25, 2022',
 	},
+	{
+		id: 'paper4',
+		img: '/images/Paper4.jpg',
+		title: 'Revisiting Fully Homomorphic Encryption Schemes for Privacy-Preserving Computing',
+		abstract:
+			'Homomorphic encryption (HME) is a sophisticated encryption technique that allows computations on encrypted data to be done without the requirement for decryption. This trait makes HME, appropriate for safe computation in scenarios involving sensitive data and also in cloud computing. The data is encrypted using a public key and the calculation is conducted on the encrypted data. The computed result is then decrypted with a private key to acquire the final output. It protects data while allowing complicated computations to be done on the encrypted data, resulting in a secure and efficient approach to analyse sensitive information. The ability of HME to do computations on encrypted data without decryption makes it a valuable tool for achieving privacy. This chapter is intended to give a clear idea about the various fully HME schemes present in the literature, as well as analysing and comparing the results of each of these schemes. The authors also provide applications and open-source tools of HME schemes, along with how HME can be used to establish and preserve privacy in various forms.',
+		link: 'https://www.igi-global.com/chapter/revisiting-fully-homomorphic-encryption-schemes-for-privacy-preserving-computing/339405',
+		publisher: 'IGI Global',
+		date: 'Feb 16, 2024',
+	},
 ];
 
 export const allResearchUrls = [

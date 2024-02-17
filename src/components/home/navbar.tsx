@@ -102,7 +102,7 @@ export const navbarData = [
 		external: true,
 	},
 	{
-		title: 'Hire me',
+		title: 'Contact me',
 		to: 'contact',
 	},
 ];

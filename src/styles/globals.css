@@ -77,6 +77,13 @@ html {
 		transform: translateX(0);
 	}
 
+	.line-clamp-4 {
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 4;
+	}
+
 	/* Heading 1 */
 	.h1 {
 		@apply text-3xl md:text-4xl lg:text-5xl font-bold mb-2 sm:mb-3 md:mb-5 inline-block;

@@ -120,6 +120,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allExperiences.nishkaera,
 	},
 	{
+		id: 'res-4',
+		storyType: 'other',
+		data: allOthers.res4,
+	},
+	{
 		id: 'res-3',
 		storyType: 'other',
 		data: allOthers.res3,

@@ -17,15 +17,16 @@ export const allExperiences: { [key: string]: ExperienceProps } = {
 		url: 'https://www.luganodes.com/',
 		imageURL: luganodesImg,
 		description: `
-Our mission is to provide leading blockchain infrastructure for Proof of Stake (PoS) 
-networks and to build a thriving web3 ecosystem.
+Luganodes is a AAA rated institutional-grade staking service provider 
+and one of the top leaders in staking volume. Globally, Luganodes’s 
+client base stakes digital assets across 37+ PoS live networks with 
+99.99% uptime.
 
-Proof-of-Stake consensus based blockchains have validators instead of miners. 
-
-Validators are servers (nodes) running blockchain software responsible for proposing, 
-verifying transactions, and adding new blocks to the blockchain. It is technically challenging 
-to run, manage and maintain validator nodes. That's where we come in to provide hassle-free staking services. 
-		`,
+- Building the official website - luganodes.com.
+- Enhanced SEO elevated Lighthouse score to 91%, lifting website activity by 60%.
+- Contributing to Luganodes’ flagship product - Staking terminal for our B2B client.
+- Refactored the newsletter-api service to seamlessly connect with Brevo API.
+- Building an open-source industry standard indexer for a Layer 2 blockchain.		`,
 		featured: true,
 	},
 	kwikpic: {

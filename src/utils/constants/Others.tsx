@@ -3,6 +3,7 @@ import blog1Img from '/public/images/other/blog1-logo.jpeg';
 import ieeexploreLogo from '/public/images/other/ieee-xplore-logo.jpeg';
 import elsevierLogo from '/public/images/other/elsevier-logo.png';
 import springerLogo from '/public/images/other/springer-logo.png';
+import igiLogo from '/public/images/other/igi-global.png';
 
 export const allOthers: { [key: string]: OtherProps } = {
 	blog1: {
@@ -106,6 +107,32 @@ and overall preprocessing performance (OPP) are proposed. Also, the suitability 
 two derived metrics in revealing methods’ capability in handling extreme outliers 
 is detailed. The merits of CNSAD and OPP are critically analyzed by applying to a 
 set of polluted data with the synthetically embedded trend and volatility effects.
+        `,
+	},
+	res4: {
+		fromDate: 'Feb 16, 2024',
+		toDate: 'Feb 16, 2024',
+		title: 'Revisiting Fully Homomorphic Encryption Schemes for Privacy-Preserving Computing',
+		type: 'Book chapter',
+		imageURL: igiLogo,
+		url: 'https://www.igi-global.com/chapter/revisiting-fully-homomorphic-encryption-schemes-for-privacy-preserving-computing/339405',
+		description: `
+**Abstract**
+
+Homomorphic encryption (HME) is a sophisticated encryption technique that allows 
+computations on encrypted data to be done without the requirement for decryption. 
+This trait makes HME, appropriate for safe computation in scenarios involving 
+sensitive data and also in cloud computing. The data is encrypted using a public 
+key and the calculation is conducted on the encrypted data. The computed result 
+is then decrypted with a private key to acquire the final output. It protects 
+data while allowing complicated computations to be done on the encrypted data, 
+resulting in a secure and efficient approach to analyse sensitive information. 
+The ability of HME to do computations on encrypted data without decryption makes 
+it a valuable tool for achieving privacy. This chapter is intended to give a clear 
+idea about the various fully HME schemes present in the literature, as well as 
+analysing and comparing the results of each of these schemes. The authors also 
+provide applications and open-source tools of HME schemes, along with how HME 
+can be used to establish and preserve privacy in various forms.
         `,
 	},
 };
