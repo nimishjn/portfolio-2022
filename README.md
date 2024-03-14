@@ -3,7 +3,7 @@
 ![GitHub issues](https://img.shields.io/github/issues-raw/nimishjn/portfolio-2022?style=for-the-badge)
 ![GitHub Repo stars](https://img.shields.io/github/stars/nimishjn/portfolio-2022?style=for-the-badge)
 
-# Portfolio Website 2022
+# Portfolio Website
 A portfolio website to showcase my projects, skills, and research works.
 
 ![Banner](https://github.com/nimishjn/portfolio-2022/assets/63140632/caed1a75-5789-473b-bab0-59fc9251eb12)
