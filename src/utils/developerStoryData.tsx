@@ -35,6 +35,11 @@ export const developerStoryData: DeveloperStoryDataProps = [
 		data: allExperiences.luganodes,
 	},
 	{
+		id: 'exp-luganodes-intern',
+		storyType: 'experience',
+		data: allExperiences.luganodesIntern,
+	},
+	{
 		id: 'exp-kwikpic',
 		storyType: 'experience',
 		data: allExperiences.kwikpic,

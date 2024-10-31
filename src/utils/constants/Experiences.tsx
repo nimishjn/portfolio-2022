@@ -9,8 +9,28 @@ import luganodesImg from '/public/images/experience/luganodes-logo.jpeg';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
 	luganodes: {
-		fromDate: 'Sep 2023',
+		fromDate: 'Jul 2024',
 		toDate: 'Present',
+		positionHeld: 'SDE',
+		orgName: 'Luganodes',
+		orgLocation: 'Lugano, CH',
+		url: 'https://www.luganodes.com/',
+		imageURL: luganodesImg,
+		description: `
+Luganodes is a AAA rated institutional-grade staking service provider 
+and one of the top leaders in staking volume. Globally, Luganodes’s 
+client base stakes digital assets across 37+ PoS live networks with 
+99.99% uptime.
+
+- Building a brand new website with better performance, SEO, 3D assets, and better design.
+- Maintaining various frontend projects in the company, which includes monitoring, fixing bugs, enhancing features, etc.
+- Working to migrate all monitoring to a new and more efficient architecture.
+`,
+		featured: true,
+	},
+	luganodesIntern: {
+		fromDate: 'Sep 2023',
+		toDate: 'Jun 2024',
 		positionHeld: 'SDE Intern',
 		orgName: 'Luganodes',
 		orgLocation: 'Lugano, CH',
