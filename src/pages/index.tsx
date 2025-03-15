@@ -30,7 +30,7 @@ const Home: NextPage = () => {
 				<HeroSection />
 				<Navbar />
 				<About />
-				<Skills />
+				{/* <Skills /> */}
 				<Projects />
 				<Research />
 				<Testimonials />
