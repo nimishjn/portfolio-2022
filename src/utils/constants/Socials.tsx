@@ -23,12 +23,6 @@ export const allSocials = [
 	},
 	{
 		name: 'nimishjain_',
-		icon: <AiFillInstagram />,
-		bgcolor: '#ea0c5f',
-		link: SocialUrls.instagramDM,
-	},
-	{
-		name: 'nimishjain_',
 		icon: <FaTwitter />,
 		bgcolor: '#1DA1F2',
 		link: SocialUrls.twitter,
