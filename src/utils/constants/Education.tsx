@@ -22,11 +22,12 @@ export const allEducation: { [key: string]: EducationProps } = {
 	},
 	vit: {
 		fromDate: '2020',
-		toDate: 'Present',
+		toDate: '2024',
 		orgName: 'Vellore Institute of Technology',
 		orgLocation: 'Vellore, India',
 		imageURL: vitImg,
 		url: 'https://vit.ac.in/',
+		featured: true,
 		description: `
 I am a final-year B. Tech undergrad majoring in Information Technology.
 
@@ -34,7 +35,7 @@ I am a final-year B. Tech undergrad majoring in Information Technology.
 2024
 
 ### CGPA
-8.54 / 10.0
+8.64 / 10.0
 
 ### Academics courses
 - Data Structures and Algorithms

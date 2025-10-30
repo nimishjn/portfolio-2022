@@ -6,14 +6,33 @@ import nishkaeraImg from '/public/images/experience/nishkaera-logo.jpeg';
 import disectoImg from '/public/images/experience/disecto-logo.jpeg';
 import kwikpicImg from '/public/images/experience/kwikpic-logo.jpeg';
 import luganodesImg from '/public/images/experience/luganodes-logo.jpeg';
+import electronImg from '/public/images/experience/electron-logo.jpeg';
 
 export const allExperiences: { [key: string]: ExperienceProps } = {
+	electron: {
+		fromDate: 'Aug 2025',
+		toDate: 'Present',
+		positionHeld: 'Founding Frontend Engineer',
+		orgName: 'Electron',
+		orgLocation: 'Bengaluru, India',
+		url: 'https://www.electron.dev/',
+		imageURL: electronImg,
+		description: `
+The Electron Foundation builds tools for enabling scalable, performant, & accessible on-chain experiences. We are currently building the next generation of Bitcoin swap dApp called [permute.finance](https://permute.finance).
+
+- Integrated Payload CMS with the permute website for Dynamic content, Programmatic SEO Pages, Internal SEO Pages, Blog, FAQs, etc.
+- Architected and launched the app.permute.finance dApp that has done $2M+ in transaction volume and supports 10+ blockchains and 100+ wallet integrations.
+- Optimized and maintained products built on React, Next.js, and Framer, focusing on performance, modularity, and rapid deployment.
+- Hardened infrastructure and security, implementing measures that reduced the attack surface and improved platform reliability.
+`,
+		featured: true,
+	},
 	luganodes: {
 		fromDate: 'Jul 2024',
-		toDate: 'Present',
+		toDate: 'Jul 2025',
 		positionHeld: 'SDE',
 		orgName: 'Luganodes',
-		orgLocation: 'Lugano, CH',
+		orgLocation: 'Hyderabad, India',
 		url: 'https://www.luganodes.com/',
 		imageURL: luganodesImg,
 		description: `
@@ -22,9 +41,11 @@ and one of the top leaders in staking volume. Globally, Luganodes’s
 client base stakes digital assets across 37+ PoS live networks with 
 99.99% uptime.
 
-- Building a brand new website with better performance, SEO, 3D assets, and better design.
-- Maintaining various frontend projects in the company, which includes monitoring, fixing bugs, enhancing features, etc.
-- Working to migrate all monitoring to a new and more efficient architecture.
+- Migrated legacy monitoring to a scalable Grafana-based architecture, significantly boosting efficiency and system management.
+- Developed an optimized Ronin Indexer to generate all historical validator or delegator reward reports since genesis within minutes.
+- Engineered a secure, scalable Ethereum staking dApp enabling institutional clients to seamlessly stake millions of dollars.
+- Managed project timelines across Product and Marketing teams, ensuring high-quality, simultaneous deliverables.
+- Maintained and optimized critical frontend applications, driving enhancements in debugging, performance, and UI/UX quality.
 `,
 		featured: true,
 	},
@@ -33,7 +54,7 @@ client base stakes digital assets across 37+ PoS live networks with
 		toDate: 'Jun 2024',
 		positionHeld: 'SDE Intern',
 		orgName: 'Luganodes',
-		orgLocation: 'Lugano, CH',
+		orgLocation: 'Hyderabad, India',
 		url: 'https://www.luganodes.com/',
 		imageURL: luganodesImg,
 		description: `
@@ -42,12 +63,13 @@ and one of the top leaders in staking volume. Globally, Luganodes’s
 client base stakes digital assets across 37+ PoS live networks with 
 99.99% uptime.
 
-- Building the official website - luganodes.com.
 - Enhanced SEO elevated Lighthouse score to 91%, lifting website activity by 60%.
 - Contributing to Luganodes’ flagship product - Staking terminal for our B2B client.
 - Refactored the newsletter-api service to seamlessly connect with Brevo API.
-- Building an open-source industry standard indexer for a Layer 2 blockchain.		`,
-		featured: true,
+- Built an efficient indexer to track rewards data for clients for the Ronin Blockchain.
+- Worked with marketing & product team to contribute to luganodes.com.
+`,
+		featured: false,
 	},
 	kwikpic: {
 		fromDate: 'Jun 2023',

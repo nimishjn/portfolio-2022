@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import Wave from 'react-wavify';
 import { developerStoryData } from 'utils/developerStoryData';
 
-export default function Projects() {
+export default function Featured() {
 	const [position, setPosition] = useState('left');
 
 	useEffect(() => {

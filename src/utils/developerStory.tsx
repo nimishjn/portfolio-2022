@@ -1,7 +1,7 @@
 import { StaticImageData } from 'next/image';
-import { BsInfo } from 'react-icons/bs';
 import { TbBriefcase, TbCertificate, TbCode, TbSchool } from 'react-icons/tb';
-import AchievementIcon from '../assets/icons/achievement.svg';
+// import AchievementIcon from '../assets/icons/achievement.svg';
+import { MdOutlineArticle } from 'react-icons/md';
 
 export const storyTypes = {
 	education: {
@@ -24,14 +24,14 @@ export const storyTypes = {
 		title: 'Certificate',
 		color: '#660033',
 	},
-	achievement: {
-		icon: <AchievementIcon height='0.8em' />,
-		title: 'Achievement',
-		color: '#330066',
-	},
+	// achievement: {
+	// 	icon: <AchievementIcon height='0.8em' />,
+	// 	title: 'Achievement',
+	// 	color: '#330066',
+	// },
 	other: {
-		icon: <BsInfo />,
-		title: 'Other',
+		icon: <MdOutlineArticle />,
+		title: 'Articles',
 		color: '#006666',
 	},
 };

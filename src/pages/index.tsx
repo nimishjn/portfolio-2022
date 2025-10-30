@@ -4,8 +4,8 @@ import Head from 'next/head';
 import HeroSection from 'components/home/herosection';
 import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
-import Skills from 'components/Skills';
-import Projects from 'components/home/projects';
+// import Skills from 'components/Skills';
+import Featured from 'components/home/featured';
 import Research from 'components/home/research';
 import Footer from 'components/footer';
 import Testimonials from 'components/home/testimonials';
@@ -14,7 +14,10 @@ const Home: NextPage = () => {
 	if (typeof window !== 'undefined') {
 		window.addEventListener('resize', () => {
 			let vh = window.innerHeight * 0.01;
-			document.documentElement.style.setProperty('--vh', `${vh}px`);
+			window.document.documentElement.style.setProperty(
+				'--vh',
+				`${vh}px`
+			);
 		});
 	}
 	return (
@@ -31,7 +34,7 @@ const Home: NextPage = () => {
 				<Navbar />
 				<About />
 				{/* <Skills /> */}
-				<Projects />
+				<Featured />
 				<Research />
 				<Testimonials />
 			</main>

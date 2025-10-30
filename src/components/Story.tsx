@@ -77,35 +77,7 @@ export default function Story() {
 						developerStoryData={developerStoryData}
 					/>
 					<DeveloperStory
-						developerStoryData={filteredStoryData.sort((a, b) => {
-							const fromDateA = a.data.fromDate;
-							const fromDateTimeA =
-								fromDateA.toLowerCase() === 'present'
-									? new Date()
-									: new Date(fromDateA);
-							const toDateA = a.data.toDate;
-							const toDateTimeA =
-								toDateA.toLowerCase() === 'present'
-									? new Date()
-									: new Date(toDateA);
-							const fromDateB = b.data.fromDate;
-							const fromDateTimeB =
-								fromDateB.toLowerCase() === 'present'
-									? new Date()
-									: new Date(fromDateB);
-							const toDateB = b.data.toDate;
-							const toDateTimeB =
-								toDateB.toLowerCase() === 'present'
-									? new Date()
-									: new Date(toDateB);
-
-							if (toDateTimeA > toDateTimeB) return -1;
-							else if (toDateTimeA < toDateTimeB) return 1;
-							else if (fromDateTimeA > fromDateTimeB) return -1;
-							else if (fromDateTimeA < fromDateTimeB) return 1;
-
-							return 0;
-						})}
+						developerStoryData={filteredStoryData}
 						position={position as any}
 					/>
 				</div>

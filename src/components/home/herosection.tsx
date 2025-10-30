@@ -33,9 +33,6 @@ export default function HeroSection() {
 						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-1'>
 							A Full-Stack Developer
 						</h2>
-						<h2 className='text-sm md:text-lg lg:text-xl font-light mb-2 sm:mb-3 md:mb-5'>
-							A Data Analytics Researcher
-						</h2>
 					</div>
 					<div className='flex gap-1 md:gap-2 mb-4 text-xl md:text-2xl justify-center sm:justify-start'>
 						<Link passHref href={SocialUrls.github} legacyBehavior>
@@ -47,7 +44,11 @@ export default function HeroSection() {
 								<FaGithub />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.linkedin} legacyBehavior>
+						<Link
+							passHref
+							href={SocialUrls.linkedin}
+							legacyBehavior
+						>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
@@ -65,7 +66,11 @@ export default function HeroSection() {
 								<FaEnvelope />
 							</a>
 						</Link>
-						<Link passHref href={SocialUrls.hackerrank} legacyBehavior>
+						<Link
+							passHref
+							href={SocialUrls.hackerrank}
+							legacyBehavior
+						>
 							<a
 								target='_blank'
 								rel='noopener noreferrer'
