@@ -4,7 +4,7 @@ import Head from 'next/head';
 import HeroSection from 'components/home/herosection';
 import Navbar from 'components/home/navbar';
 import About from 'components/home/about';
-// import Skills from 'components/Skills';
+import Skills from 'components/Skills';
 import Featured from 'components/home/featured';
 import Research from 'components/home/research';
 import Footer from 'components/footer';
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
 				<HeroSection />
 				<Navbar />
 				<About />
-				{/* <Skills /> */}
+				<Skills />
 				<Featured />
 				<Research />
 				<Testimonials />

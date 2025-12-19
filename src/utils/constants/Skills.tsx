@@ -24,7 +24,7 @@ import {
 	SiExpress,
 	SiHeroku,
 	SiIntellijidea,
-	SiJquery,
+	// SiJquery,
 	SiManjaro,
 	SiMaterialui,
 	SiMongodb,
@@ -42,6 +42,7 @@ import CppIcon from '../../assets/icons/cplusplus-original.svg';
 import Matlab from '../../assets/icons/matlab.svg';
 import PrimeReactLogo from '../../assets/icons/primereact-logo.svg';
 import NivoLogo from '../../assets/icons/nivo-logo.svg';
+import TurborepoIcon from '../../assets/icons/turborepo.svg';
 import { BsBootstrap, BsPieChart } from 'react-icons/bs';
 
 export const Categories = [
@@ -78,39 +79,6 @@ export interface skillInterface {
 
 export const allSkills: skillInterface[] = [
 	{
-		name: 'C',
-		icon: <CIcon height='1em' />,
-		bgcolor: 'rgb(4, 99, 172)',
-		link: 'https://devdocs.io/c/',
-		id: 'skill_c',
-		category: ['language'],
-	},
-	{
-		name: 'C++',
-		icon: <CppIcon height='1em' />,
-		bgcolor: '#af0443',
-		link: 'https://devdocs.io/cpp/',
-		id: 'skill_cpp',
-		category: ['language'],
-	},
-	{
-		name: 'Java',
-		icon: <FaJava />,
-		bgcolor: '#f89820',
-		link: 'https://docs.oracle.com/en/java/',
-		color: 'black',
-		id: 'skill_java',
-		category: ['language'],
-	},
-	{
-		name: 'Python',
-		icon: <FaPython />,
-		bgcolor: '#306998',
-		link: 'https://docs.python.org/3/',
-		id: 'skill_python',
-		category: ['language'],
-	},
-	{
 		name: 'HTML',
 		icon: <FaHtml5 />,
 		bgcolor: '#E34F26',
@@ -144,6 +112,39 @@ export const allSkills: skillInterface[] = [
 		category: ['language', 'frontend'],
 	},
 	{
+		name: 'C',
+		icon: <CIcon height='1em' />,
+		bgcolor: 'rgb(4, 99, 172)',
+		link: 'https://devdocs.io/c/',
+		id: 'skill_c',
+		category: ['language'],
+	},
+	{
+		name: 'C++',
+		icon: <CppIcon height='1em' />,
+		bgcolor: '#af0443',
+		link: 'https://devdocs.io/cpp/',
+		id: 'skill_cpp',
+		category: ['language'],
+	},
+	{
+		name: 'Java',
+		icon: <FaJava />,
+		bgcolor: '#f89820',
+		link: 'https://docs.oracle.com/en/java/',
+		color: 'black',
+		id: 'skill_java',
+		category: ['language'],
+	},
+	{
+		name: 'Python',
+		icon: <FaPython />,
+		bgcolor: '#306998',
+		link: 'https://docs.python.org/3/',
+		id: 'skill_python',
+		category: ['language'],
+	},
+	{
 		name: 'Next.js',
 		icon: <TbBrandNextjs />,
 		bgcolor: 'white',
@@ -159,6 +160,15 @@ export const allSkills: skillInterface[] = [
 		link: 'https://reactjs.org/docs/getting-started.html',
 		color: 'black',
 		id: 'skill_reactjs',
+		category: ['framework', 'frontend'],
+	},
+	{
+		name: 'Turborepo',
+		icon: <TurborepoIcon />,
+		bgcolor: '#0096FF',
+		link: 'https://turborepo.com/',
+		color: 'black',
+		id: 'skill_turborepo',
 		category: ['framework', 'frontend'],
 	},
 	{
@@ -192,7 +202,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#BA8FFF',
 		link: 'https://redux-toolkit.js.org/',
 		id: 'skill_redux',
-		category: ['framework', 'library', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'MongoDB',
@@ -228,21 +238,21 @@ export const allSkills: skillInterface[] = [
 		category: ['language', 'scripting', 'frontend'],
 	},
 	{
-		name: 'Tailwind CSS',
+		name: 'TailwindCSS',
 		icon: <SiTailwindcss />,
 		bgcolor: '#38bdf8',
 		link: 'https://tailwindcss.com/',
 		color: 'black',
 		id: 'skill_tailwindcss',
-		category: ['framework', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
-		name: 'Ant designs',
+		name: 'Ant.design',
 		icon: <SiAntdesign />,
 		bgcolor: '#1677FF',
 		link: 'https://ant.design/',
 		id: 'skill_antd',
-		category: ['framework', 'library', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'Material UI',
@@ -250,7 +260,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#007FFF',
 		link: 'https://mui.com/',
 		id: 'skill_materialui',
-		category: ['framework', 'library', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'Chakra UI',
@@ -258,7 +268,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#4FD1C5',
 		link: 'https://chakra-ui.com/',
 		id: 'skill_chakraui',
-		category: ['framework', 'library', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'Prime React',
@@ -266,7 +276,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#06c4e8',
 		link: 'https://primereact.org/',
 		id: 'skill_primereact',
-		category: ['framework', 'library', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'Nivo.rocks',
@@ -274,7 +284,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#e1cf2c',
 		link: 'https://nivo.rocks/',
 		id: 'skill_nivorocks',
-		category: ['framework', 'library', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'Bootstrap',
@@ -282,15 +292,7 @@ export const allSkills: skillInterface[] = [
 		bgcolor: '#8012f4',
 		link: 'https://getbootstrap.com/',
 		id: 'skill_bootstrap',
-		category: ['framework', 'library', 'frontend'],
-	},
-	{
-		name: 'JQuery',
-		icon: <SiJquery />,
-		bgcolor: '#0769AD',
-		link: 'https://jquery.com/',
-		id: 'skill_jquery',
-		category: ['framework', 'frontend'],
+		category: ['library', 'frontend'],
 	},
 	{
 		name: 'JavaFx',
@@ -401,21 +403,21 @@ export const allSkills: skillInterface[] = [
 		id: 'skill_manjaro',
 		category: ['os'],
 	},
-	{
-		name: 'Mac OS',
-		icon: <FaApple />,
-		bgcolor: 'white',
-		link: 'https://apple.com',
-		color: 'black',
-		id: 'skill_macos',
-		category: ['os'],
-	},
-	{
-		name: 'Windows OS',
-		icon: <FaWindows />,
-		bgcolor: '#00a4ef',
-		link: 'https://www.microsoft.com/en-in/windows',
-		id: 'skill_windowsos',
-		category: ['os'],
-	},
+	// {
+	// 	name: 'Mac OS',
+	// 	icon: <FaApple />,
+	// 	bgcolor: 'white',
+	// 	link: 'https://apple.com',
+	// 	color: 'black',
+	// 	id: 'skill_macos',
+	// 	category: ['os'],
+	// },
+	// {
+	// 	name: 'Windows OS',
+	// 	icon: <FaWindows />,
+	// 	bgcolor: '#00a4ef',
+	// 	link: 'https://www.microsoft.com/en-in/windows',
+	// 	id: 'skill_windowsos',
+	// 	category: ['os'],
+	// },
 ];
