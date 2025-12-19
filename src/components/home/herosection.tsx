@@ -66,7 +66,7 @@ export default function HeroSection() {
 								<FaEnvelope />
 							</a>
 						</Link>
-						<Link
+						{/* <Link
 							passHref
 							href={SocialUrls.hackerrank}
 							legacyBehavior
@@ -78,7 +78,7 @@ export default function HeroSection() {
 							>
 								<FaHackerrank />
 							</a>
-						</Link>
+						</Link> */}
 					</div>
 					<div className='flex gap-2 item-center justify-center sm:justify-start text-sm sm:text-base'>
 						<Button variant='primary' className='whitespace-nowrap'>
